@@ -826,6 +826,7 @@ body {
 #footer {
 	box-shadow: inset 0px -3px 19px -3px rgba(93, 93, 93, 0.72);
 	background: #97c25c99;
+	background-size: cover;
 	border-top: 1.5px solid grey;
 	padding: 1em 0em;
 }
@@ -845,13 +846,16 @@ body {
 	font-size: 13;
 	font-weight: 600;
 }
-.footer_contact div {
+.footer_contact .footer_content_body {
 	display: flex;
 	flex-direction: column;
 }
 .footer_logo {
-	height: 8em;
-	width: 8em;
+	height: 6.5em;
+	width: 6.5em;
+}
+.footer_org,.footer_center {
+	text-align: center;
 }
 .footer_org_name {
 	display: flex;
@@ -862,26 +866,100 @@ body {
 }
 .footer_org_name p span{
 	display: block;
-	line-height: 1.4em;
 }
-.footer_org_name p span:nth-child(1) {
+.footer_org_name_nep {
 	font-size: 12pt;
 	font-weight: 600;
 }
-.footer_org_name p span:nth-child(2) {
+.footer_org_nick_name {
 	font-size: 20.5pt;
 	font-family: poppins-regular;
 	font-weight: 600;
+	margin: .05em 0em;
 }
-.footer_org_name p span:nth-child(3) {
-	font-size: 12pt;
+.footer_org_type {
+	font-size: 9pt;
+	font-weight: 600;
+}
+.footer_org_add {
+	font-size: 11.3pt;
+}
+.footer_org_country {
+	font-size: 10pt;
+}
+.footer_org_email {
+	font-size: 7.5pt;
+	font-family: poppins-regular;
+	font-weight: 600;
+	cursor: pointer;
+}
+.footer_org_email:hover {
+	color: #9b0404;
+}
+.footer_important_link {
+	display: flex;
+	justify-content: space-between;
+}
+.footer_imp_link {
+	font-size: 10pt;
+	
+}
+.footer_imp_link:hover {
+	cursor: pointer;
+	color: #51032e;
+}
+.footer_important_link span {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: fit-content;
+	margin: .5em .5em;
+}
+.footer_social_media_subhead {
+	font-weight: 600;
+	font-size: 10pt;
+	margin: .5em 0;
+}
+.fb_name,.fb_name_small {
+	margin: 0em .5em;
+	line-height: 1.3em;
+}
+.fb_name_small {
+	font-weight: 500;
+}
+.footer_social_btn {
+	background: #971f0c;
+	color: #f2f2f2;
+	padding: .5em 1em;
+	border-radius: 2em;
+	display: flex;
+	justify-content: center;
+	width: auto;
+	margin: 0 6em;
 	text-align: center;
 }
-.footer_org_name p span:nth-child(4) {
-	font-size: 11pt;
+.footer_social_btn:hover {
+	background: #0c0c97c5;
+	cursor: pointer;
 }
-.footer_org_name p span:nth-child(5) {
-	font-size: 9.5pt;
+.footer_social_media_facebook {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer_facebook_description {
+	display: flex;
+	flex-direction: column;
+}
+.footer_facebook_description img{
+	height: 2em;
+	width: 13.5em;
+	border-radius: .5em;
+}
+.footer_ext_links {
+	display: flex;
+	flex-direction: column;
+	margin: .5em 0;
 }
 .web_developer {
 	display: block;
