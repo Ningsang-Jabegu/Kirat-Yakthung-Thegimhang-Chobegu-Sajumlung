@@ -1,0 +1,67 @@
+/* Font used in this website */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+@font-face {
+    font-family: "preeti-regular";
+    src: url('/fonts/Preeti\ Normal.otf');
+}
+
+@font-face {
+    font-family: "preeti-bold";
+    src: url('/fonts/Preeti\ Bold.otf');
+}
+
+@font-face {
+    font-family: "ananda-regular";
+    src: url('/fonts/Ananda\ Akchyar.ttf');
+}
+
+@font-face {
+    font-family: "ananda-bold";
+    src: url('/fonts/Ananda\ Akchyar\ bold.ttf');
+}
+
+@font-face {
+    font-family: "ganess-regular";
+    src: url('/fonts/Ganess\ Regular.otf');
+}
+
+@font-face {
+    font-family: "yakthung-regular";
+    src: url('/fonts/yakthung.ttf');
+}
+
+@font-face {
+    font-family: "yakthung-bold";
+    src: url('/fonts//yakthungb.ttf');
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "poppins-semi-bold";
+    src: url('/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "poppins-light";
+    src: url('/fonts/Poppins-Thin.ttf');
+}
+@font-face {
+	font-family: 'Capriola-Regular';
+	src: url('../fonts/Capriola-Regular.eot');
+	src: local('☺'),  url('../fonts/Capriola-Regular.woff') format('woff'),  url('../fonts/Capriola-Regular.ttf') format('truetype'),  url('../fonts/Capriola-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Responsiveness website */
+/* Tablet View */
+@media only screen and (max-width: 820px) {
+.box:nth-child(1)  {
+    display: none;
+}
+}
