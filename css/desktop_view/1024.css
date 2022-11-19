@@ -1,3 +1,83 @@
-@media only screen and (max-width:769px)and(max-width:1024px) {
+@media only screen and (max-width:1024px) { /* Minimum screen width 769px for desktop view */
+/*------------------------------ HEADER ------------------------------*/
+/* Heading organization name adjustment */
+.org_nep {
+	font-size: 35pt;
+}
+.org_eng {
+	font-size: 17pt;
+}
+.org_yak {
+	font-size: 43px;
+    margin: .1em 0;
+}
+.org_nep_add {
+	font-size: 24px;
+}
+.logo_discription {
+	height: 100%;
+	width: 100vw;
+}
 
+/* Body content second box (middle) adjustment */
+.homepage_news {
+	width: 80%;
+}
+.middle_chobegu_20th_gen {
+	display: flex;
+    align-items: flex-start;
+}
+.middle_chobegu_20th_gen div {
+    padding: 0;
+}
+.middle_side_son_person_info {
+    margin-left: 0;
+}
+.middle_chobegu_ending {
+    font-size:9pt;
+}
+.homepage_scholarship_info {
+    display: inline-block;
+}
+.homepage_scholarship_info img {
+    height: 9em;
+    width: 100%;
+}
+.homepage_scholarship_text span {
+    margin-left: 0;
+}
+.scholarship_btn1 {
+    margin-top: 1.3em;
+}
+.homepage_membership_1st_text {
+    font-size: 10pt;
+}
+.homepage_membership_button {
+    font-size: 9pt;
+    padding: .1em .1em;
+    margin: .5em;
+}
+.homepage_build_branch {
+    font-size: 10pt;
+}
+.homepage_build_branch_button {
+    text-align: center;
+    width: 50%;
+}
+.homepage_cencus_box {
+    font-size: 10pt;
+    text-align: justify;
+}
+.homepage_cencus_button {
+    width: 50%;
+}
+
+/* Body content third box (right) adjustment */
+.homepage_right_side_post {
+    bottom: 1.4em;
+}
+
+.footer_content_body  {
+    margin: .5em 0;
+}
 }

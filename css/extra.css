@@ -57,11 +57,3 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
-/* Responsiveness website */
-/* Tablet View */
-@media only screen and (max-width: 820px) {
-.box:nth-child(1)  {
-    display: none;
-}
-}
