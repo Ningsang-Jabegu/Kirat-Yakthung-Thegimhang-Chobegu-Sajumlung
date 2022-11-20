@@ -63,7 +63,7 @@ body {
 
 .logo_n {
 	height: 8.6em;
-	width: auto;
+	width: 8.6em;
 	cursor: pointer;
 }
 
@@ -396,7 +396,26 @@ body {
 	text-transform: uppercase;
 	height: 100%;
 }
-
+.nav_menu {
+	display: none;
+	position: relative;
+	background-color: #000000b4;
+	color: #fff;
+	height: 2.5em;
+	border-radius: 1.3em;
+	width: 8em;
+	float: right;
+}
+.nav_link_menu {
+	position: absolute;
+}
+.nav_link_menu img {
+	display: inline;
+	height: 2em;
+	width: 2em;
+	align-items: center;
+	filter: drop-shadow(0px 0px 3px rgba(2, 9, 35, 0.865));
+}
 /*------------------------------ Home_Page_Body-content  ------------------------------*/
 .body_content {
 	display: flex;
@@ -444,10 +463,17 @@ body {
 
 .left_side_box:hover {
 	background: rgba(48, 22, 140, 0.737);
-	color: #fff;
+	color: #fff ;
 	cursor: pointer;
 }
-
+.left_side_box:hover .left_side_opt_name,
+.right_side_box:hover .right_side_person_info span
+ {
+	color: #f2f2f2;
+}
+.left_side_opt_name {
+	color: #083703;
+}
 .left_side_more_icon {
 	display: none;
 }
@@ -928,30 +954,42 @@ body {
 }
 
 .right_side_person_info span:first-child {
-	font-weight: 600;
+	font-weight: 700!important;
+	color: #6c0b75;
 }
 
 .right_side_person_info span:nth-child(2),
 .right_side_person_info span:nth-child(3) {
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 10pt;
+	color: #083703;
 }
 
 .homepage_right_side_post {
 	font-family: poppins-regular;
 	font-size: 13pt;
 	font-weight: 600 !important;
-	filter: drop-shadow(0px 0px 3px rgba(28, 3, 56, 0.568));
+	filter: drop-shadow(0px 0px 3px rgba(82, 4, 28, 0.568));
 	position: absolute;
+	color: #6d052e;
 	right: 1em;
 	margin: 0 .5em;
 }
-
+.right_officials:hover .homepage_right_side_post{
+	color: #f2f2f2;
+}
 .homepage_see_members {
 	text-decoration: none;
 	color: inherit;
 }
-
+.more_member_box {
+	display: flex;
+}
+.more_member_box p:last-child {
+	position: absolute;
+	right: 3em;
+	font-weight: 600;
+}
 .more_member_box,
 .more_member_box:hover {
 	border-bottom-left-radius: 1em;
@@ -974,6 +1012,9 @@ body {
 	font-weight: 600;
 	font-family: poppins-regular;
 	text-align: right;
+}
+.notice_last_box {
+	border-bottom-left-radius: 1em;
 }
 
 /*------------------------------ FOOTER ------------------------------*/
