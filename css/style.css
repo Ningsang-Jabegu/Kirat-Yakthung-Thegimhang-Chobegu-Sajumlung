@@ -408,12 +408,13 @@ body {
 .nav_menu {
 	display: none;
 	position: relative;
-	background-color: #000000b4;
-	color: #fff;
+	background-color: #989898b4;
+	color: rgb(2, 2, 2);
 	height: 2.5em;
 	border-radius: 1.3em;
 	width: 8em;
 	float: right;
+	cursor: pointer;
 }
 .nav_link_menu {
 	position: absolute;

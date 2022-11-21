@@ -118,11 +118,24 @@ function open_more_left_foot() {
 /* for navigation bar for tab and mobile phone */
 function open_nav_small() {
   var nav_bar = document.querySelector(".navigation_items");
-  var nav_bar_background = document.querySelector("#nav_bar_layer");
+  var nav_menu = document.querySelector(".nav_menu");
+  var nav_close = document.querySelector(".show_hide_nav_bar")
+  var menu_text = document.querySelector(".nav_hide_menu")
   nav_bar.classList.toggle("show_hide_nav_bar");
-  
+  if(nav_bar.offsetHeight != 0) {
+    nav_menu.style.background = "#000000b4";
+    menu_text.style.color = "#d1d4d4";
+  } else {
+    nav_menu.style.background = "#989898b4";
+    menu_text.style.color = "inherit";
+    nav_bar.setAttribute('closing', '');
+    nav_menu.addEventListener("animationend", () => {
+      nav_bar.removeAttribute('closing');
+      nav_bar.close();
+    }, {once: true})
+  }
 }
-
+/*animation: nav_open 400ms ease-in-out forwards; */
 /* For copyright year */
 var date = new Date();
 var year = date.getFullYear();
