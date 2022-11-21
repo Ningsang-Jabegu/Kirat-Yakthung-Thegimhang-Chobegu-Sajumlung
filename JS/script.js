@@ -115,6 +115,14 @@ function open_more_left_foot() {
   }
   
 }
+/* for navigation bar for tab and mobile phone */
+function open_nav_small() {
+  var nav_bar = document.querySelector(".navigation_items");
+  var nav_bar_background = document.querySelector("#nav_bar_layer");
+  nav_bar.classList.toggle("show_hide_nav_bar");
+  
+}
+
 /* For copyright year */
 var date = new Date();
 var year = date.getFullYear();

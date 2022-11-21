@@ -126,7 +126,16 @@ body {
 	margin-right: 0.9em;
 	margin-left: 0.9em;
 }
-
+.org_register_num {
+	position: absolute;
+	top: .3em;
+	right: 1em;
+	font-weight: 600;
+	color: #7e0920;
+}
+.org_register_hide {
+	display: none;
+}
 .logo_discription {
 	height: 100%;
 	width: 100%;
@@ -666,7 +675,12 @@ body {
 	height: 4.5em;
 	width: 4.5em;
 }
-
+.middle_side_box .right_side_person_info {
+	order: 2;
+}
+.middle_side_box .right_side_person {
+	order: 1;
+}
 .middle_chobegu_20th_gen div .right_side_person_info {
 	margin-top: 1em;
 }
@@ -678,7 +692,12 @@ body {
 	padding: .8em;
 
 }
-
+.middle_chobegu_20th_gen .middle_son_division .right_side_person{
+	order: 1;
+}
+.middle_chobegu_20th_gen .middle_son_division .middle_side_son_person_info{
+	order: 2;
+}
 .middle_son_division {
 	align-items: center;
 	width: 25%;
@@ -1016,7 +1035,9 @@ body {
 .notice_last_box {
 	border-bottom-left-radius: 1em;
 }
-
+.hide_notice_desktop {
+	display: none;
+}
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
 	box-shadow: inset 0px -3px 19px -3px rgba(93, 93, 93, 0.72);

@@ -1,10 +1,16 @@
 @media only screen and (max-width:768px) {
     /*------------------------------ HEADER ------------------------------*/
-/* Heading organization name adjustment */
+body {
+    position: relative;
+}
+    /* Heading organization name adjustment */
+#header {
+    width: 100vw;
+}
 #logo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .logo_n {
     margin: .5em;
@@ -23,7 +29,8 @@
 }
 .org_nep_slo {
 	font-size: 13.9pt;
-    line-height: 2;
+    line-height: 1.5;
+    margin-top: -.2em;
 }
 .org_nep {
 	font-size: 22.1pt;
@@ -41,6 +48,20 @@
 .org_nep_add {
 	font-size: 13pt;
     line-height: 1;
+}
+.org_register_num {
+    position: absolute;
+    top: 3.5em;
+    left: 26%;
+    right: 26%;
+    font-size: 10pt;
+    text-align: center;
+}
+.org_reg_dot {
+    display: none;
+}
+.org_register_hide {
+    display: inline-block
 }
 .logo_discription {
 	height: 100%;
@@ -71,10 +92,66 @@
 
 /*Navigation Bar*/
 #navigation {
-    height: 2.2em;
+    height: 2.5em;
+    position: relative;
 }
-.nav_item{
+.navigation_items {
     display: none;
+    position: absolute;
+    right: .5em;
+    top: 3em;
+    z-index: 5;
+    width: 10.3em;
+    height: max-content;
+    border-radius: .8em;
+    background: #a11255e1;
+    box-shadow: 10px 5px 55px 5px rgba(4, 1, 23, 0.667),
+		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
+    padding: .5em;
+}
+.navigation_items .selected {
+    background: #d1d4d4;
+    border-radius: .6em;
+}
+.nav_item {
+    display: flex;
+    justify-content: space-between;
+} 
+.selected .nav_hide {
+    color: #640e30!important;
+}
+.nav_item .nav_hide {
+    opacity: 1;
+    color: #d1d4d4;
+    background: none;
+    position: relative;
+    align-items: center;
+    margin: .8em .2em 0 0;
+    font-family: poppins-regular;
+    font-weight: 600;
+    font-size: 10pt;
+}
+#navigation .nav_item.selected .nav_link {
+    background: none;
+}
+.navigation_items .nav_item {
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+.navigation_items .nav_item:last-child {
+    border-bottom: none;
+}
+#navigation .navigation_items .nav_item {
+    width: 100%;
+}
+#navigation .navigation_items .nav_item .nav_hide{
+    display: block;
+    position: relative;
+}
+.show_hide_nav_bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
 }
 .nav_hide_menu {
     display: inline-block;
@@ -181,14 +258,14 @@
 }
 .homepage_build_branch_button {
     text-align: center;
-    width: 70%;
+    width: 90%;
 }
 .homepage_cencus_box {
     font-size: 10pt;
     text-align: justify;
 }
 .homepage_cencus_button {
-    width: 70%;
+    width: 90%;
 }
 
 /* Body content third box (right) adjustment */
@@ -198,6 +275,20 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+}
+.right_side_box .notice_board_image{
+    order: 1;
+    margin-top: .5em;
+}
+.right_side_box .notice_board_description{
+    order: 2;
+    margin: .5em;
+}
+.notice_board_description span:nth-child(1) {
+    margin-top: .2em!important;
+}
+.notice_board_description span:nth-child(2) {
+    text-align: justify;
 }
 .right_side_person {
     height: 3em;
@@ -217,17 +308,83 @@
 }
 .right_side_person_info span:first-child{
     font-size: 10pt;
+    margin-top: 1.5em;
+}
+.more_member_box p:last-child {
+    right: 54%;
+    left: 46%;
+    top: 48%;
 }
 .homepage_right_side_post {
     position: relative;
-    margin: 1.3em 1em -1.5em 1em;
+    margin: 1.8em 1em -1.5em 1em;
     justify-self: center;
     order: 2;
-    font-size: 10pt;
+    font-size: 8pt;
+    background: rgba(80, 36, 6, 0.559);
+    color: #fefefe;
+    text-align: center;
+    width: 100%;
+    border-radius: 2em;
+    font-weight: 600;
+    padding: .3em 0;
 }
 
 /* Footer content adjustment */
+/*#footer {
+    position: absolute;
+    bottom: -114em;
+}*/
 .footer_content_body  {
     margin: .5em 0;
 }
+.notice_board_content {
+    display: none;
 }
+.hide_notice_desktop {
+	display: flex;
+    width: 100%;
+}
+.hide_notice_desktop img {
+}
+.hide_notice_desktop .notice_board_description span:nth-child(1){
+    background-color: #640e30;
+    color: #fefefe;
+    text-align: center;
+    padding: .3em 1em;
+    border-radius: 2em;
+    font-size: 9pt;
+}
+.hide_notice_desktop .notice_board_description span:nth-child(1):hover {
+    background-color: #640e30cf;
+    color: #dadada;
+}
+}
+/*@media only screen and (max-width:600px) {
+.middle_side {
+width: 64%;
+}
+.right_side {
+    width: 32%;
+}
+.left_side {
+    display: block;
+    position: absolute;
+    background: #d6ddd8da;
+    left: .7em;
+    top: 162.5em;
+    width: 30%;
+    z-index: 3;
+}
+#notice_board {
+    position: absolute;
+    background: #d6ddd8da;
+    right: 0;
+    width: 205%;
+    top: 142.3em;
+    margin-top: 1em;
+    border-radius: 1em;
+    box-shadow: 5px 6px 5px -1px rgba(0, 0, 0, 0.292),
+		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
+}
+}*/
