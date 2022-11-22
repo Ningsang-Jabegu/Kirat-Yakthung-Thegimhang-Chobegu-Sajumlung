@@ -7,18 +7,8 @@
 }
 
 @font-face {
-    font-family: "preeti-bold";
-    src: url('/fonts/Preeti\ Bold.otf');
-}
-
-@font-face {
     font-family: "ananda-regular";
     src: url('/fonts/Ananda\ Akchyar.ttf');
-}
-
-@font-face {
-    font-family: "ananda-bold";
-    src: url('/fonts/Ananda\ Akchyar\ bold.ttf');
 }
 
 @font-face {
@@ -32,28 +22,26 @@
 }
 
 @font-face {
-    font-family: "yakthung-bold";
-    src: url('/fonts//yakthungb.ttf');
-}
-
-@font-face {
     font-family: "poppins-regular";
     src: url('/fonts/Poppins-Regular.ttf');
 }
 
-@font-face {
-    font-family: "poppins-semi-bold";
-    src: url('/fonts/Poppins-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: "poppins-light";
-    src: url('/fonts/Poppins-Thin.ttf');
-}
 @font-face {
 	font-family: 'Capriola-Regular';
 	src: url('../fonts/Capriola-Regular.eot');
 	src: local('☺'),  url('../fonts/Capriola-Regular.woff') format('woff'),  url('../fonts/Capriola-Regular.ttf') format('truetype'),  url('../fonts/Capriola-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+@font-face {
+    font-family: "germaniaOne";
+    src: url('/fonts/GermaniaOne-Regular.ttf');
+}
+@font-face {
+    font-family: "limbu";
+    src: url('/fonts/Sanchabir\ Kurle\ Style.ttf');
+}
+@font-face {
+    font-family: "aakar";
+    src: url('/fonts/Aakar\ Regular.ttf');
 }
