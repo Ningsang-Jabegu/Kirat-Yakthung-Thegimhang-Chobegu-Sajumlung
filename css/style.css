@@ -22,7 +22,6 @@ body {
 	width: 100%;
 	min-height: 100vh;
 }
-
 /*-----------------------Scroll Bar--------------------------*/
 /* width */
 ::-webkit-scrollbar {
@@ -336,7 +335,7 @@ body {
 	display: inline-block;
 	align-items: center;
 	list-style: none;
-	width: clamp(320px, 100vw,1440px); /*clamp(320px, 100vw,1440px)*/
+	width: 100%; 
 	background: #9ba6af43;
 	border-radius: 1.3em;
 	box-shadow: 2px 5px 9px -4px rgba(42, 41, 41, 0.868),
@@ -453,7 +452,7 @@ body {
 
 /*------------------------------ Home_Page_Body-left_side_content  ------------------------------*/
 .left_side {
-	width: 20.7%;
+	width: clamp(15em, 20vw,20em); 
 	margin-left: .2em;
 	border-top-right-radius: 1em;
 	border-bottom-right-radius: 1em;
@@ -495,8 +494,35 @@ body {
 }
 .left_side_more_icon {
 	display: none;
+	animation: open_boxes 500ms forwards ease-in-out;
+	transform-origin: top center;
 }
-
+.left_side_more_icon[closing] {
+	
+	transform-origin: top center;
+}
+@keyframes open_boxes {
+	0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg) 
+    }
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
+@keyframes close_boxes {
+	100% {
+        transform: rotateX(-90deg)
+    }
+    50% {
+        transform: rotateX(20deg) 
+    }
+    0% {
+        transform: rotateX(0deg) 
+    }
+}
 .left_side_foot {
 	font-size: 9pt;
 	font-family: poppins-regular;
@@ -565,7 +591,7 @@ body {
 
 /*------------------------------ Home_Page_Body-middle_side_content  ------------------------------*/
 .middle_side {
-	width: 50%;
+	width: clamp(19.6em, 50vw,50em);
 	border-radius: 1em;
 }
 
@@ -930,7 +956,7 @@ body {
 
 /*------------------------------ Home_Page_Body-right_side_content  ------------------------------*/
 .right_side {
-	width: 24%;
+	width: clamp(21em, 28vw,25em); /*clamp(320px, 28vw,1440px)*/
 	margin-right: .2em;
 	border-top-left-radius: 1em;
 	border-bottom-left-radius: 1em;
@@ -1050,7 +1076,7 @@ body {
 }
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
-	box-shadow: inset 0px -3px 19px -3px rgba(93, 93, 93, 0.72);
+	box-shadow: inset 0px -3px 19px -3px rgba(53, 50, 50, 0.72);
 	background: #97c25c99;
 	background-size: cover;
 	border-top: 1.5px solid grey;

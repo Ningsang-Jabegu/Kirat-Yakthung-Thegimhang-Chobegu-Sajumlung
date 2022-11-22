@@ -98,14 +98,33 @@ function open_left_side_box_more() {
   var hidden_icons = document.querySelector(".left_side_more_icon");
   var more_icon = document.querySelector(".see_more_box");
   more_icon.style.display="none";
-  hidden_icons.style.display="block";
+  hidden_icons.style.display="block"; 
+  hidden_icons.setAttribute("closing","");
+
 }
 function close_left_side_box_more() {
   var hidden_icons = document.querySelector(".left_side_more_icon");
+  var hidden_icons_closing = document.querySelector(".left_side_more_icon[closing]");
   var more_icon = document.querySelector(".see_more_box");
-  more_icon.style.display="flex";
-  hidden_icons.style.display="none";
+  hidden_icons_closing.style.animation = "close_boxes 500ms forwards ease-in-out";
+  hidden_icons_closing.addEventListener(
+    "animationend",
+    () => {
+      more_icon.style.display="flex";
+      hidden_icons.style.display="none";
+      hidden_icons.removeAttribute("closing");
+      hidden_icons_closing.style.animation = "open_boxes 500ms forwards ease-in-out";
+    },
+    { once: true }
+  );
 }
+/*animation: close_boxes 500ms forwards ease-in-out; */
+/*var close = document.querySelector(".see_less_box");
+var hidden_icons = document.querySelector(".left_side_more_icon");
+close.addEventListener('animationend' , () => {
+hidden_icons.removeAttribute("closing");
+}, {once: true})*/
+
 function open_more_left_foot() {
   var open_box = document.querySelector(".left_side_foot_more");
   var background = document.body;
@@ -129,13 +148,9 @@ function open_nav_small() {
     nav_menu.style.background = "#989898b4";
     menu_text.style.color = "inherit";
     nav_bar.setAttribute('closing', '');
-    nav_menu.addEventListener("animationend", () => {
-      nav_bar.removeAttribute('closing');
-      nav_bar.close();
-    }, {once: true})
   }
 }
-/*animation: nav_open 400ms ease-in-out forwards; */
+
 /* For copyright year */
 var date = new Date();
 var year = date.getFullYear();
