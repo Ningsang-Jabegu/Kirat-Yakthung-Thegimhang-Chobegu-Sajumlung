@@ -216,12 +216,9 @@ body {
 /* Body content second box (middle) adjustment */
 .middle_side {
     width: auto;
-    margin-inline-start: 0;
-    margin-inline-end: .7em;
 }
 .right_side {
     min-width: 28%;
-    margin-inline-start: .5em;
 }
 .homepage_news_head {
     text-align: center;
@@ -378,8 +375,6 @@ body {
 .hide_notice_desktop {
 	display: flex;
     width: 100%;
-}
-.hide_notice_desktop img {
 }
 .hide_notice_desktop .notice_board_description span:nth-child(1){
     background-color: #640e30;

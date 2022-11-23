@@ -446,6 +446,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin: 1em .5em;
+	gap: 1em;
 }
 
 .box {
@@ -594,7 +595,6 @@ body {
 .middle_side {
 	width: clamp(19.6em, 47vw,47em);
 	border-radius: 1em;
-	margin-inline: 1em;
 }
 
 .middle_side_news {
@@ -1174,7 +1174,8 @@ body {
 
 .footer_important_link {
 	display: flex;
-	justify-content: space-between;
+	gap: 3em;
+	justify-content: center;
 }
 
 .footer_imp_link {
@@ -1203,8 +1204,8 @@ body {
 
 .fb_name,
 .fb_name_small {
-	margin: 0em .5em;
 	line-height: 1.3em;
+	font-size: 10pt;
 }
 
 .fb_name_small {
@@ -1231,7 +1232,7 @@ body {
 .footer_social_media_facebook {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	gap: 1em;
 }
 
 .footer_facebook_description {
