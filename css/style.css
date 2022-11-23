@@ -424,6 +424,13 @@ body {
 	float: right;
 	cursor: pointer;
 }
+.nav_menu_close[hide] {
+	display: none;
+}
+.nav_menu_close {
+	background: #000000b4;
+	color: #d1d4d4;
+}
 .nav_link_menu {
 	position: absolute;
 }
@@ -505,9 +512,6 @@ body {
 	0% {
         transform: rotateX(-90deg)
     }
-    70% {
-        transform: rotateX(20deg) 
-    }
     100% {
         transform: rotateX(0deg) 
     }
@@ -515,9 +519,6 @@ body {
 @keyframes close_boxes {
 	100% {
         transform: rotateX(-90deg)
-    }
-    50% {
-        transform: rotateX(20deg) 
     }
     0% {
         transform: rotateX(0deg) 

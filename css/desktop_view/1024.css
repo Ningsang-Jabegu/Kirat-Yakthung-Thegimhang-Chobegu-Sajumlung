@@ -1,3 +1,9 @@
+@media (min-width:769px) and (max-width:3440px) {
+    .nav_menu_close,.nav_menu_open {
+        display: none!important;
+    }
+}
+
 @media only screen and (max-width:1024px) { /* Minimum screen width 769px for desktop view */
     /*------------------------------ HEADER ------------------------------*/
     /* Heading organization name adjustment */

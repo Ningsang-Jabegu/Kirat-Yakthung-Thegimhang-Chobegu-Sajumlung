@@ -1,3 +1,4 @@
+/* For sticky navigation bar */
 var navbar = document.getElementById("navigation");
 var sticky = navbar.offsetTop;
 window.onscroll = function () {
@@ -12,6 +13,9 @@ window.onscroll = function () {
     navbar.classList.remove("sticky");
   }
 }
+/* ----------------------------------------------------------- */
+
+/* For the download box of logos */
 function open_logo_box() {
   var model_box_all = document.querySelector(".logo_discription");
   model_box_all.style.display="block";
@@ -94,19 +98,21 @@ function close_logo_box_subfav() {
   model_box_all.style.display="none";
   img.remove();
 }
+/*---------------------------------------------------------------------------- */ 
+
+/* Animation for opening and closing of left side more boxes in desktop view */
 function open_left_side_box_more() {
   var hidden_icons = document.querySelector(".left_side_more_icon");
   var more_icon = document.querySelector(".see_more_box");
   more_icon.style.display="none";
   hidden_icons.style.display="block"; 
   hidden_icons.setAttribute("closing","");
-
 }
 function close_left_side_box_more() {
   var hidden_icons = document.querySelector(".left_side_more_icon");
   var hidden_icons_closing = document.querySelector(".left_side_more_icon[closing]");
   var more_icon = document.querySelector(".see_more_box");
-  hidden_icons_closing.style.animation = "close_boxes 500ms forwards ease-in-out";
+  hidden_icons_closing.style.animation = "close_boxes 300ms forwards ease-in-out";
   hidden_icons_closing.addEventListener(
     "animationend",
     () => {
@@ -118,17 +124,14 @@ function close_left_side_box_more() {
     { once: true }
   );
 }
-/*animation: close_boxes 500ms forwards ease-in-out; */
-/*var close = document.querySelector(".see_less_box");
-var hidden_icons = document.querySelector(".left_side_more_icon");
-close.addEventListener('animationend' , () => {
-hidden_icons.removeAttribute("closing");
-}, {once: true})*/
+/* ------------------------------------------------------------------------------------ */
 
+/* homepage left side box footer when clicked in  थप*/
 function open_more_left_foot() {
   var open_box = document.querySelector(".left_side_foot_more");
   var background = document.body;
   open_box.classList.toggle('flex');
+  
   background.onclick() = function() {
     open_box.classList.remove('flex');
   }
@@ -137,22 +140,43 @@ function open_more_left_foot() {
 /* for navigation bar for tab and mobile phone */
 function open_nav_small() {
   var nav_bar = document.querySelector(".navigation_items");
-  var nav_menu = document.querySelector(".nav_menu");
-  var nav_close = document.querySelector(".show_hide_nav_bar")
-  var menu_text = document.querySelector(".nav_hide_menu")
-  nav_bar.classList.toggle("show_hide_nav_bar");
+  var open_icon = document.querySelector(".nav_menu_open");
+  var close_icon = document.querySelector(".nav_menu_close");
+  nav_bar.removeAttribute('closing');
+  nav_bar.classList.add("show_hide_nav_bar");
+  nav_bar.style.transformOrigin = "top center";
+  nav_bar.style.animation = "nav_open 400ms ease-in forwards";
   if(nav_bar.offsetHeight != 0) {
-    nav_menu.style.background = "#000000b4";
-    menu_text.style.color = "#d1d4d4";
-  } else {
-    nav_menu.style.background = "#989898b4";
-    menu_text.style.color = "inherit";
-    nav_bar.setAttribute('closing', '');
+    open_icon.style.display = "none";
+ 
+    close_icon.style.display = "block";
   }
 }
+function close_nav_small() {
+  var nav_bar = document.querySelector(".navigation_items");
+  var nav_close = document.querySelector(".show_hide_nav_bar")
+  var open_icon = document.querySelector(".nav_menu_open");
+  var close_icon = document.querySelector(".nav_menu_close");
+  nav_bar.style.transformOrigin = "top center";
+  nav_bar.style.animation = "nav_close 400ms ease-in forwards";
+  close_icon.style.display = "none";
+  open_icon.style.display = "block";
+    nav_bar.setAttribute('closing', '');
+    nav_close.addEventListener(
+      "animationend",
+      () => {
+        nav_bar.classList.remove("show_hide_nav_bar");
+        nav_bar.removeAttribute("closing");
+      },
+      { once: true }
+    );
+}
+
+/* -------------------------------------------------------------- */
 
 /* For copyright year */
 var date = new Date();
 var year = date.getFullYear();
 document.querySelector(".year").innerHTML = year;
 document.querySelector("#year").innerHTML = year;
+/* ----------------------------------------------------------- */
