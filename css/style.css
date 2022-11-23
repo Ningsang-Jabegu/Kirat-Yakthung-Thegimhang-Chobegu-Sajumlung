@@ -345,7 +345,7 @@ body {
 #navigation .nav_item {
 	float: left;
 	height: 3em;
-	width: clamp(5em, 11.11%,10em); 
+	width: 11.11%; /*clamp(5em, 11.11%,10em)*/
 }
 
 #navigation .nav_item.selected .nav_link {
@@ -452,7 +452,7 @@ body {
 
 /*------------------------------ Home_Page_Body-left_side_content  ------------------------------*/
 .left_side {
-	width: clamp(15em, 20vw,20em); 
+	width: clamp(9em, 20vw,20em); 
 	margin-left: .2em;
 	border-top-right-radius: 1em;
 	border-bottom-right-radius: 1em;
@@ -591,8 +591,9 @@ body {
 
 /*------------------------------ Home_Page_Body-middle_side_content  ------------------------------*/
 .middle_side {
-	width: clamp(19.6em, 50vw,50em);
+	width: clamp(19.6em, 47vw,47em);
 	border-radius: 1em;
+	margin-inline: 1em;
 }
 
 .middle_side_news {

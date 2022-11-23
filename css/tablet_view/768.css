@@ -183,7 +183,8 @@ body {
 /* Body content second box (middle) adjustment */
 .middle_side {
     width: auto;
-    margin-right: .8em;
+    margin-inline-start: 0;
+    margin-inline-end: .7em;
 }
 .right_side {
     width: 28%;
@@ -271,7 +272,6 @@ body {
 /* Body content third box (right) adjustment */
 .right_side_box {
     padding: .2em .3em;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
