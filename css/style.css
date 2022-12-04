@@ -94,24 +94,25 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 .org_eng {
 	font-size: clamp(8pt, 2.3vw,29.9pt);
-	color: #b90044;
+	color: transparent;
 	font-family: germaniaOne;
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
 	line-height: 1.2;
 	order: 2;
+	color: #b90044;
 }
 
 .org_yak {
 	font-size: clamp(15pt, 3.4vw,45pt);
-	color: #306948;
+	color: transparent;
 	font-family: limbu /*yakthung-bold*/;
 	font-weight: 800;
 	text-decoration: none;
 	line-height: 1.3;
 	order: 3;
-	
+	color: #306948;
 }
 
 .org_nep_add {
