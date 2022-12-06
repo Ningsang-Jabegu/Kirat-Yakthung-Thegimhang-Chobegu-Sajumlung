@@ -166,4 +166,25 @@
         width: 46%;
         margin: .9em 0 0 0;
     }
+    .more_member_box {
+        background: rgb(6, 146, 43);
+        border-radius: 2em;
+        padding: .3em;
+        color: aliceblue;
+        border: 0;
+        width: 100vw;
+        justify-content: space-evenly;
+        position: relative;
+        margin: 1em;
+    }
+    .more_member_box .right_side_person {
+        display: none;
+    }
+    .more_member_box p span{
+        color: aliceblue!important;
+        font-size: 10pt!important;
+    }
+    .more_member_box p:last-child{
+        display: none;
+    }
 }
