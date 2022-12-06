@@ -7,9 +7,11 @@
     }
     .org_yak {
         font-size: 13.2pt;
+        line-height: 1.5;
     }
     .org_nep {
         font-size: 13.5pt;
+        line-height: 1;
     }
     .org_nep_add {
         font-size: 8pt;
@@ -37,7 +39,7 @@
     #org_name {
         order: 2;
         width: auto;
-        margin: 1.5em 0 0 0;
+        margin: 1em 0 0 0;
     }
     .logo_n0 {
         display: none;
