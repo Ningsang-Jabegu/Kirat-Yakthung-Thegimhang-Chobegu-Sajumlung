@@ -1,4 +1,4 @@
-@media only screen and (max-width:321px) {
+@media only screen and (max-width:428px) {
     .org_nep_slo {
         font-size: 8.8pt;
     }
@@ -53,8 +53,10 @@
         border-radius: 0;
         box-shadow: none;
         background: #306948!important;
+        color: aliceblue;
     }
     .nav_menu {
         border-radius: 2em 0 0 2em;
+        background: #96b367;
     }
 }
