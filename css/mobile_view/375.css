@@ -18,7 +18,7 @@
     }
     .org_register_num {
         font-size: 8pt;
-        background: rgb(78 59 184);
+        background: rgb(61 39 132);
         color: aliceblue;
         width: 100vw;
         left: 0;
@@ -48,5 +48,13 @@
         order: 1;
         max-height: 5em;
         max-width: 5em;
+    }
+    #navigation {
+        border-radius: 0;
+        box-shadow: none;
+        background: #306948!important;
+    }
+    .nav_menu {
+        border-radius: 2em 0 0 2em;
     }
 }
