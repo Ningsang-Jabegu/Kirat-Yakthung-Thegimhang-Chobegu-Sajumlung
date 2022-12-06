@@ -59,4 +59,38 @@
         border-radius: 2em 0 0 2em;
         background: #96b367;
     }
+    .body_content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .middle_side {
+        order: 1;
+    }
+    .left_side {
+        order: 3;
+        display: block!important;
+        border-radius: 1em;
+        width: 100vw;
+        position: relative;
+    }
+    .right_side {
+        order: 2;
+        border-radius: 1em!important;
+        width: 100vw;
+    }
+    .right_side_head {
+        border-top-right-radius: 1em!important;
+    }
+    .see_more_box {
+        display: none;
+    }
+    .left_side_more_icon {
+        display: block;
+    }
+    .notice_last_box {
+        display: none;
+    }
+    .notice_board_content {
+        display: block;
+    }
 }
