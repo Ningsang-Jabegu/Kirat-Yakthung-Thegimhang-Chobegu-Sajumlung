@@ -16,7 +16,6 @@
     }
     .org_register_num {
         font-size: 8pt;
-        top: .5em;
         background: rgb(78 59 184);
         color: aliceblue;
         width: 100vw;
@@ -24,6 +23,7 @@
         right: 0;
         position: absolute;
         top: 0;
+        margin-top: -.6em;
         padding: .3em;
     }
     #logo {
