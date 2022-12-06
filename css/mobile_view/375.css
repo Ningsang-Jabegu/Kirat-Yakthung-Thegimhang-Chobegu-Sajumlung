@@ -2,20 +2,25 @@
     .org_nep_slo {
         font-size: 8.8pt;
     }
+
     .org_eng {
         font-size: 9.2pt;
     }
+
     .org_yak {
         font-size: 13.2pt;
         line-height: 1.5;
     }
+
     .org_nep {
         font-size: 13.5pt;
         line-height: 1;
     }
+
     .org_nep_add {
         font-size: 8pt;
     }
+
     .org_register_num {
         font-size: 8pt;
         background: rgb(61 39 132);
@@ -28,69 +33,137 @@
         margin-top: -.6em;
         padding: .3em;
     }
+
     #logo {
         margin: .3em .5em;
         justify-content: space-evenly;
     }
+
     #logo img {
         margin: 0;
         margin-top: 1.4em;
     }
+
     #org_name {
         order: 2;
         width: auto;
         margin: 1em 0 0 0;
     }
+
     .logo_n0 {
         display: none;
     }
+
     .logo_n1 {
         order: 1;
         max-height: 5em;
         max-width: 5em;
     }
+
     #navigation {
         border-radius: 0;
         box-shadow: none;
-        background: #306948!important;
+        background: #306948 !important;
         color: aliceblue;
     }
+
     .nav_menu {
         border-radius: 2em 0 0 2em;
         background: #96b367;
     }
+
     .body_content {
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: .5em .7em;
     }
+
     .middle_side {
         order: 1;
     }
+
     .left_side {
         order: 3;
-        display: block!important;
+        display: block !important;
         border-radius: 1em;
         width: 100vw;
         position: relative;
     }
+
     .right_side {
         order: 2;
-        border-radius: 1em!important;
+        border-radius: 1em !important;
         width: 100vw;
     }
-    .right_side_head {
-        border-top-right-radius: 1em!important;
+
+    .right_side_box {
+        padding: 0;
     }
+
+    .right_side_head {
+        border-top-right-radius: 1em !important;
+    }
+
     .see_more_box {
         display: none;
     }
+
     .left_side_more_icon {
         display: block;
     }
+
     .notice_last_box {
         display: none;
     }
+
     .notice_board_content {
         display: block;
+    }
+
+    .right_side_person {
+        order: 1;
+    }
+
+    .right_side_person_info {
+        order: 2;
+    }
+
+    .right_side_person_info span:first-child {
+        margin-top: .3em;
+    }
+
+    .homepage_right_side_post {
+        width: 100vw;
+        margin: 0;
+        order: 3;
+        position: relative;
+        right: 0;
+    }
+
+    .right_officials_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .right_officials:nth-child(odd) {
+        border: 2px solid gray;
+        border-left: none;
+        border-radius: 0 1em 1em 0;
+    }
+    .right_officials:nth-child(odd) .homepage_right_side_post {
+        border-bottom-right-radius: 1em;
+    }
+    .right_officials:nth-child(even) {
+        border: 2px solid gray;
+        border-radius: 1em 0 0 1em;
+        border-right: none;
+    }
+    .right_officials:nth-child(even) .homepage_right_side_post {
+        border-bottom-left-radius: 1em;
+    }
+    .right_officials {
+        width: 46%;
+        margin: .9em 0 0 0;
     }
 }
