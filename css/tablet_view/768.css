@@ -1,3 +1,22 @@
+@media  (min-width:429px)and(max-width:768px) {
+    .right_side_box {
+        flex-wrap: wrap;
+    }
+    .right_side_box .notice_board_image{
+        order: 1;
+        margin-top: .5em;
+    }
+    .right_side_box .notice_board_description{
+        order: 2;
+        margin: .5em;
+    }
+    .notice_board_description span:nth-child(1) {
+        margin-top: .2em!important;
+    }
+    .notice_board_description span:nth-child(2) {
+        text-align: justify;
+    }
+}
 @media only screen and (max-width:768px) {
     /*------------------------------ HEADER ------------------------------*/
 body {
@@ -303,24 +322,10 @@ body {
 /* Body content third box (right) adjustment */
 .right_side_box {
     padding: .2em .3em;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
-.right_side_box .notice_board_image{
-    order: 1;
-    margin-top: .5em;
-}
-.right_side_box .notice_board_description{
-    order: 2;
-    margin: .5em;
-}
-.notice_board_description span:nth-child(1) {
-    margin-top: .2em!important;
-}
-.notice_board_description span:nth-child(2) {
-    text-align: justify;
-}
+
 .right_side_person {
     height: 3em;
     width: 3em;

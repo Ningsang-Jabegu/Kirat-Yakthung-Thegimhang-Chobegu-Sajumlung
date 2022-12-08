@@ -127,7 +127,7 @@
         border-top-right-radius: 1em !important;
     }
 
-    .see_more_box {
+    .see_more_box,.see_less_box {
         display: none;
     }
 
@@ -185,9 +185,14 @@
     .right_officials:nth-child(even) .homepage_right_side_post {
         border-bottom-left-radius: 1em;
     }
-    .right_officials {
+    .right_officials_box .right_officials {
         width: 46%;
         margin: .9em 0 0 0;
+        flex-direction: column;
+    }
+    .right_officials_box .right_officials .homepage_right_side_post{
+        position: relative;
+        width: 100%;
     }
     .more_member_box {
         background: rgb(6, 146, 43);
@@ -209,5 +214,32 @@
     }
     .more_member_box p:last-child{
         display: none;
+    }
+    #notice_board {
+        width: 100%;
+    }
+    #notice_board .notice_board_content .right_side_box {
+        position: relative!important;
+        display: flex;
+        flex-direction: row;
+        margin: .3em .8em;   
+        width: 93%;
+        gap: 1em;
+    }
+    #notice_board .right_side_box .right_side_perosn_info {
+        position: relative;
+        margin-left: 0!important;
+    }
+    #notice_board .right_side_box .right_side_person{
+        height: auto!important;
+        width: 3.5em!important;
+        margin: .5em 0;
+    }
+    #notice_board .right_side_box .right_side_person img{
+        height: 100%;
+        width: 100%;
+    }
+    .notice_board_discription {
+        margin: 0;
     }
 }
