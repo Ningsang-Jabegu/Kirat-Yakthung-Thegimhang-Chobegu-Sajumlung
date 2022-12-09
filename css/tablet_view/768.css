@@ -16,6 +16,11 @@
     .notice_board_description span:nth-child(2) {
         text-align: justify;
     }
+    .right_tab_view {
+        margin: .5em .5em !important;
+        text-align: center;
+        order: 3;
+    }
 }
 @media only screen and (max-width:768px) {
     /*------------------------------ HEADER ------------------------------*/
@@ -331,11 +336,7 @@ body {
     width: 3em;
     order: 1;
 }
-.right_tab_view {
-    margin: .5em .5em !important;
-    text-align: center;
-    order: 3;
-}
+
 .right_side_person_info span:nth-child(2),
 .right_side_person_info span:nth-child(3),
 .right_side_person_info span:nth-child(4) {
