@@ -197,7 +197,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         height: fit-content;
-        background: url('/images/logo/logo_2.PNG') 100% 100% #cdc2bc57 ;
+        background: #cdc2bc57 ;
         border: 2px solid rgba(80, 36, 6, 0.559);
     }
     .right_officials:nth-child(odd) {
@@ -374,5 +374,21 @@
 
     .notice_board_content .right_side_person_info span:first-child {
         margin-top: 0;
+    }
+    .homepage_scholarship_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 1em;
+        gap: 1em;
+    }
+    .homepage_scholarship_2 {
+        margin-left: 0;
+    }
+    .scholarship_btn1 {
+        margin-top: 0;
+    }
+    .homepage_scholarship_button {
+        margin: .5em 0 0 0;
     }
 }
