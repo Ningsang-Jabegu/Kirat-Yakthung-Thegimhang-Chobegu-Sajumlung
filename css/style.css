@@ -15,7 +15,7 @@ span {
 }
 
 body {
-	background-image: linear-gradient(135deg, #d0e0e8 0%, #90c9a3 100%);
+	background-image: linear-gradient(135deg, #d0e0e8 0%, #c7e6d1 100%);
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -330,7 +330,7 @@ body {
 	list-style: none;
 	width: 100%; 
 	background: #9ba6af43;
-	border-radius: 1.3em;
+	border-radius: 0 0 1.3em 1.3em;
 	box-shadow: 2px 5px 9px -4px rgba(42, 41, 41, 0.868),
 		inset 3px 5px 9px -2px rgb(39, 39, 39);
 }
@@ -437,8 +437,10 @@ body {
 	/*border: 2px solid rgb(73, 42, 141);*/
 	height: max-content;
 	background: #d6ddd8da;
-	box-shadow: 5px 6px 5px -1px rgba(0, 0, 0, 0.292),
-		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
+	box-shadow: inset -3px -4px 3px -.9px rgba(0, 0, 0, 0.578),
+		inset 3px 4px 6px -.5px rgba(0, 0, 0, 0.578),
+		-3px -4px 3px -.9px rgba(174, 218, 212, 0.612),
+		3px 4px 6px -.5px rgba(174, 218, 212, 0.612);
 	position: relative;
 }
 
@@ -545,8 +547,6 @@ body {
 
 .middle_side_news {
 	background: #d6ddd8da;
-	box-shadow: 5px 6px 5px -1px rgba(0, 0, 0, 0.292),
-		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
 	height: max-content;
 	padding: .7em;
 	border-top-left-radius: 1em;
@@ -586,8 +586,6 @@ body {
 	color: #e8e7e7;
 	text-align: center;
 	font-weight: 600;
-	box-shadow: 5px 6px 5px -1px rgba(0, 0, 0, 0.292),
-		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
 }
 
 .image_slider {
@@ -598,8 +596,6 @@ body {
 	background-image: url(/images/banner/Krishna\ Janmasthami.JPG);
 	background-size: 100% 100%;
 	position: relative;
-	box-shadow: 5px 6px 5px -1px rgba(0, 0, 0, 0.292),
-		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
 	animation: slide_image 25s infinite linear;
 }
 
@@ -902,6 +898,7 @@ body {
 	align-items: center;
 	position: relative;
 	gap: 1em;
+	margin-left: .8em;
 }
 
 .right_side_person {
