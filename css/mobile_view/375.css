@@ -20,36 +20,75 @@
     .org_nep_add {
         font-size: 7pt !important;
     }
+
     .footer_org_name_nep {
-    font-size: 17pt;
+        font-size: 12.3pt;
+    }
+
+    .footer_org_nick_name {
+        font-size: 19.8pt;
+    }
+
+    .footer_org_type {
+        font-size: 9pt;
+    }
+
+    .footer_org_add {
+        font-size: 10.5pt;
+    }
+
+    .footer_org_country {
+        font-size: 9.2pt;
+    }
+
+    .footer_org_email {
+        font-size: 7.2pt;
+    }
+    #footnote {
+        font-size: 8.5pt;
+    }
 }
-.footer_org_nick_name {
-    font-size: 27.5pt;
+
+@media screen and (min-width:321px) and (max-width:428px) {
+    .footer_contact .footer_content_body {
+        width: 100%;
+    }
+
+    .footer_content_body .footer_content_head {
+        border-radius: 0;
+    }
+
+    .footer_org_name {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer_org_name_nep {
+        font-size: 13pt;
+    }
+
+    .footer_org_nick_name {
+        font-size: 27.5pt;
+    }
+
+    .footer_org_type {
+        font-size: 12.5pt;
+    }
+
+    .footer_org_add {
+        font-size: 13pt;
+    }
+
+    .footer_org_country {
+        font-size: 11.5pt;
+    }
+
+    .footer_org_email {
+        font-size: 9pt;
+    }
+
 }
-.footer_org_type {
-    font-size: 12.5pt;
-}
-.footer_org_add {
-    font-size: 13pt;
-}
-.footer_org_country {
-    font-size: 11.5pt;
-}
-.footer_org_email {
-    font-size: 9pt;
-}
-.footer_social_media_subhead,
-.footer_social_media_facebook,
-.footer_imp_link {
-    margin: 0  .8em;
-}
-.footer_social_media_subhead {
-    margin: .5em;
-}
-}
-@media (max-width:500px)and(min-width:321px) {
-    
-}
+
 @media only screen and (max-width:428px) {
     .org_nep_slo {
         font-size: 8.8pt;
@@ -221,13 +260,15 @@
     .right_officials .right_side_person {
         margin-top: .5em;
     }
+
     .right_officials {
         background-size: contain;
         background-repeat: no-repeat;
         height: fit-content;
-        background: #cdc2bc57 ;
+        background: #cdc2bc57;
         border: 2px solid rgba(80, 36, 6, 0.559);
     }
+
     .right_officials:nth-child(odd) {
         border-left: none;
         border-radius: 0 1em 1em 0;
@@ -238,7 +279,7 @@
     }
 
     .right_officials:nth-child(even) {
-        
+
         border-radius: 1em 0 0 1em;
         border-right: none;
     }
@@ -252,9 +293,11 @@
         margin: .9em 0 0 0;
         flex-direction: column;
     }
-.right_officials .right_side_box {
-    border-bottom: none !important;
-}
+
+    .right_officials .right_side_box {
+        border-bottom: none !important;
+    }
+
     .right_officials_box .right_officials .homepage_right_side_post {
         position: relative;
         width: 100%;
@@ -291,16 +334,19 @@
     .more_member_box p:last-child {
         display: none;
     }
+
     .right_tab_view {
-        margin: .3em .3em ;
+        margin: .3em .3em;
         width: 100%;
         text-align: center;
         order: 3;
     }
+
     .right_tab_view span:nth-child(2),
     .right_tab_view span:nth-child(3) {
         margin: 0 .5em;
     }
+
     #notice_board {
         width: 100%;
     }
@@ -403,6 +449,7 @@
     .notice_board_content .right_side_person_info span:first-child {
         margin-top: 0;
     }
+
     .homepage_scholarship_box {
         display: flex;
         flex-direction: column;
@@ -410,59 +457,38 @@
         margin: 1em;
         gap: 1em;
     }
+
     .homepage_scholarship_2 {
         margin-left: 0;
     }
+
     .scholarship_btn1 {
         margin-top: 0;
     }
+
     .homepage_scholarship_button {
         margin: .5em 0 0 0;
     }
+
     .left_side_foot {
         border-top: 2px solid gray;
         width: 100%;
         text-align: center;
         padding-top: .5em;
     }
+
     .footer_content {
         gap: 1em;
         width: 100vw;
     }
-.footer_contact .footer_content_body {
-    width: 100%;
-}
-.footer_content_body .footer_content_head {
-    border-radius: 0;
-}
-.footer_org_name {
-    width: 100%;
-    justify-content: space-evenly;
-}
-.footer_org_name_nep {
-    font-size: 17pt;
-}
-.footer_org_nick_name {
-    font-size: 27.5pt;
-}
-.footer_org_type {
-    font-size: 12.5pt;
-}
-.footer_org_add {
-    font-size: 13pt;
-}
-.footer_org_country {
-    font-size: 11.5pt;
-}
-.footer_org_email {
-    font-size: 9pt;
-}
-.footer_social_media_subhead,
+    .footer_social_media_subhead,
     .footer_social_media_facebook,
     .footer_imp_link {
-        margin: 0  .8em;
+        margin: 0 .8em;
     }
+
     .footer_social_media_subhead {
         margin: .5em;
     }
+    
 }

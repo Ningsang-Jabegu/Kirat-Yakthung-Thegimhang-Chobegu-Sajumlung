@@ -1,4 +1,4 @@
-@media  (min-width:429px)and(max-width:768px) {
+@media  (min-width:429px) and (max-width:768px) {
     .right_side_box {
         flex-wrap: wrap;
     }
