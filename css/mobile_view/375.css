@@ -209,7 +209,10 @@
     }
 
     .notice_board_content {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap:.3em;
+        padding: .5em;
     }
 
     .right_side_person {
@@ -355,9 +358,12 @@
         position: relative !important;
         display: flex;
         flex-direction: row;
-        margin: .3em .8em;
-        width: 93%;
-        gap: 1em;
+        justify-content: space-evenly;
+        /* margin: .3em .8em; */
+        margin-left: 0;
+        /* padding: .3em; */
+        /* width: 93%; */
+        gap: .5em;
     }
 
     #notice_board .right_side_box .right_side_perosn_info {
@@ -441,9 +447,10 @@
         font-size: 8pt;
         padding: .2em 0;
     }
-
-    .notice_last_box {
-        border-bottom: none;
+    .notice_board_content .right_side_box {
+        background: #aecadc;
+        border-radius: 1em;
+        padding: .5em;
     }
 
     .notice_board_content .right_side_person_info span:first-child {
@@ -480,6 +487,9 @@
     .footer_content {
         gap: 1em;
         width: 100vw;
+    }
+    .footer_content_head {
+        border-radius: 0;
     }
     .footer_social_media_subhead,
     .footer_social_media_facebook,
