@@ -1,4 +1,14 @@
 /* Chobegu Sajumlung Official Website */
+:root {
+	--background-text-general : 'nato-devanagari';
+	--background-content-head-font-size: 16pt;
+	--background-content-head-font-color: rgba(255, 255, 255, 0.874);
+	--background-content-head-background-color: #186353db;
+	--background-content-body-font-size: 14pt;
+	--background-content-body-font-size-s: 12pt;
+	--background-text-font-weight-primary: 600;
+	--background-text-color-general : rgba(3, 32, 7, 0.699);
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -16,7 +26,7 @@ span {
 
 body {
 	background-image: linear-gradient(135deg, #d0e0e8 0%, #c7e6d1 100%);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--background-text-general);
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -457,6 +467,8 @@ body {
 	display: flex;
 	border-bottom: 2px solid grey;
 	align-items: center;
+	font-weight: var(--background-text-font-weight-primary);
+	font-size: var(--background-content-body-font-size);
 }
 
 .left_side_icon {
@@ -466,11 +478,11 @@ body {
 
 .left_side_box .left_side_opt_name:nth-child(2) {
 	margin-left: 1em;
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 }
 
 .left_side_opt_name {
-	color: #083703;
+	color: var(--background-text-color-general);
 }
 .left_side_more_icon {
 	display: none;
@@ -499,7 +511,7 @@ body {
 }
 .left_side_foot {
 	font-size: 9pt;
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 	margin: .3em .7em;
 	position: relative;
 }
@@ -582,10 +594,11 @@ body {
 
 .homepage_image_slider_head {
 	padding: .5em 1em;
-	background: #230875da;
-	color: #e8e7e7;
+	background: var(--background-content-head-background-color);
+	color: var(--background-content-head-font-color);
 	text-align: center;
 	font-weight: 600;
+	font-size: var(--background-content-head-font-size);
 }
 
 .image_slider {
@@ -630,7 +643,7 @@ body {
 
 .t12th_gen_after {
 	font-weight: 600;
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 	font-size: 14pt;
 	margin: .8em auto;
 	background: #7f0651c9;
@@ -695,7 +708,6 @@ body {
 }
 
 .middle_chobegu_ending {
-	font-family: poppins-regular;
 	font-size: 11pt;
 	text-align: justify;
 	margin: .8em 0 0 0;
@@ -717,7 +729,6 @@ body {
 	border-radius: 1em;
 	color: #e9f1f1e8;
 	font-weight: 600;
-	font-family: poppins-regular;
 }
 
 .scholarship_box .homepage_scholarship_head {
@@ -880,8 +891,9 @@ body {
 }
 
 .right_side_head {
-	background: #230875da;
-	color: #e8e7e7;
+	font-size: var(--background-content-head-font-size);
+	background: var(--background-content-head-background-color);
+	color: var(--background-content-head-font-color);
 	padding: .5em 1em;
 	border-top-left-radius: 1em;
 	font-weight: 600;
@@ -897,7 +909,6 @@ body {
 	align-items: center;
 	position: relative;
 	gap: 1em;
-	margin-left: .8em;
 }
 
 .right_side_person {
@@ -924,19 +935,20 @@ body {
 }
 
 .right_side_person_info span:first-child {
-	font-weight: 700!important;
+	font-weight: var(--background-text-font-weight-primary);
 	color: #6c0b75;
+	font-size: var(--background-content-body-font-size);
 }
 
 .right_side_person_info span:nth-child(2),
 .right_side_person_info span:nth-child(3) {
-	font-weight: 500;
-	font-size: 10pt;
-	color: #083703;
+	font-weight: 600;
+	font-size: var(--background-content-body-font-size-s);
+	color: var(--background-text-color-general);
 }
 
 .homepage_right_side_post {
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 	font-size: 13pt;
 	font-weight: 600 !important;
 	filter: drop-shadow(0px 0px 3px rgba(82, 4, 28, 0.568));
@@ -981,7 +993,7 @@ body {
 
 .notice_board_description span:nth-child(3) {
 	font-weight: 600;
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 	text-align: right;
 }
 .notice_last_box {
@@ -1015,8 +1027,8 @@ body {
 	color: rgb(242, 242, 242);
 	padding: .5em 1em;
 	border-radius: 0 2em 2em 0;
-	font-size: 13;
-	font-weight: 600;
+	font-size: var(--background-content-head-font-size);
+	font-weight: var(--background-text-font-weight-primary);
 }
 .footer_content_body {
 	width: 21em;
@@ -1056,7 +1068,7 @@ body {
 
 .footer_org_nick_name {
 	font-size: 22.5pt;
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 	font-weight: 600;
 	line-height: 1.6;
 }
@@ -1078,7 +1090,7 @@ body {
 
 .footer_org_email {
 	font-size: 7.8pt;
-	font-family: poppins-regular;
+	font-family: var(--background-text-general);
 	font-weight: 600;
 	cursor: pointer;
 }

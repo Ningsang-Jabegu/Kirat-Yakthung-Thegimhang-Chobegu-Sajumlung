@@ -45,3 +45,7 @@
     font-family: "aakar";
     src: url('/fonts/Aakar\ Regular.ttf');
 }
+@font-face {
+    font-family: "nato-devanagari";
+    src: url("/fonts/NotoSans_Devanagari.ttf");
+}
