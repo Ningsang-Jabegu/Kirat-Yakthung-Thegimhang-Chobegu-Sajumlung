@@ -268,7 +268,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         height: fit-content;
-        background: #cdc2bc57;
+        background: #d7bdb18a;
         border: 2px solid rgba(80, 36, 6, 0.559);
     }
 
@@ -305,7 +305,12 @@
         position: relative;
         width: 100%;
     }
-
+    .right_side {
+        min-width: 100%;
+    }
+    .left_side {
+        margin-left: 0;
+    }
     .more_member_box {
         background: rgb(6, 146, 43);
         border-radius: 2em;

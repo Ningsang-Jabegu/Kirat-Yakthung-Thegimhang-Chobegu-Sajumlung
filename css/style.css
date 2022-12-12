@@ -875,7 +875,6 @@ body {
 /*------------------------------ Home_Page_Body-right_side_content  ------------------------------*/
 .right_side {
 	width: clamp(21em, 28vw,25em); /*clamp(320px, 28vw,1440px)*/
-	margin-right: .2em;
 	border-top-left-radius: 1em;
 	border-bottom-left-radius: 1em;
 }
