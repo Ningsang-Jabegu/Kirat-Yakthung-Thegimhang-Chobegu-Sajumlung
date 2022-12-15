@@ -11,6 +11,8 @@
 	--background-button-font-size : 12.5pt;
 	--background-button-font-weight : 500;
 	--background-person-name-font-color : #6c0b75;
+	--background-person-post-font-color : #337466;
+	--bakcground-person-post-font-size : 14pt;
 }
 * {
 	box-sizing: border-box;
@@ -384,7 +386,7 @@ body {
 	border-radius: 1em;
 	color: #fff;
 	font-weight: 400;
-	font-size: 9pt;
+	font-size: 10pt;
 	display: inline-block;
 	width: max-content;
 	margin: .5em 3.5em;
@@ -565,7 +567,6 @@ body {
 }
 
 .middle_side_news {
-	background: #d6ddd8da;
 	height: max-content;
 	padding: .7em;
 	border-top-left-radius: 1em;
@@ -575,7 +576,7 @@ body {
 .homepage_news_head {
 	font-weight: 600;
 	font-size: 14pt;
-	color: #6f1092;
+	color: var(--background-person-post-font-color);
 }
 
 .homepage_news {
@@ -597,6 +598,8 @@ body {
 .homepage_news marquee a {
 	text-decoration: none;
 	color: inherit;
+	font-size: var(--background-text-general);
+
 }
 
 .homepage_image_slider_head {
@@ -610,9 +613,10 @@ body {
 
 .image_slider {
 	height: 22em;
-	width: 100%;
-	margin-bottom: 1em;
+	width: auto;
+	margin: 1.3em;
 	background: rgba(24, 18, 146, 0.438);
+	border: 2px solid var(--background-person-post-font-color);
 	background-image: url(/images/banner/Krishna\ Janmasthami.JPG);
 	background-size: 100% 100%;
 	position: relative;
@@ -934,7 +938,7 @@ body {
 	border-radius: 50%;
 	border: 3px solid gray;
 	box-shadow: 3px 4px 9px 2px rgba(151, 149, 147, 0.683);
-	border: 1px solid rgb(44, 59, 47);
+	border: 2px solid var(--background-person-post-font-color);
 }
 
 .middle_side_box .right_side_person_info {
@@ -969,11 +973,10 @@ body {
 
 .homepage_right_side_post {
 	font-family: var(--background-text-general);
-	font-size: 13pt;
-	font-weight: 600 !important;
-	filter: drop-shadow(0px 0px 3px rgba(82, 4, 28, 0.568));
+	font-size: var(--bakcground-person-post-font-size);
+	font-weight: 700 !important;
 	position: absolute;
-	color: #6d052e;
+	color: var(--background-person-post-font-color);
 	right: 1em;
 	margin: 0 .5em;
 }
