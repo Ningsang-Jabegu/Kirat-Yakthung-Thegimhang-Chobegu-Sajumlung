@@ -20,6 +20,53 @@
         text-align: center;
         order: 3;
     }
+    .body_content {
+        margin-bottom: 17em;
+    }
+    .left_side_foot {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-top: 2px solid grey;
+        padding: .4em 0;
+    }
+    .left_side {
+        order: 3;
+        position: absolute;
+        bottom: -16em;
+        width: 69.5%;
+        border-radius: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: .8em 0;
+    }
+    .left_side_box {
+        border-bottom: none;
+        flex-direction: column;
+        justify-content: center;
+        margin: .2em;
+        display: flex;
+        background: #99bfb56b;
+        border-radius: .5em;
+        width: 20%;
+        border: 2px solid var(--background-content-head-background-color);
+    }
+    .see_more_box,.see_less_box {
+        display: none;
+    }
+    .left_side_more_icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .middle_side {
+        order: 1;
+    }
+    .right_side {
+        order: 2;
+    }
 }
 @media only screen and (max-width:768px) {
     /*------------------------------ HEADER ------------------------------*/
@@ -76,7 +123,10 @@ body {
 /*Navigation Bar*/
 #navigation {
     height: 2.5em;
-    position: relative;
+    border-radius: 0;
+}
+.nav_menu {
+    border-radius: 1.3em 0 0 1.3em;
 }
 .navigation_items {
     display: none;
@@ -224,11 +274,11 @@ body {
     right: 5.2em;
 	top: .2em;
 }
-/* Body content first box (left) adjustment */
-.left_side {
-    display: none;
-    position: absolute;
+.body_content {
+    position: relative;
 }
+/* Body content first box (left) adjustment */
+
 .left_side_icon {
     height: 1.7em;
     width: 1.7em;
@@ -236,12 +286,14 @@ body {
 .left_side_opt_name {
     font-size: 10pt;
 }
+
 /* Body content second box (middle) adjustment */
 .middle_side {
     width: auto;
 }
 .right_side {
     min-width: 28%;
+    border-radius: 1em;
 }
 .homepage_news_head {
     text-align: center;
@@ -298,7 +350,7 @@ body {
     font-size: 8.5pt;
 }
 .scholarship_btn1 {
-    margin-top: 2.8em;
+    margin-top: 1.5em;
 }
 .homepage_membership_1st_text {
     font-size: 10pt;
@@ -354,15 +406,19 @@ body {
     position: relative;
     justify-self: center;
     order: 2;
-    font-size: 8pt;
+    font-size: 10pt;
     background: rgba(80, 36, 6, 0.559);
-    color: #fefefe;
+    color: #f2f2f2dd;
     text-align: center;
     width: 100%;
-    font-weight: 600;
+    font-weight: 500;
     padding: .3em 0;
     right: 0;
     margin: 0;
+}
+.middle_side_son_person_info {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Footer content adjustment */
@@ -391,6 +447,9 @@ body {
 .hide_notice_desktop .notice_board_description span:nth-child(1):hover {
     background-color: #640e30cf;
     color: #dadada;
+}
+.right_officials {
+    margin-top: .5em;
 }
 }
 /*@media only screen and (max-width:600px) {

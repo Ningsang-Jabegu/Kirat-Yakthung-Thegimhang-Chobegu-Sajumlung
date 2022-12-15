@@ -350,8 +350,8 @@ body {
 	width: 100%; 
 	background: #9ba6af43;
 	border-radius: 0 0 1.3em 1.3em;
-	box-shadow: 2px 5px 9px -4px rgba(42, 41, 41, 0.868),
-		inset 3px 5px 9px -2px rgb(39, 39, 39);
+	box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
+		inset 3px 5px 9px -2px rgb(56, 56, 56);
 }
 
 #navigation .nav_item {
@@ -974,7 +974,7 @@ body {
 .homepage_right_side_post {
 	font-family: var(--background-text-general);
 	font-size: var(--bakcground-person-post-font-size);
-	font-weight: 700 !important;
+	font-weight: 700;
 	position: absolute;
 	color: var(--background-person-post-font-color);
 	right: 1em;
