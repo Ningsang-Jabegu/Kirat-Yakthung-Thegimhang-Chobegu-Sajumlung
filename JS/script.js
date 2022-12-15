@@ -5,7 +5,7 @@ var sticky = navbar.offsetTop;
 window.onscroll = function () {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
-    navbar.style.background = "#008073fa";
+    navbar.style.background = "rgb(48 104 99 / 81%)";
   } else if (window.pageYOffset < sticky) {
     navbar.classList.add("sticky");
     navbar.style.background = "#9ba6af43";

@@ -16,7 +16,8 @@
 	}
 
 	#navigation .nav_item .nav_link:hover {
-		background-color: rgba(61, 61, 62, 0.333);
+		background-color: rgba(87, 87, 87, 0.578);
+		border: 2px solid #d0e0e89c;
 	}
 
 	#navigation .nav_item .nav_link:hover img {

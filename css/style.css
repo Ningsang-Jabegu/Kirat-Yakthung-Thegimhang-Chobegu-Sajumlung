@@ -347,7 +347,7 @@ body {
 	display: inline-block;
 	align-items: center;
 	list-style: none;
-	width: 100%; 
+	width: 100%;
 	background: #9ba6af43;
 	border-radius: 0 0 1.3em 1.3em;
 	box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
@@ -359,7 +359,9 @@ body {
 	height: 3em;
 	width: 11.11%; /*clamp(5em, 11.11%,10em)*/
 }
-
+#navigation .nav_item .nav_link {
+	border: 2px solid transparent;
+}
 #navigation .nav_item.selected .nav_link {
 	background-color: #000000b4;
 }
@@ -410,7 +412,7 @@ body {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 48px;
-	padding: 0;
+	margin: .5em;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -742,7 +744,6 @@ body {
 	color: #e9f1f1e8;
 	font-weight: 600;
 }
-
 .scholarship_box .homepage_scholarship_head {
 	text-align: center;
 	width: 100%;
