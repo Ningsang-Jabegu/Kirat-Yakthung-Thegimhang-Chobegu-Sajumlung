@@ -508,4 +508,7 @@
     .image_slider {
         height: 20em;
     }
+    .footer_social_btn {
+        width: auto;
+    }
 }

@@ -8,6 +8,9 @@
 	--background-content-body-font-size-s: 12pt;
 	--background-text-font-weight-primary: 600;
 	--background-text-color-general : rgba(3, 32, 7, 0.699);
+	--background-button-font-size : 12.5pt;
+	--background-button-font-weight : 500;
+	--background-person-name-font-color : #6c0b75;
 }
 * {
 	box-sizing: border-box;
@@ -245,6 +248,8 @@ body {
 	text-align: center;
 	margin-top: .8em;
 	border-radius: 1em;
+	font-size: var(--background-button-font-size);
+	font-weight: var(--background-button-font-weight);
 }
 
 .logo_img_discription {
@@ -330,6 +335,8 @@ body {
 	padding: .3em 1em;
 	border-radius: 2em;
 	display: inline-block;
+	font-size: var(--background-button-font-size);
+	font-weight: var(--background-button-font-weight);
 }
 
 
@@ -702,6 +709,7 @@ body {
 .middle_side_son_person_info span:first-child {
 	font-size: 12pt;
 	font-weight: 600;
+	color: var(--background-person-name-font-color);
 }
 .middle_son_division p span i {
 	font-weight: 600;
@@ -745,11 +753,12 @@ body {
 .homepage_scholarship_info {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
 }
 
 .homepage_scholarship_info img {
 	height: 8.5em;
-	width: 8.5em;
+	width: 100%;
 }
 
 .homepage_scholarship_1 .homepage_scholarship_head {
@@ -763,14 +772,14 @@ body {
 .homepage_scholarship_text {
 	display: flex;
 	flex-direction: column;
-	color: #0a2e19;
+	margin: .5em 0;
+	
+	color: var(--background-text-color-general);
 }
 
 .homepage_scholarship_text span {
-	font-size: 10.2pt;
-	text-align: justify !important;
-	margin-left: .5em;
-	font-family: 'Times New Roman', Times, serif;
+	font-size: var(--background-content-body-font-size-s);
+	font-family: var(--background-text-general);
 }
 
 .homepage_scholarship_button {
@@ -781,6 +790,8 @@ body {
 	width: 100%;
 	cursor: pointer;
 	margin-top: .2em;
+	font-weight: var(--background-button-font-weight);
+	font-size: var(--background-button-font-size);
 }
 
 .scholarship_btn1 {
@@ -813,6 +824,8 @@ body {
 	border-radius: 1em;
 	cursor: pointer;
 	margin: .4em .5em;
+	font-size: var(--background-button-font-size);
+	font-weight: var(--background-button-font-weight);
 }
 
 .homepage_membership_button a:nth-child(1) {
@@ -855,6 +868,8 @@ body {
 	font-weight: 600;
 	margin-top: .7em;
 	cursor: pointer;
+	font-weight: var(--background-button-font-weight);
+	font-size: var(--background-button-font-size);
 }
 
 
@@ -874,9 +889,11 @@ body {
 	width: 40%;
 	border-radius: 1em;
 	justify-content: center;
-	font-weight: 600;
+	font-weight: var(--background-button-font-weight);
 	margin-top: .7em;
 	cursor: pointer;
+	font-size: var(--background-button-font-size);
+
 }
 
 
@@ -936,10 +953,13 @@ body {
 
 .right_side_person_info span:first-child {
 	font-weight: var(--background-text-font-weight-primary);
-	color: #6c0b75;
+	color: var(--background-person-name-font-color);
 	font-size: var(--background-content-body-font-size);
 }
-
+.name {
+	color: var(--background-person-name-font-color);
+	font-weight: var(--background-text-font-weight-primary);
+}
 .right_side_person_info span:nth-child(2),
 .right_side_person_info span:nth-child(3) {
 	font-weight: 600;
@@ -965,6 +985,8 @@ body {
 	display: flex;
 	background: transparent;
 	border: inherit;
+	width: 100%;
+	height: auto;
 }
 .more_member_box p:last-child {
 	position: absolute;
@@ -1139,10 +1161,11 @@ body {
 	border-radius: 2em;
 	display: flex;
 	justify-content: center;
-	width: auto;
-	margin: 0 6em;
+	width: 100%;
 	text-align: center;
 	border: none;
+	font-weight: var(--background-button-font-weight);
+	font-size: var(--background-button-font-size);
 }
 
 .footer_social_media_facebook {
