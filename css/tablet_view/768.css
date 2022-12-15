@@ -17,7 +17,6 @@
         text-align: justify;
     }
     .right_tab_view {
-        margin: .5em .5em !important;
         text-align: center;
         order: 3;
     }
@@ -345,7 +344,6 @@ body {
 }
 .right_side_person_info span:first-child{
     font-size: 10pt;
-    margin-top: 1.5em;
 }
 .more_member_box p:last-child {
     right: 54%;
@@ -354,7 +352,6 @@ body {
 }
 .homepage_right_side_post {
     position: relative;
-    margin: 1.8em 1em -1.5em 1em;
     justify-self: center;
     order: 2;
     font-size: 8pt;
@@ -364,6 +361,8 @@ body {
     width: 100%;
     font-weight: 600;
     padding: .3em 0;
+    right: 0;
+    margin: 0;
 }
 
 /* Footer content adjustment */

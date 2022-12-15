@@ -1,7 +1,7 @@
 /* Chobegu Sajumlung Official Website */
 :root {
 	--background-text-general : 'nato-devanagari';
-	--background-content-head-font-size: 16pt;
+	--background-content-head-font-size: 14pt;
 	--background-content-head-font-color: rgba(255, 255, 255, 0.874);
 	--background-content-head-background-color: #186353db;
 	--background-content-body-font-size: 14pt;
@@ -1050,7 +1050,7 @@ body {
 	border-bottom: 4px solid #61063e;
 	background: #9b7606;
 	color: rgb(242, 242, 242);
-	padding: .5em 1em;
+	padding: .5em .5em;
 	border-radius: 0 2em 2em 0;
 	font-size: var(--background-content-head-font-size);
 	font-weight: var(--background-text-font-weight-primary);
