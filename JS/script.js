@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* For sticky navigation bar */
 var navbar = document.querySelector("#navigation");
 var sticky = navbar.offsetTop;
@@ -124,7 +124,7 @@ function close_left_side_box_more() {
   );
 }
 function animation_End() {
-  more_icon.style.display = "flex"
+  more_icon.style.display = "flex";
   hidden_icons.style.display = "none";
   hidden_icons.removeAttribute("closing");
   hidden_icons_closing.style.animation = "open_boxes 500ms forwards ease-in-out";
@@ -147,7 +147,7 @@ function open_nav_small() {
   nav_bar.classList.add("show_hide_nav_bar");
   nav_bar.style.transformOrigin = "top center";
   nav_bar.style.animation = "nav_open 400ms ease-in forwards";
-  if (nav_bar.offsetHeight != 0) {
+  if (open_icon.style.display != "none") {
     open_icon.style.display = "none";
     close_icon.style.display = "block";
   }
@@ -174,6 +174,8 @@ window.onclick = function (event) {
   nav_bar.classList.add("show_hide_nav_bar");
   nav_bar.style.transformOrigin = "top center";
   nav_bar.style.animation = "nav_open 400ms ease-in forwards";
+  var open_icon = document.querySelector(".nav_menu_open");
+  var close_icon = document.querySelector(".nav_menu_close");
   if (nav_bar.offsetHeight != 0) {
     open_icon.style.display = "none";
     close_icon.style.display = "block";
@@ -198,7 +200,7 @@ function close_nav_small() {
     },
     { once: true }
   );
-}
+};
 
 /* -------------------------------------------------------------- */
 
