@@ -108,26 +108,23 @@ function open_left_side_box_more() {
   more_icon.style.display = "none";
   hidden_icons.style.display = "block";
   hidden_icons.setAttribute("closing", "");
+  
 }
 var hidden_icons = document.querySelector(".left_side_more_icon");
 var hidden_icons_closing = document.querySelector(".left_side_more_icon[closing]");
 var more_icon = document.querySelector(".see_more_box");
 function close_left_side_box_more() {
-
   hidden_icons_closing.style.animation = "close_boxes 300ms forwards ease-in-out";
-  hidden_icons_closing.addEventListener(
-    "animationend",
-    () => {
-      animation_End();
-    },
-    { once: true }
-  );
-}
+  hidden.addEventListener('animationend', () => {
+  animation_End();
+  
+}, {once: true});
 function animation_End() {
   more_icon.style.display = "flex";
   hidden_icons.style.display = "none";
   hidden_icons.removeAttribute("closing");
   hidden_icons_closing.style.animation = "open_boxes 500ms forwards ease-in-out";
+  
 }
 /* ------------------------------------------------------------------------------------ */
 
@@ -139,10 +136,12 @@ function open_more_left_foot() {
 /* ------------------------------------------------------------------------------------ */
 
 /* for navigation bar for tab and mobile phone */
-function open_nav_small() {
+
+/*function open_nav_small() {
   var nav_bar = document.querySelector(".navigation_items");
   var open_icon = document.querySelector(".nav_menu_open");
   var close_icon = document.querySelector(".nav_menu_close");
+  alert("HI");
   nav_bar.removeAttribute('closing');
   nav_bar.classList.add("show_hide_nav_bar");
   nav_bar.style.transformOrigin = "top center";
@@ -151,6 +150,7 @@ function open_nav_small() {
     open_icon.style.display = "none";
     close_icon.style.display = "block";
   }
+  alert("hi");
 }
 var nav_bar = document.querySelector(".navigation_items");
 var nav_lists = document.querySelector("#navigation_items");
@@ -200,8 +200,7 @@ function close_nav_small() {
     },
     { once: true }
   );
-};
-
+};/*
 /* -------------------------------------------------------------- */
 
 /* For copyright year */

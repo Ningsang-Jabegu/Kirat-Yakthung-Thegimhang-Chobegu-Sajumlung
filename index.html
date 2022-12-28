@@ -196,17 +196,56 @@
 					</a>
 				</div>
 			</nav>
-			<li class=" nav_menu nav_menu_open" id="nav_menu_open" onclick="open_nav_small();">
+			<li class=" nav_menu nav_menu_open" id="navigation_open">
+				<!--id="nav_menu_open" onclick="open_nav_small();"-->
 				<a href="#" class="nav_link_menu"><img src="/images/Icons/PNG/Asset 10.png"></a>
 				<!--सम्पर्क गर्नुहोस्-->
 				<span class="nav_hide_menu">मेनु ह्रेर्नुहोस्</span>
 			</li>
-			<li class=" nav_menu nav_menu_close" id=" nav_menu_close" hide onclick="close_nav_small();">
+			<li class=" nav_menu nav_menu_close" id="navigation_close" hide>
+				<!--id=" nav_menu_close" onclick="close_nav_small();"-->
 				<a href="#" class="nav_link_menu"><img src="/images/Icons/PNG/Asset 11.png"></a>
 				<!--सम्पर्क गर्नुहोस्-->
 				<span class="nav_hide_menu">मेनु बन्दहोस्</span>
 			</li>
 		</ul>
+		<script>
+			var navigation_open = document.querySelector("#navigation_open");
+			navigation_open.addEventListener('click', () => {
+				var nav_bar = document.querySelector(".navigation_items");
+				var open_icon = document.querySelector(".nav_menu_open");
+				var close_icon = document.querySelector(".nav_menu_close");
+				nav_bar.removeAttribute('closing');
+				nav_bar.classList.add("show_hide_nav_bar");
+				nav_bar.style.transformOrigin = "top center";
+				nav_bar.style.animation = "nav_open 400ms ease-in forwards";
+				if (open_icon.style.display != "none") {
+					open_icon.style.display = "none";
+					close_icon.style.display = "block";
+				}
+			});
+			var navigation_close = document.querySelector("#navigation_close");
+			navigation_close.addEventListener('click', () => {
+				var nav_list_background = document.querySelector("#nav_bar_layer");
+				var nav_bar = document.querySelector(".navigation_items");
+				var nav_close = document.querySelector(".show_hide_nav_bar");
+				var open_icon = document.querySelector(".nav_menu_open");
+				var close_icon = document.querySelector(".nav_menu_close");
+				nav_bar.style.transformOrigin = "top center";
+				nav_bar.style.animation = "nav_close 400ms ease-in forwards";
+				close_icon.style.display = "none";
+				open_icon.style.display = "block";
+				nav_bar.setAttribute('closing', '');
+				nav_close.addEventListener(
+					"animationend",
+					() => {
+						nav_bar.classList.remove("show_hide_nav_bar");
+						nav_bar.removeAttribute("closing");
+					},
+					{ once: true }
+				);
+			});
+		</script>
 		<section class="body_content">
 			<aside class="left_side box">
 				<div class="calender_box left_side_box">
@@ -358,7 +397,8 @@
 							</p>
 						</div>
 					</div>
-					<span class="middle_chobegu_ending">यसै कम्रमा <span class="name">साङदिङहाङ</span>का जेठो छोरा <span class="name">चोबेगु</span> ले आफ्नो सन्तान
+					<span class="middle_chobegu_ending">यसै कम्रमा <span class="name">साङदिङहाङ</span>का जेठो छोरा <span
+							class="name">चोबेगु</span> ले आफ्नो सन्तान
 						फैलाउदै जाने कम्रमा २१ औं पुस्ता देखिका सन्तानहरूले चोबेगु लाइ आफ्नो नामको
 						पछाडि राख्ने चलन हुन आयाे र अहिलेको चोबेगु (जबेगु, चबेगु, जबेगो, चबेगु, जवेगु .....) थरकाे
 						सुरूवात हुन पुग्यो । </span>
@@ -556,13 +596,13 @@
 						</p>
 						<p class="homepage_right_side_post">सदस्य</p>
 					</div>
-						<button class=" more_member_box right_side_box">
-							<img class="right_side_person" src="/images/Icons/PNG/Asset Rseemore.PNG">
-							<p class="right_side_person_info right_tab_view">
-								<span>थप सदस्यहरू हेर्नुहोस्</span>
-							</p>
-							<p>+</p>
-						</button>
+					<button class=" more_member_box right_side_box">
+						<img class="right_side_person" src="/images/Icons/PNG/Asset Rseemore.PNG">
+						<p class="right_side_person_info right_tab_view">
+							<span>थप सदस्यहरू हेर्नुहोस्</span>
+						</p>
+						<p>+</p>
+					</button>
 				</div>
 				<div id="notice_board">
 					<div class="right_side_head right_side_notice_board">
