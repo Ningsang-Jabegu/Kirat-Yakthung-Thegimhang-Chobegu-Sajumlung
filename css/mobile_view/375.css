@@ -156,11 +156,19 @@
         box-shadow: none;
         background: #306948 !important;
         color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #nav_bar_layer {
+        order: 2;
+        margin-top: 3em;
     }
 
     .nav_menu {
         border-radius: 2em 0 0 2em;
         background: #96b367;
+        order: 1;
     }
 
     .body_content {

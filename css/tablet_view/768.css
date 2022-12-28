@@ -127,12 +127,12 @@ body {
 }
 .nav_menu {
     border-radius: 1.3em 0 0 1.3em;
+    z-index: 8;
 }
 .navigation_items {
     display: none;
     position: absolute;
     right: .5em;
-    top: 3em;
     z-index: 8;
     width: 11.8em;
     height: max-content;
@@ -187,11 +187,18 @@ body {
     position: absolute;
     right: .3em;
 }
+#nav_bar_layer {
+
+    position: relative;
+    z-index: 5;
+}
 .show_hide_nav_bar {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    float: right;
+    position: sticky;
 }
+
 .show_hide_nav_bar[open] {
     transform-origin: top center;
     animation: nav_open 400ms ease-in forwards;

@@ -211,11 +211,13 @@
 		</ul>
 		<script>
 			var navbar = document.querySelector("#navigation");
+			var show_hide_nav = document.querySelector(".show_hide_nav_bar");
 			var sticky = navbar.offsetTop;
 			window.onscroll = function () {
 				if (window.pageYOffset >= sticky) {
 					navbar.classList.add("sticky");
 					navbar.style.background = "rgb(48 104 99 / 81%)";
+					show_hide_nav.style.position="sticky";
 				} else if (window.pageYOffset < sticky) {
 					navbar.classList.add("sticky");
 					navbar.style.background = "#9ba6af43";
@@ -226,10 +228,12 @@
 			};
 			
 			var navigation_open = document.querySelector("#navigation_open");
+			var nav_btn = document.querySelector(".nav_menu ");
 			navigation_open.addEventListener('click', () => {
 				var nav_bar = document.querySelector(".navigation_items");
 				var open_icon = document.querySelector(".nav_menu_open");
 				var close_icon = document.querySelector(".nav_menu_close");
+				
 				nav_bar.removeAttribute('closing');
 				nav_bar.classList.add("show_hide_nav_bar");
 				nav_bar.style.transformOrigin = "top center";
@@ -237,6 +241,7 @@
 				if (open_icon.style.display != "none") {
 					open_icon.style.display = "none";
 					close_icon.style.display = "block";
+					close_icon.style.background = "#a11255e1";
 				}
 			});
 			var navigation_close = document.querySelector("#navigation_close");

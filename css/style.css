@@ -357,6 +357,7 @@ body {
 #navigation .nav_item {
 	float: left;
 	height: 3em;
+	top: 5em;
 	width: 11.11%; /*clamp(5em, 11.11%,10em)*/
 }
 #navigation .nav_item .nav_link {
