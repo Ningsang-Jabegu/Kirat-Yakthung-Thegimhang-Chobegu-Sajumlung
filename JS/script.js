@@ -1,19 +1,6 @@
 'use strict';
 /* For sticky navigation bar */
-var navbar = document.querySelector("#navigation");
-var sticky = navbar.offsetTop;
-window.onscroll = function () {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    navbar.style.background = "rgb(48 104 99 / 81%)";
-  } else if (window.pageYOffset < sticky) {
-    navbar.classList.add("sticky");
-    navbar.style.background = "#9ba6af43";
-  }
-  else {
-    navbar.classList.remove("sticky");
-  }
-};
+
 /* ----------------------------------------------------------- */
 
 /* For the download box of logos */
