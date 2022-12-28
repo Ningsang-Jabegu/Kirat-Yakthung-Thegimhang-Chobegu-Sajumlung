@@ -357,7 +357,6 @@ body {
 #navigation .nav_item {
 	float: left;
 	height: 3em;
-	top: 5em;
 	width: 11.11%; /*clamp(5em, 11.11%,10em)*/
 }
 #navigation .nav_item .nav_link {
@@ -434,7 +433,7 @@ body {
 	display: none;
 }
 .nav_menu_close {
-	background: #000000b4;
+	background: #a11255e1;
 	color: #d1d4d4;
 }
 .nav_link_menu {
