@@ -506,18 +506,24 @@ body {
 }
 @keyframes open_boxes {
 	0% {
-        transform: rotateX(-90deg)
+        transform: rotateX(-90deg);
     }
     100% {
-        transform: rotateX(0deg) 
+        transform: rotateX(0deg);
     }
 }
 @keyframes close_boxes {
 	100% {
-        transform: rotateX(-90deg)
+        transform: rotateX(-90deg);
+		opacity: 0;
     }
+	50% {
+		transform: rotateX(-45deg);
+		opacity: 0.5;
+	}
     0% {
-        transform: rotateX(0deg) 
+        transform: rotateX(0deg);
+		opacity: 1;
     }
 }
 .left_side_foot {
@@ -667,7 +673,25 @@ body {
 	border-radius: 1em;
 	box-shadow: inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
 }
+.btn_bansawali {
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-top: .8em;
 
+}
+.chobegu_bansawali_btn {
+	width: max-content;
+	border: none;
+	background: rgb(144 52 110);
+	font-size: var(--background-button-font-size);
+	color: #f2f2f2;
+	font-family: var(--background-text-general);
+	padding: .5em .8em;
+	border-radius: 2em;
+	justify-content: center;
+}
 .middle_side_box {
 	padding: .5em .9em;
 	display: flex;

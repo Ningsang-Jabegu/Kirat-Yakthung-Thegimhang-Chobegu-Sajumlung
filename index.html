@@ -367,12 +367,12 @@
 					left_side_more_btn.addEventListener('click', () => {
 						more_icon.style.display = "none";
 						hidden_icons.style.display = "block";
-						hidden_icons.style.animation = "open_boxes 300ms forwards ease-in-out";
+						hidden_icons.style.animation = "open_boxes 300ms forwards ease-in";
 						left_side_less_btn.setAttribute("closing", "");
 					});
 
 					left_side_less_btn.addEventListener('click', () => {
-						hidden_icons.style.animation = "close_boxes 500ms forwards ease-in-out";
+						hidden_icons.style.animation = "close_boxes 300ms forwards ease-out";
 						hidden_icons.addEventListener('animationend', () => {
 							animation_End();
 						},{once: true});
@@ -476,6 +476,9 @@
 						फैलाउदै जाने कम्रमा २१ औं पुस्ता देखिका सन्तानहरूले चोबेगु लाइ आफ्नो नामको
 						पछाडि राख्ने चलन हुन आयाे र अहिलेको चोबेगु (जबेगु, चबेगु, जबेगो, चबेगु, जवेगु .....) थरकाे
 						सुरूवात हुन पुग्यो । </span>
+						<div class="btn_bansawali">
+							<button class="chobegu_bansawali_btn">चोबेगु बंसावलि</button>
+						</div>
 				</div>
 				<div class="homepage_image_slider_head">
 					<span>चोबेगु परिवरका केहि सहयोगी हातहरू </span>
