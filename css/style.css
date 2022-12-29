@@ -501,8 +501,8 @@ body {
 	transform-origin: top center;
 }
 .left_side_more_icon[closing] {
-	
 	transform-origin: top center;
+	animation: close_boxes 300ms forwards ease-in-out;
 }
 @keyframes open_boxes {
 	0% {

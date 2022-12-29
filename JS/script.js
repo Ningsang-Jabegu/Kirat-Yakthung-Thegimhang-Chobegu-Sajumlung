@@ -89,15 +89,14 @@ function close_logo_box_subfav() {
 /*---------------------------------------------------------------------------- */
 
 /* Animation for opening and closing of left side more boxes in desktop view */
-function open_left_side_box_more() {
+/*function open_left_side_box_more() {
   var hidden_icons = document.querySelector(".left_side_more_icon");
   var more_icon = document.querySelector(".see_more_box");
   more_icon.style.display = "none";
   hidden_icons.style.display = "block";
   hidden_icons.setAttribute("closing", "");
-  
-}
-var hidden_icons = document.querySelector(".left_side_more_icon");
+}*/
+/*var hidden_icons = document.querySelector(".left_side_more_icon");
 var hidden_icons_closing = document.querySelector(".left_side_more_icon[closing]");
 var more_icon = document.querySelector(".see_more_box");
 function close_left_side_box_more() {
@@ -105,14 +104,14 @@ function close_left_side_box_more() {
   hidden.addEventListener('animationend', () => {
   animation_End();
   
-}, {once: true});
+}, {once: true});}
 function animation_End() {
   more_icon.style.display = "flex";
   hidden_icons.style.display = "none";
   hidden_icons.removeAttribute("closing");
   hidden_icons_closing.style.animation = "open_boxes 500ms forwards ease-in-out";
   
-}
+}*/
 /* ------------------------------------------------------------------------------------ */
 
 /* homepage left side box footer when clicked in  थप*/
@@ -191,8 +190,8 @@ function close_nav_small() {
 /* -------------------------------------------------------------- */
 
 /* For copyright year */
-var date = new Date();
+/*var date = new Date();
 var year = date.getFullYear();
 document.querySelector(".year").innerHTML = year;
-document.querySelector("#year").innerHTML = year;
+document.querySelector("#year").innerHTML = year;*/
 /* ----------------------------------------------------------- */
