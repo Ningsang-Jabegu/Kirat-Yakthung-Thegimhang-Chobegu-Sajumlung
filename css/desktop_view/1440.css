@@ -69,6 +69,11 @@
 		border-bottom-right-radius: .5em;
 	}
 
+	.chobegu_bansawali_btn:hover {
+		background: rgb(106, 52, 144);
+		cursor: pointer;
+	}
+
 	.scholarship_btn1:hover {
 		background: #05495cea;
 	}
@@ -110,7 +115,7 @@
 	.right_officials:hover .homepage_right_side_post {
 		color: #f2f2f2;
 	}
-
+	
 	.more_member_box,
 	.more_member_box:hover {
 		border-bottom-left-radius: 1em;
