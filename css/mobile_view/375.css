@@ -503,9 +503,9 @@
         padding-top: .5em;
     }
 
-    .footer_content {
-        gap: 1em;
-        width: 100vw;
+    .footer_contact {
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     .footer_content_head {

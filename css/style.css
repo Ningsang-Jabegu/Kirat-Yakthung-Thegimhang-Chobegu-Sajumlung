@@ -1152,7 +1152,6 @@ header .box_head {
 	flex-wrap: wrap;
 	width: 100%;
 	font-weight: 600;
-	gap: 1em;
 }
 
 .footer_contact div {
