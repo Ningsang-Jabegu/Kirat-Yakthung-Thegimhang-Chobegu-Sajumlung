@@ -2,8 +2,8 @@
 :root {
 	--background-text-general: 'nato-devanagari';
 	--background-content-head-font-size: 14pt;
-	--background-content-head-font-color: rgba(255, 255, 255, 0.874);
-	--background-content-head-background-color: #186353db;
+	--background-content-head-font-color: #e5e3e6;
+	--background-content-head-background-color: #186353d1;
 	--background-content-body-font-size: 14pt;
 	--background-content-body-font-size-s: 12pt;
 	--background-text-font-weight-primary: 600;
@@ -646,6 +646,7 @@ header .box_head {
 	border-radius: 1em;
 	position: relative;
 	margin: .5em 0 0 0;
+	border-bottom: 2px solid #5d5f5e;
 }
 .homepage_news marquee {
 	position: absolute;
@@ -1131,7 +1132,7 @@ header .box_head {
 	background: #97c25c99;
 	background-size: cover;
 	border-top: 1.5px solid grey;
-	padding: 1em 0em .8em 0em;
+	padding: 1em 0em 0em 0em;
 }
 
 .footer_contact {
@@ -1141,22 +1142,29 @@ header .box_head {
 	width: 100%;
 	font-weight: 600;
 }
-
+.footer_contact div {
+	background: #99bb91;
+	border-radius: 1em;
+}
 .footer_content_head {
 	width: 100%;
-	border-bottom: 4px solid #61063e;
-	background: #9b7606;
-	color: rgb(242, 242, 242);
+	border-bottom: 3.5px solid #0b14298f;
+	background: #3a796bc9;
+	color: var(--background-content-head-font-color);
 	padding: .2em .5em;
-	border-radius: 0 2em 2em 0;
+	margin: 0;
+	border-radius: 16px 16px 0 0;
 	font-size: var(--background-content-head-font-size);
 	font-weight: var(--background-text-font-weight-primary);
 }
 
 .footer_content_body {
 	width: 21em;
+	padding: 0 0 .5em 0;
 }
-
+.ftr_body {
+	margin:.3em .9em;
+}
 .footer_contact .footer_content_body {
 	display: flex;
 	flex-direction: column;
@@ -1290,7 +1298,6 @@ header .box_head {
 .footer_ext_links {
 	display: flex;
 	flex-direction: column;
-	margin: .5em 0;
 }
 
 .web_developer {
@@ -1306,9 +1313,10 @@ header .box_head {
 	color: #341e04;
 	font-size: 10pt;
 	line-height: 1.5;
-	margin: .5em 0em;
+	margin: 1em 0 0 0;
 	text-align: center;
 	width: 100%;
 	padding: .5em 0em 0em 0em;
 	border-top: 3px solid rgb(100, 3, 3);
+	background: #99bb91;
 }
