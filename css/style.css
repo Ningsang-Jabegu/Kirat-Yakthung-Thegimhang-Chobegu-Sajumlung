@@ -471,6 +471,7 @@ body {
 	margin: 1em .5em;
 	gap: 1em;
 }
+
 header {
 	background: #d6ddd8da;
 	box-shadow: inset -3px -4px 3px -.9px rgba(0, 0, 0, 0.304),
@@ -480,6 +481,7 @@ header {
 	margin: 0.5em .5em;
 	border-radius: .5em;
 }
+
 header .box_head {
 	/*border: 2px solid rgb(73, 42, 141);*/
 	height: max-content;
@@ -489,6 +491,7 @@ header .box_head {
 	justify-items: center;
 	justify-content: space-evenly;
 }
+
 .box {
 	/*border: 2px solid rgb(73, 42, 141);*/
 	height: max-content;
@@ -631,12 +634,14 @@ header .box_head {
 	width: 100%;
 	text-align: center;
 }
+
 .homepage_news_org_name {
 	color: #50456f;
 	font-weight: 600;
 	font-size: 18pt;
 	font-family: aakar;
 }
+
 .homepage_news {
 	background: #7a7a7aa0;
 	box-shadow: inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
@@ -648,18 +653,22 @@ header .box_head {
 	margin: .5em 0 0 0;
 	border-bottom: 2px solid #5d5f5e;
 }
+
 .homepage_news marquee {
 	position: absolute;
 	top: .5em;
 }
+
 .homepage_news marquee a {
 	text-decoration: none;
 	color: inherit;
 	font-size: var(--background-content-head-font-size);
 }
+
 .middle_side div:first-child {
 	border-radius: 1em 1em 0 0;
 }
+
 .homepage_image_slider_head {
 	padding: .5em 1em;
 	background: var(--background-content-head-background-color);
@@ -713,7 +722,7 @@ header .box_head {
 .t12th_gen_after {
 	font-weight: 600;
 	font-family: var(--background-text-general);
-	font-size: var(--background-content-head-font-size)!important;
+	font-size: var(--background-content-head-font-size) !important;
 	margin: .8em auto;
 	background: #98b2b485;
 	color: #214e44;
@@ -1083,9 +1092,11 @@ header .box_head {
 	height: auto;
 
 }
+
 .more_member_box:last-child {
 	border-bottom: 4px solid grey;
 }
+
 .more_member_box p:last-child {
 	position: absolute;
 	right: 3em;
@@ -1141,11 +1152,13 @@ header .box_head {
 	flex-wrap: wrap;
 	width: 100%;
 	font-weight: 600;
+	gap: 1em;
 }
+
 .footer_contact div {
-	background: #99bb91;
 	border-radius: 1em;
 }
+
 .footer_content_head {
 	width: 100%;
 	border-bottom: 3.5px solid #0b14298f;
@@ -1161,10 +1174,14 @@ header .box_head {
 .footer_content_body {
 	width: 21em;
 	padding: 0 0 .5em 0;
+	margin-left: .5em;
+	background: #93bb8af5;
 }
+
 .ftr_body {
-	margin:.3em .9em;
+	margin: .3em .9em;
 }
+
 .footer_contact .footer_content_body {
 	display: flex;
 	flex-direction: column;
@@ -1265,7 +1282,7 @@ header .box_head {
 }
 
 .footer_social_btn {
-	background: #971f0c;
+	background: #2e5a90;
 	color: #f2f2f2;
 	padding: .5em 1em;
 	border-radius: 2em;
@@ -1274,6 +1291,7 @@ header .box_head {
 	width: 100%;
 	text-align: center;
 	border: none;
+	font-family: nato-devanagari;
 	font-weight: var(--background-button-font-weight);
 	font-size: var(--background-button-font-size);
 }
