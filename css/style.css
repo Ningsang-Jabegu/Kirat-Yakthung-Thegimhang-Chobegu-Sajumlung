@@ -355,7 +355,6 @@ body {
 	align-items: center;
 	list-style: none;
 	width: 100%;
-	background: #9ba6af43;
 	border-radius: 1em;
 	box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
 		inset 3px 5px 9px -2px rgb(56, 56, 56);
@@ -431,15 +430,15 @@ body {
 .nav_menu {
 	display: none;
 	position: relative;
-	background-color: #989898b4;
-	color: rgb(2, 2, 2);
+	color: #f3f5f5;
+	font-weight: 600;
 	height: 2.5em;
 	border-radius: 1.3em;
 	width: 8em;
 	float: right;
 	cursor: pointer;
+	border: 2px solid black;
 }
-
 .nav_menu_close[hide] {
 	display: none;
 }

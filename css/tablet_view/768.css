@@ -155,8 +155,7 @@ body {
     height: 2.5em;
     border-radius: 0;
     box-shadow: none;
-    background: #306948 !important;
-    color: aliceblue;
+    background: #3a7975de;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -167,11 +166,13 @@ body {
 }
 .nav_menu {
     border-radius: 2em 0 0 2em;
-    background: #96b367;
     order: 1;
     border-radius: 1.3em 0 0 1.3em;
     z-index: 8;
+    background: #047821;
+    height: 2.5em;
 }
+
 .navigation_items {
     display: none;
     position: absolute;

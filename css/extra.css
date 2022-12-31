@@ -1,5 +1,4 @@
 /* Font used in this website */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
 
 @font-face {
     font-family: "preeti-regular";
@@ -29,9 +28,6 @@
 @font-face {
 	font-family: 'Capriola-Regular';
 	src: url('../fonts/Capriola-Regular.eot');
-	src: local('☺'),  url('../fonts/Capriola-Regular.woff') format('woff'),  url('../fonts/Capriola-Regular.ttf') format('truetype'),  url('../fonts/Capriola-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
 }
 @font-face {
     font-family: "germaniaOne";
