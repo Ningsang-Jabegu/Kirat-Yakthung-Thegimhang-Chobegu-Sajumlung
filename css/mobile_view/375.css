@@ -1,5 +1,5 @@
 @media only screen and (max-width:320px) {
-    .org_nep_slo {
+    /*.org_nep_slo {
         font-size: 7.6pt !important;
     }
 
@@ -19,7 +19,7 @@
 
     .org_nep_add {
         font-size: 7pt !important;
-    }
+    }*/
 
     .footer_org_name_nep {
         font-size: 12.3pt;
@@ -91,7 +91,7 @@
 }
 
 @media only screen and (max-width:428px) {
-    .org_nep_slo {
+    /*.org_nep_slo {
         font-size: 8.8pt;
     }
 
@@ -111,7 +111,7 @@
 
     .org_nep_add {
         font-size: 8pt;
-    }
+    }*/
 
     .org_register_num {
         font-size: 8pt;

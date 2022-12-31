@@ -17,13 +17,37 @@
     }
 }
 /*-----------------------------------------*/
-
+@media (min-width: 553px) {
+    .org_nep_slo {
+        font-size: clamp(8pt, 1.5vw, 20pt);/*clamp(8pt, 1.5vw, 20pt)*/
+    }
+    .org_nep {
+        font-size: clamp(15.5pt, 3.5vw, 60pt);
+    }
+    
+    .org_eng {
+        font-size: clamp(10.4pt, 2.3vw, 29.9pt);
+    }
+    
+    .org_yak {
+        font-size: clamp(15pt, 3.4vw, 45pt);
+    }
+    
+    .org_nep_add {
+        font-size: clamp(11pt, 2vw, 30pt);
+    }
+}
 /*Resizing the right side box by sifting the post of person to not overflow into personal info*/
 @media (min-width: 769px) and (max-width: 1219px) {
     .homepage_right_side_post {
         bottom: .5em;
         right: 0;
         font-size: 11.1pt;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .homepage_news {
+        width: 100%!important;
     }
 }
 /*--------------------------------------------*/
