@@ -426,7 +426,9 @@ body {
 	text-transform: uppercase;
 	height: 100%;
 }
-
+#nav_bar_layer {
+	margin: .3em;
+}
 .nav_menu {
 	display: none;
 	position: relative;
@@ -437,14 +439,16 @@ body {
 	width: 8em;
 	float: right;
 	cursor: pointer;
-	border: 2px solid black;
 }
 .nav_menu_close[hide] {
 	display: none;
 }
-
+.nav_menu_open {
+    background: #315654;
+	color: #d1d4d4;
+}
 .nav_menu_close {
-	background: #a11255e1;
+	background: #227671c4;
 	color: #d1d4d4;
 }
 

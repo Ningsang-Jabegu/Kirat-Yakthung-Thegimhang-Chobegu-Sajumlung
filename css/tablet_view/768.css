@@ -13,6 +13,7 @@
     
     .org_yak {
         font-size: clamp(8.5pt,4vw,15pt);
+        margin-top: .2em 0;
     }
     
     .org_nep_add {
@@ -162,17 +163,14 @@ body {
 }
 #nav_bar_layer {
     order: 2;
-    margin-top: 3em;
 }
 .nav_menu {
     border-radius: 2em 0 0 2em;
     order: 1;
     border-radius: 1.3em 0 0 1.3em;
     z-index: 8;
-    background: #047821;
-    height: 2.5em;
+    padding: 1.25em;
 }
-
 .navigation_items {
     display: none;
     position: absolute;
