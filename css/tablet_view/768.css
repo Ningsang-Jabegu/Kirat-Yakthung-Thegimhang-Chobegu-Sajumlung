@@ -429,12 +429,6 @@ body {
     order: 1;
 }
 
-.right_side_person_info span:nth-child(2),
-.right_side_person_info span:nth-child(3),
-.right_side_person_info span:nth-child(4) {
-    font-size: 8.2pt;
-    font-family: poppins-regular;
-}
 .more_member_box p:last-child {
     right: 54%;
     left: 46%;
