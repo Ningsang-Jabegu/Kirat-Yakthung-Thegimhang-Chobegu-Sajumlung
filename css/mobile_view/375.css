@@ -244,11 +244,6 @@
         text-align: right;
     }
 
-    .right_side_person_info span:nth-child(2),
-    .right_side_person_info span:nth-child(3) {
-        font-size: 8pt;
-    }
-
     .homepage_right_side_post {
         margin: 0;
         order: 3;
@@ -274,8 +269,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         height: fit-content;
-        background: #d7bdb18a;
-        border: 2px solid rgba(80, 36, 6, 0.559);
+        background: #a4b0ad82;
     }
 
     .right_officials:nth-child(odd) {
@@ -284,7 +278,7 @@
     }
 
     .right_officials:nth-child(odd) .homepage_right_side_post {
-        border-bottom-right-radius: 1.2em;
+        border-bottom-right-radius: 1em;
     }
 
     .right_officials:nth-child(even) {
@@ -411,7 +405,7 @@
     }
 
     .left_side .left_side_box:nth-child(odd) .left_side_opt_name {
-        border-radius: 0 0 0 1.5em;
+        border-radius: 0 0 0.5em 1.5em;
         margin: 0 -.1em -.1em 0;
     }
 
@@ -420,7 +414,7 @@
     }
 
     .left_side .left_side_box:nth-child(even) .left_side_opt_name {
-        border-radius: 0 0 1.5em 0;
+        border-radius: 0 0 1.5em 0.5em;
         margin: 0 0 -.1em -.1em;
     }
 
@@ -455,11 +449,10 @@
     .left_side_box .left_side_opt_name {
         margin: .5em;
         background: #306948;
-        color: aliceblue;
+        color: #f0f8ffdf;
         width: 100%;
         text-align: center;
-        font-size: 8pt;
-        padding: .2em 0;
+        padding: .4em 0 .2em 0;
     }
 
     .notice_board_content .right_side_box {

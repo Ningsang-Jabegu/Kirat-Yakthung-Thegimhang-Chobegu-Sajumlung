@@ -187,15 +187,6 @@
     .middle_side_son_person_info {
         margin-left: 0;
     }
-    .middle_side_son_person_info span:first-child {
-        font-size: 10pt;
-    }
-    .middle_side_son_person_info span {
-        font-size: 8pt;
-    }
-    .middle_chobegu_ending {
-        font-size:9pt;
-    }
     .homepage_scholarship_info {
         display: inline-block;
     }
@@ -205,32 +196,24 @@
     }
     .homepage_scholarship_head,
     .homepage_scholarship_button {
-        font-size: 9pt;
+        font-size: 10pt;
     }
     .homepage_scholarship_text span {
         margin-left: 0;
-        font-size: 8.5pt;
     }
     .scholarship_btn1 {
         margin-top: 2.8em;
-    }
-    .homepage_membership_1st_text {
-        font-size: 10pt;
     }
     .homepage_membership_button {
         font-size: 9pt;
         padding: .1em .1em;
         margin: .5em;
     }
-    .homepage_build_branch {
-        font-size: 10pt;
-    }
     .homepage_build_branch_button {
         text-align: center;
         width: 70%;
     }
     .homepage_cencus_box {
-        font-size: 10pt;
         text-align: justify;
     }
     .homepage_cencus_button {
@@ -248,9 +231,6 @@
     }
     .right_side_person_info span {
         font-size: 9pt;
-    }
-    .right_side_person_info span:first-child{
-        font-size: 10pt;
     }
     
     /* Footer content adjustment */

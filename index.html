@@ -243,7 +243,7 @@
 				if (open_icon.style.display != "none") {
 					open_icon.style.display = "none";
 					close_icon.style.display = "block";
-					
+
 				}
 			});
 			nav_backdrop.addEventListener('click', () => {
@@ -294,7 +294,8 @@
 		<header class="box_head">
 			<div class="middle_side_news">
 				<p><span class="homepage_news_head">
-					<span class="homepage_news_org_name">rf]a]u' ;h'Dn'ª </span> समाचार प्रदर्शन बोर्ड </span><span class="homepage_news"><!--चोबेगु सजुम्लुङ-->
+						<span class="homepage_news_org_name">rf]a]u' ;h'Dn'ª </span> समाचार प्रदर्शन बोर्ड </span><span
+						class="homepage_news"><!--चोबेगु सजुम्लुङ-->
 						<marquee onmouseover="this.stop();" onmouseout="this.start();"><a href="#">*****यो चोबेगु
 								सजुन्लुङको समाचार पेटिका हो ।*****</a>
 						</marquee>
@@ -385,13 +386,13 @@
 						hidden_icons.style.animation = "close_boxes 300ms forwards ease-out";
 						hidden_icons.addEventListener('animationend', () => {
 							animation_End();
-						},{once: true});
+						}, { once: true });
 						function animation_End() {
-						more_icon.style.display = "flex";
-						hidden_icons.style.display = "none";
-						hidden_icons.removeAttribute("closing");
-						hidden_icons_closing.style.animation = "open_boxes 500ms forwards ease-in-out";
-					}
+							more_icon.style.display = "flex";
+							hidden_icons.style.display = "none";
+							hidden_icons.removeAttribute("closing");
+							hidden_icons_closing.style.animation = "open_boxes 500ms forwards ease-in-out";
+						}
 					});
 				</script>
 				<div class="left_side_foot">
@@ -479,9 +480,9 @@
 						फैलाउदै जाने कम्रमा २१ औं पुस्ता देखिका सन्तानहरूले चोबेगु लाइ आफ्नो नामको
 						पछाडि राख्ने चलन हुन आयो र अहिलेको चोबेगु (जबेगु, चबेगु, जबेगो, चबेगु, जवेगु .....) थरको
 						सुरूवात हुन पुग्यो । </span>
-						<div class="btn_bansawali">
-							<button class="chobegu_bansawali_btn">चोबेगु वंश नक्शा</button>
-						</div>
+					<div class="btn_bansawali">
+						<button class="chobegu_bansawali_btn">चोबेगु वंश नक्शा</button>
+					</div>
 				</div>
 				<div class="homepage_image_slider_head">
 					<span>चोबेगु परिवरका केहि सहयोगी हातहरू </span>
@@ -801,19 +802,19 @@
 					<span class="footer_content_head">सामाजिक संजाल</span>
 					<div class="ftr_body">
 						<span class="footer_social_media_subhead">सजुम्लुङ सामाजिक संजालमा</span>
-					<a href="https://www.facebook.com/jabegu.sanjumlung" target="_blank">
-						<div class="footer_social_media_facebook">
-							<span><img class="right_side_person" src="/images/Icons/PNG/Asset Foot1.png"></span>
-							<span class="footer_facebook_description">
-								<span class=" fb_name">प्रोफाइल नाम :</span>
-								<span class=" fb_name">Chobegu Sajumlung (ᤆᤥᤒᤣᤃᤢ ᤛᤈᤢᤶᤗᤢᤅ)</span>
-								<span class=" fb_name_small">२०० जनाले फलो गर्नुभयो र ९५२ साथीहरू</span>
-							</span>
-						</div>
-					</a>
-					<span class="footer_social_media_subhead">सजुम्लुङलाइ अन्य सामाजिक संजालमा देख्न चाहानु हुन्छ
-						।</span>
-					<button class="footer_social_media_subhead footer_social_btn">सिफारीस गर्नुहोस</button>
+						<a href="https://www.facebook.com/jabegu.sanjumlung" target="_blank">
+							<div class="footer_social_media_facebook">
+								<span><img class="right_side_person" src="/images/Icons/PNG/Asset Foot1.png"></span>
+								<span class="footer_facebook_description">
+									<span class=" fb_name">प्रोफाइल नाम :</span>
+									<span class=" fb_name">Chobegu Sajumlung (ᤆᤥᤒᤣᤃᤢ ᤛᤈᤢᤶᤗᤢᤅ)</span>
+									<span class=" fb_name_small">२०० जनाले फलो गर्नुभयो र ९५२ साथीहरू</span>
+								</span>
+							</div>
+						</a>
+						<span class="footer_social_media_subhead">सजुम्लुङलाइ अन्य सामाजिक संजालमा देख्न चाहानु हुन्छ
+							।</span>
+						<button class="footer_social_media_subhead footer_social_btn">सिफारीस गर्नुहोस</button>
 					</div>
 				</div>
 				<div class="footer_external_link_ footer_content_body">
@@ -842,15 +843,45 @@
 			</div>
 			<p id="footnote">
 				<span class="web_developer"><span>निङसाङ चोबेगु (जबेगु)</span> द्वारा डिजाइन र विकास गरिएको</span>
-				<span> कियाथेचोस © 2020 - <span id="year"></span></span>. सबै अधिकार सुरक्षित गरिएको छ ।
+				<span> कियाथेचोस © २०२० - <span id="year"></span></span>. सबै अधिकार सुरक्षित गरिएको छ ।
 			</p>
 		</footer>
 		<script>
+			const numbers = {
+					0: '०',
+					1: '१',
+					2: '२',
+					3: '३',
+					4: '४',
+					5: '५',
+					6: '६',
+					7: '७',
+					8: '८',
+					9: '९'
+				};
 			var date = new Date();
 			var year = date.getFullYear();
-			document.querySelector(".year").innerHTML = year;
-			document.querySelector("#year").innerHTML = year;
+			var nep_date = toNepali(year);
+			
+			document.querySelector(".year").innerHTML = nep_date;
+			document.querySelector("#year").innerHTML = nep_date;
+			function toNepali(number) {
+				// map of English to Nepali numbers
+
+				// convert number to string
+				number = number.toString();
+
+				// replace English numbers with Nepali numbers
+					for (const key in numbers) {
+					number = number.replace(key, numbers[key]);
+					}
+					for (const key in numbers) {
+					number = number.replace(key, numbers[key]);
+					}
+				return number;
+			}
 		</script>
+
 	</section>
 </body>
 <script src="JS/script.js"></script>

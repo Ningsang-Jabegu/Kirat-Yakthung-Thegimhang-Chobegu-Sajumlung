@@ -7,7 +7,7 @@
 	--background-content-body-font-size: 14pt;
 	--background-content-body-font-size-s: 12pt;
 	--background-text-font-weight-primary: 600;
-	--background-text-color-general: rgba(3, 32, 7, 0.699);
+	--background-text-color-general: rgba(2, 26, 5, 0.699);
 	--background-button-font-size: 12.5pt;
 	--background-button-font-weight: 500;
 	--background-person-name-font-color: #6c0b75;
@@ -479,7 +479,7 @@ header {
 		-3px -4px 3px -.9px rgba(174, 218, 212, 0.612),
 		3px 4px 6px -.5px rgba(174, 218, 212, 0.612);
 	margin: 0.5em .5em;
-	border-radius: .5em;
+	border-radius: 1em;
 }
 
 header .box_head {
@@ -807,7 +807,7 @@ header .box_head {
 }
 
 .middle_side_son_person_info span:first-child {
-	font-size: 12pt;
+	font-size: var(--background-content-body-font-size-s);
 	font-weight: 600;
 	color: var(--background-person-name-font-color);
 }
@@ -817,7 +817,6 @@ header .box_head {
 }
 
 .middle_chobegu_ending {
-	font-size: 11pt;
 	text-align: justify;
 	margin: .8em 0 0 0;
 }
@@ -836,15 +835,17 @@ header .box_head {
 	height: max-content;
 	width: 100%;
 	border-radius: 1em;
-	color: #e9f1f1e8;
-	font-weight: 600;
-}
 
+}
+.homepage_scholarship_button {
+	color: #e9f1f1e8;
+	font-family: nato-devanagari;
+}
 .scholarship_box .homepage_scholarship_head {
 	text-align: center;
 	width: 100%;
 	display: inline-block;
-	padding: .3em;
+	padding: .5em;
 	color: #e9f1f1e8;
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
@@ -874,13 +875,13 @@ header .box_head {
 	display: flex;
 	flex-direction: column;
 	margin: .5em 0;
-
+	font-size: var(--background-content-body-font-size-s);
 	color: var(--background-text-color-general);
 }
 
 .homepage_scholarship_text span {
 	font-size: var(--background-content-body-font-size-s);
-	font-family: var(--background-text-general);
+	font-weight: var(--background-text-font-weight-primary);
 }
 
 .homepage_scholarship_button {
@@ -1022,7 +1023,6 @@ header .box_head {
 .right_side_box {
 	padding: .5em .9em;
 	display: flex;
-	border-bottom: 2px solid grey;
 	align-items: center;
 	position: relative;
 	gap: 1em;
@@ -1250,10 +1250,6 @@ header .box_head {
 	justify-content: center;
 }
 
-.footer_imp_link {
-	font-size: 10pt;
-
-}
 
 
 .footer_important_link span {
@@ -1266,14 +1262,14 @@ header .box_head {
 
 .footer_social_media_subhead {
 	font-weight: 600;
-	font-size: 10pt;
+	font-size: var(--background-content-body-font-size-s);
 	margin: .5em 0;
 }
 
 .fb_name,
 .fb_name_small {
 	line-height: 1.3em;
-	font-size: 10pt;
+	font-size: var(--background-content-body-font-size-s);
 }
 
 .fb_name_small {
@@ -1336,4 +1332,5 @@ header .box_head {
 	padding: .5em 0em 0em 0em;
 	border-top: 3px solid rgb(100, 3, 3);
 	background: #99bb91;
+	font-family: var(--background-text-general);
 }
