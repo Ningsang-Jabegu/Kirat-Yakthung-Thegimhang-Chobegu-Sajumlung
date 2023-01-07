@@ -169,7 +169,7 @@ body {
     order: 1;
     border-radius: 1.3em 0 0 1.3em;
     z-index: 8;
-    padding: 1.25em;
+    padding:  1.25em .2em;
 }
 .navigation_items {
     display: none;
