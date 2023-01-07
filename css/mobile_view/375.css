@@ -44,10 +44,6 @@
     .footer_org_email {
         font-size: 7.2pt;
     }
-
-    #footnote {
-        font-size: 8.5pt;
-    }
 }
 
 @media screen and (min-width:321px) and (max-width:428px) {

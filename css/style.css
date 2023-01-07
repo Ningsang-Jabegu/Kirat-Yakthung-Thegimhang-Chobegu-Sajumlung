@@ -154,7 +154,7 @@ body {
 	right: 1em;
 	font-weight: 600;
 	color: #7e0920;
-	font-size: clamp(10pt, 1vw, 16pt);
+	font-size: clamp(8.2pt, 1vw, 16pt);
 	font-family: nato-devanagari;
 }
 
@@ -1315,13 +1315,17 @@ header .box_head {
 
 .web_developer {
 	display: block;
+	font-size: inherit;
 }
 
 .web_developer span {
-	font-weight: 700;
-	font-weight: poppins-semi-bold;
+	font-weight: 800;
+	font-weight: var(--background-text-general);
+	font-size: inherit;
 }
-
+#footnote span {
+	font-size: 10pt;
+}
 #footnote {
 	color: #341e04;
 	font-size: 10pt;
