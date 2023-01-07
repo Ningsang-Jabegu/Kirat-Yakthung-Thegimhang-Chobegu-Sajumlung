@@ -155,7 +155,7 @@ body {
     height: 2.5em;
     border-radius: 0;
     box-shadow: none;
-    background: #3a7975de;
+    background: #3a7975de!important;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -318,11 +318,11 @@ body {
 }
 .nav_hide_menu {
     display: inline-flex;
-    font-size: 9pt;
+    font-size: inherit;
     position: absolute;
-    top: .9em;
-    right: 1.3em;
-    font-family: poppins-regular;
+    top: .5em;
+    right: 1em;
+    font-family: var(--background-text-general);
 }
 .nav_menu {
     display: inline;
@@ -336,8 +336,11 @@ body {
     width: 100%;
     position: absolute;
 }
+.nav_menu_close img {
+    margin-left: .3em!important;
+}
 .nav_link_menu img {
-    margin-left: .5em;
+    margin-left: .4em;
 }
 .body_content {
     position: relative;
@@ -465,9 +468,6 @@ body {
     position: absolute;
     bottom: -114em;
 }*/
-.footer_content_body  {
-    margin: .5em 0;
-}
 .notice_board_content {
     display: none;
 }

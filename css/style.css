@@ -160,6 +160,7 @@ body {
 
 .org_register_hide {
 	display: none;
+	font-size: inherit
 }
 
 .logo_discription {
@@ -352,6 +353,7 @@ body {
 /*------------------------------ Navigation ------------------------------*/
 #navigation {
 	display: inline-block;
+	/*background: #bdc0c1;*/
 	align-items: center;
 	list-style: none;
 	width: 100%;
@@ -378,7 +380,6 @@ body {
 
 #navigation .nav_item.selected .nav_link {
 	color: #fff;
-	height: 49px;
 	border-radius: 1.3em;
 }
 
@@ -532,6 +533,7 @@ header .box_head {
 
 .left_side_opt_name {
 	color: var(--background-text-color-general);
+	font-size: clamp(8.5pt,1.3vw,15pt);/*clamp(8.5pt,1.3vw,15pt)*/
 }
 
 .left_side_more_icon {
@@ -1065,7 +1067,7 @@ header .box_head {
 .right_side_person_info span:nth-child(2),
 .right_side_person_info span:nth-child(3) {
 	font-weight: 600;
-	font-size: var(--background-content-body-font-size-s);
+	/*font-size: var(--background-content-body-font-size-s);*/
 	color: var(--background-text-color-general);
 }
 
@@ -1152,6 +1154,7 @@ header .box_head {
 	flex-wrap: wrap;
 	width: 100%;
 	font-weight: 600;
+	gap: 2em;
 }
 
 .footer_contact div {
@@ -1173,7 +1176,6 @@ header .box_head {
 .footer_content_body {
 	width: 21em;
 	padding: 0 0 .5em 0;
-	margin-left: .5em;
 	background: #93bb8af5;
 }
 

@@ -99,6 +99,12 @@
         line-height: 1.4em;
     }
 }
+/* for the border bottom right officials box for tab to desktop view*/
+@media (min-width:769px) {
+    .right_officials {
+        border-bottom: 2px solid gray;
+    }
+}
 @media (min-width: 718px)and (max-width:1219px) {
     .more_member_box p:last-child {
         display: none;
@@ -157,7 +163,7 @@
         width: 1.7em;
     }
     .left_side_opt_name {
-        font-size: 10pt;
+        /*font-size: 10pt;*/
     }
     /* Body content second box (middle) adjustment */
     .right_side {
@@ -234,7 +240,4 @@
     }
     
     /* Footer content adjustment */
-    .footer_content_body  {
-        margin: .5em 0;
-    }
     }

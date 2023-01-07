@@ -224,14 +224,18 @@
 					navbar.classList.add("sticky");
 					navbar.style.background = "rgb(48 104 99 / 81%)";
 					show_hide_nav.style.position = "sticky";
-				} else if (window.pageYOffset < sticky) {
+				} else if (window.pageYOffset < sticky && window.innerWidth < 768) {
 					navbar.classList.add("sticky");
 					navbar.style.background = "#3a7975de";
+				} else if (window.pageYOffset < sticky && window.innerWidth > 768) {
+					navbar.classList.add("sticky");
+					navbar.style.background = "#cfe2e4";
 				}
 				else {
 					navbar.classList.remove("sticky");
 				}
 			};
+
 
 			var navigation_open = document.querySelector("#navigation_open");
 			var nav_btn = document.querySelector(".nav_menu ");
