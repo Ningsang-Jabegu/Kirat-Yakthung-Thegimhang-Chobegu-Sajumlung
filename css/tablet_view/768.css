@@ -318,7 +318,7 @@ body {
       }
 }
 .nav_hide_menu {
-    display: inline-block;
+    display: inline-flex;
     font-size: 9pt;
     position: absolute;
     top: .9em;
@@ -327,10 +327,18 @@ body {
 }
 .nav_menu {
     display: inline;
+    position: relative;
 }
 .nav_link_menu {
-    right: 5.2em;
 	top: .2em;
+    display: inline-flex;
+    justify-content: space-between;
+	gap: .3em;
+    width: 100%;
+    position: absolute;
+}
+.nav_link_menu img {
+    margin-left: .5em;
 }
 .body_content {
     position: relative;
