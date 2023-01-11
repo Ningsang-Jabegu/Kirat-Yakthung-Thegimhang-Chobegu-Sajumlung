@@ -173,6 +173,7 @@
 
     .middle_side {
         order: 1;
+        width: auto;
     }
 
     .left_side {
