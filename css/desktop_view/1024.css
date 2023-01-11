@@ -55,7 +55,7 @@
 /*Changing the homepage news portal news layout*/
 @media (min-width: 769px)and (max-width:960px) {
     #notice_board .notice_board_content .right_side_box {
-        min-height: 7.9em;
+        min-height: 5.9em;
     }
 }
 @media (min-width: 961px)and (max-width:1024px) {
@@ -73,7 +73,6 @@
         top: .4em;
         left: .8em;
         font-weight: 600;
-        font-family: poppins-regular;
         line-height: 1.3em;
     }
     #notice_board .notice_board_content .right_side_box .notice_board_image {
