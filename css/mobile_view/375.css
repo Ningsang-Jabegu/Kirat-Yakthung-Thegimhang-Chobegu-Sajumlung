@@ -108,7 +108,10 @@
     .org_nep_add {
         font-size: 8pt;
     }*/
+    .homepage_right_side_post {
+        border-radius: 0;
 
+    }
     .org_register_num {
         font-size: 8pt;
         background: rgb(61 39 132);
@@ -214,7 +217,7 @@
     .notice_board_content {
         display: flex;
         flex-direction: column;
-        gap: .3em;
+        gap: .5em;
         padding: .5em;
     }
 
@@ -266,7 +269,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         height: fit-content;
-        background: #a4b0ad82;
+        background: #6facb738;
     }
 
     .right_officials:nth-child(odd) {
@@ -281,7 +284,6 @@
     .right_officials:nth-child(even) {
 
         border-radius: 1em 0 0 1em;
-        border-right: none;
     }
 
     .right_officials:nth-child(even) .homepage_right_side_post {
@@ -292,6 +294,10 @@
         width: 45%;
         margin: .9em 0 0 0;
         flex-direction: column;
+        box-shadow: inset 3px 4px 6px -1px #69827c,
+                    inset -2px -2px 2px 1px #69827c30;
+        box-sizing: content-box;
+        border-right: 2px solid #69827c;
     }
 
     .right_officials .right_side_box {
@@ -369,6 +375,7 @@
         /* padding: .3em; */
         /* width: 93%; */
         gap: .5em;
+        box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #69827c54;
     }
 
     #notice_board .right_side_box .right_side_perosn_info {

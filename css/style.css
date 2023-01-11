@@ -726,14 +726,15 @@ header .box_head {
 	font-weight: 600;
 	font-family: var(--background-text-general);
 	font-size: var(--background-content-head-font-size) !important;
-	margin: .8em auto;
+	border-radius: 1em 1em 0 0;
 	background: #98b2b485;
 	color: #214e44;
 	width: 100%;
+	margin: .3em auto;
 	padding: 0.5em 0 0.3em 0;
 	font-size: 12pt;
-	border-radius: 1em;
-	box-shadow: inset 3px 4px 6px -1px #546f69;
+	border-radius: 1em 1em 0 0;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;;
 }
 
 .btn_bansawali {
@@ -760,10 +761,13 @@ header .box_head {
 .middle_side_box {
 	padding: .5em .9em;
 	display: flex;
-	border-bottom: 2px solid grey;
-	border-top: 2px solid grey;
 	align-items: center;
 	position: relative;
+    background: #54af9b42;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: .7em;
+    box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 
 .middle_side_box img {

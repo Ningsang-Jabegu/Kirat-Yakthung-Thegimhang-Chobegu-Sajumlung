@@ -392,6 +392,11 @@ body {
 }
 .middle_side_box {
     padding: .1em .5em;
+    background: #54af9b42;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: .7em;
+    box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 .middle_side_box img {
     height: 3.3em;
@@ -462,7 +467,6 @@ body {
     margin: 0;
     border-radius: .7em;
     border-bottom: 2px solid #69827c;
-    border-right: 2px solid #69827c;
     box-shadow: inset 3px 4px 6px -1px #546f69;
 }
 .middle_side_son_person_info {
