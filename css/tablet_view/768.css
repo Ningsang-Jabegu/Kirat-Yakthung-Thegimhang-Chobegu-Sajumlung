@@ -1,3 +1,9 @@
+/*tablet view right side border radius*/
+@media (max-width:768px) {
+    .right_side_head {
+        border-top-right-radius: 1em;
+    }
+}
 @media (min-width:245px) and (max-width:552px) {
     .org_nep_slo {
         font-size: clamp(5pt,2.5vw, 11pt);
@@ -51,7 +57,9 @@
         order: 3;
     }
     .body_content {
-        margin-bottom: 17em;
+        /*margin-bottom: 17em;*/
+        display: flex;
+        flex-wrap: wrap;
     }
     .left_side_foot {
         display: flex;
@@ -62,9 +70,9 @@
     }
     .left_side {
         order: 3;
-        position: absolute;
-        bottom: -16em;
-        width: 69.5%;
+        position: relative;
+        /*bottom: -16em;*/
+        width: 100%;
         border-radius: 1em;
         display: flex;
         flex-wrap: wrap;
@@ -93,9 +101,11 @@
     }
     .middle_side {
         order: 1;
+        width: 66%;
     }
     .right_side {
         order: 2;
+        width: 30%;
     }
 }
 @media only screen and (max-width:768px) {
@@ -356,9 +366,6 @@ body {
 }
 
 /* Body content second box (middle) adjustment */
-.middle_side {
-    width: auto;
-}
 .right_side {
     min-width: 28%;
     border-radius: 1em;
