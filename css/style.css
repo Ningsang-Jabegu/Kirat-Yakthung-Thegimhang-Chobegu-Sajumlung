@@ -991,7 +991,6 @@ header .box_head {
 	background: #047821;
 	color: #e9e6e6;
 	padding: .5em 1em;
-	width: 40%;
 	border-radius: 1em;
 	justify-content: center;
 	font-weight: var(--background-button-font-weight);

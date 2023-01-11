@@ -424,13 +424,9 @@ body {
 }
 .homepage_build_branch_button {
     text-align: center;
-    width: 90%;
 }
 .homepage_cencus_box {
     text-align: justify;
-}
-.homepage_cencus_button {
-    width: 90%;
 }
 
 /* Body content third box (right) adjustment */
