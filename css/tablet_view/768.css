@@ -449,14 +449,18 @@ body {
     justify-self: center;
     order: 2;
     font-size: var(--background-content-body-font-size-s);
-    background: rgba(80, 36, 6, 0.559);
-    color: #f2f2f2dd;
+    background: #8fc3b95c;
+    color: #1b5447;
     text-align: center;
     width: 100%;
-    font-weight: 500;
+    font-weight: 600;
     padding: .3em 0;
     right: 0;
     margin: 0;
+    border-radius: .7em;
+    border-bottom: 2px solid #69827c;
+    border-right: 2px solid #69827c;
+    box-shadow: inset 3px 4px 6px -1px #546f69;
 }
 .middle_side_son_person_info {
     display: flex;
@@ -489,6 +493,7 @@ body {
 }
 .right_officials {
     margin-top: .5em;
+    background: #5d7c7333;
 }
 }
 /*@media only screen and (max-width:600px) {

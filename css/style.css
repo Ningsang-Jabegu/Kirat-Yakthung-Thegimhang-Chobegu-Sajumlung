@@ -13,6 +13,7 @@
 	--background-person-name-font-color: #6c0b75;
 	--background-person-post-font-color: #337466;
 	--bakcground-person-post-font-size: 14pt;
+	--background-officials-name-font-size: clamp(11pt,2vw,14pt);
 }
 
 * {
@@ -437,7 +438,7 @@ body {
 	font-weight: 600;
 	height: 2.5em;
 	border-radius: 1.3em;
-	width: 8em;
+	width: 9em;
 	float: right;
 	cursor: pointer;
 }
@@ -1056,7 +1057,7 @@ header .box_head {
 .right_side_person_info span:first-child {
 	font-weight: var(--background-text-font-weight-primary);
 	color: var(--background-person-name-font-color);
-	font-size: var(--background-content-body-font-size);
+	font-size: var(--background-officials-name-font-size);/*clamp(11pt,2vw,14pt)*/
 }
 
 .name {

@@ -100,7 +100,7 @@
     }
 }
 /* for the border bottom right officials box for tab to desktop view*/
-@media (min-width:769px) {
+@media (min-width:429px) {
     .right_officials {
         border-bottom: 2px solid gray;
     }
