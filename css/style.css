@@ -668,10 +668,6 @@ header .box_head {
 	font-size: var(--background-content-head-font-size);
 }
 
-.middle_side div:first-child {
-	border-radius: 1em 1em 0 0;
-}
-
 .homepage_image_slider_head {
 	padding: .5em 1em;
 	background: var(--background-content-head-background-color);
@@ -827,7 +823,112 @@ header .box_head {
 	text-align: justify;
 	margin: .8em 0 0 0;
 }
-
+.middle_chobegu_bansa {
+	background: #54af9b42;
+	border-radius: 0 0 1em 1em;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
+	padding:0.5em;
+}
+.parents {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: .8em auto auto auto;
+	gap: .8em;
+}
+.parents_info {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 1.2em;
+	margin: .5em 0;
+	font-size: 10pt;
+	text-align: center;
+}
+.parents_content,.parents_content_head {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #075f4c;
+	padding: .5em;
+	border-radius: .8em;
+	gap: .3em;
+	position: relative;
+	background: #075f4c30;
+}
+.branch::after {
+	content: '';
+	height: 1em;
+	width: 2px;
+	background: #047821;
+	position: absolute;
+	bottom: -1em;
+	left: 49%;
+}
+.branch_origin:nth-child(odd):after {
+	content: '';
+	height: 2px;
+	width: .9em;
+	background: #047821;
+	position: absolute;
+	right: -.9em;
+	top: 50%;
+}
+.parents_gen_second {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*.parents_gen_second .parents_content::before,
+.parents_gen_third .parents_content::before,
+.parents_gen_fourth .parents_content::before*/
+.parents_p1 .parents_content::before {
+	content: '';
+	height: 1em;
+	width: 2px;
+	background: #047821;
+	position: absolute;
+	top: -1em;
+	left: 49%;
+}
+.parents_p1 .parents_content_head:first-child:before {
+    content: '';
+    height: 4.3em;
+    width: 2px;
+    background: #047821;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+}
+.bansa_icons .half_hr {
+	border: 1.4px solid #047821;
+	width: 50%;
+	margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: -.3em;
+}
+.bansa_icons hr {
+	border: 1.4px solid #047821;
+	width: 100%;
+	margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  margin-bottom: -.3em;
+}
+.bansa_icons {
+	display: flex;
+	flex-direction: column;
+	gap: .4em;
+	position: relative;
+}
+.bansa_icons .bansa {
+	height: 4em;
+	width: 4em;
+	border: 2px solid #075f4c;
+	border-radius: 50%;
+}
+.parents_content .name {
+	text-align: center;
+}
 .homepage_scholarship_box {
 	display: flex;
 	justify-content: space-evenly;
