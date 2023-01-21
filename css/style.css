@@ -745,7 +745,7 @@ header .box_head {
 .chobegu_bansawali_btn {
 	width: max-content;
 	border: none;
-	background: rgb(144 52 110);
+	background: #075f4cca;
 	font-size: var(--background-button-font-size);
 	color: #f2f2f2;
 	font-family: var(--background-text-general);
