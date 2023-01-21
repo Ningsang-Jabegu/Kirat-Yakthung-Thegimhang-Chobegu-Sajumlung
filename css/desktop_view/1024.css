@@ -145,6 +145,7 @@
         margin-bottom: -.3em;
     }
 }
+
 @media (max-width:1353px) {
     .parents_p1_r1 {
         order: 1;
@@ -180,6 +181,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .parents_p1:nth-child(5) .parents_p_odd::before {
         content: '';
         height: 2px;
@@ -189,9 +191,11 @@
         top: 50%;
         left: 100%;
     }
+
     .parents_p1:nth-child(5) .parents_p_odd:nth-child(6):before {
         width: .8em;
     }
+
     .parents_p1:nth-child(5) .parents_p_even::before {
         content: '';
         height: 2px;
@@ -201,31 +205,37 @@
         top: 60%;
         left: -1em;
     }
+
     .parents_p1:nth-child(5) .parents_p_even:nth-child(4):before {
         left: -1.3em;
         width: 1.3em;
     }
 }
+
 @media (min-width:927px) and (max-width:963px) {
     .bansa_icons .parents_p1:nth-child(5) {
-        width: 60%!important;
+        width: 60% !important;
     }
 }
+
 @media (min-width:769px) and (max-width:927px) {
     .bansa_icons .parents_p1:nth-child(5) {
-        width: 83%!important;
+        width: 83% !important;
     }
 }
+
 @media (min-width:676px) and (max-width:702px) {
     .bansa_icons .parents_p1:nth-child(5) {
-        width: 70%!important;
+        width: 70% !important;
     }
 }
+
 @media (max-width:961px) {
     .half_hr {
-        width: 90%!important;
+        width: 90% !important;
     }
 }
+
 @media (max-width:530px) {
     .parents_p2_r1 {
         order: 1;
@@ -239,47 +249,58 @@
         order: 2;
     }
 }
-@media (min-width:530px) and (max-width:676px) { 
+
+@media (min-width:530px) and (max-width:676px) {
     .bansa_icons .parents_p1:nth-child(5) {
-        width: 82%!important;
+        width: 82% !important;
     }
 }
+
 @media (min-width:429px) and (max-width:530px) {
+
     .half_hr:nth-child(2)::after,
     .half_hr:nth-child(6)::after {
         content: '';
-    height: 9em;
-    width: 2px;
-    background: #047821;
-    position: absolute;
-    left: 50%;
+        height: 9em;
+        width: 2px;
+        background: #047821;
+        position: absolute;
+        left: 50%;
     }
-    .parents_gen_second,.parents_gen_fourth {
+
+    .parents_gen_second,
+    .parents_gen_fourth {
         gap: 2em;
     }
+
     .bansa_icons .parents_p1:nth-child(5) {
         width: auto;
     }
 }
+
 @media (min-width:539px) and (max-width:429px) {
     .parents_gen_fourth {
         gap: 2em;
     }
 }
+
 @media (min-width:270px) and (max-width:428px) {
+
     .parents_gen_fourth,
     .parents_gen_second {
         gap: 2em;
     }
+
     .half_hr:nth-child(2)::after,
     .half_hr:nth-child(6)::after {
         content: '';
-    height: 9em;
-    width: 2px;
-    background: #047821;
-    position: absolute;
-    left: 50%;
+        height: 9em;
+        width: 2px;
+        background: #047821;
+        position: absolute;
+        left: 50%;
     }
+
     .bansa_icons hr:nth-child(4) {
         border: 1.4px solid #047821;
         width: 1.4px;
@@ -287,10 +308,12 @@
         margin-top: .5em;
         margin-bottom: -.3em;
     }
+
     .bansa_icons .parents_p1:nth-child(5) {
         width: 73%;
     }
 }
+
 @media (min-width:539px) and (max-width:475px) {
     .half_hr:nth-child(2)::after {
         content: '';
@@ -298,41 +321,48 @@
         width: 2px;
         background: #047821;
         position: absolute;
-        left: 50%!important;
+        left: 50% !important;
     }
 }
+
 @media (min-width:398px) and (max-width:428px) {
     .half_hr:nth-child(2)::after {
         content: '';
-    height: 9em;
-    width: 2px;
-    background: #047821;
-    position: absolute;
-    left: 50%;
+        height: 9em;
+        width: 2px;
+        background: #047821;
+        position: absolute;
+        left: 50%;
     }
-    
+
 }
+
 @media (max-width:368px) and (min-width:356px) {
     .bansa_icons .parents_p1:nth-child(5) {
         width: 80%;
     }
 }
-@media (max-width:355px){
+
+@media (max-width:355px) {
     .bansa_icons .parents_p1:nth-child(5) {
         width: 100%;
     }
 }
+
 @media (max-width:497px) and (min-width:400px) {
     .parents_p2_r1 {
         order: 1;
     }
+
     .parents_p2_r2 {
         order: 2;
     }
+
     .parents_p2_r3 {
         order: 3;
     }
 }
+
 @media only screen and (max-width:1024px) {
     /* Minimum screen width 769px for desktop view */
     /*------------------------------ HEADER ------------------------------*/
@@ -420,12 +450,13 @@
     }
 
     .homepage_scholarship_info {
-        display: inline-block;
+        display: flex;
     }
 
     .homepage_scholarship_info img {
-        height: 9em;
-        width: 100%;
+        height: 7.5em;
+        width: 8em;
+        border-radius: 0;
     }
 
     .homepage_scholarship_head,

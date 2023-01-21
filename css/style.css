@@ -1034,6 +1034,10 @@ header .box_head {
 	display: inline-block;
 	margin: .5em 1.2em;
 	text-align: justify;
+	background: #54af9b42;
+	padding: .5em;
+	border-radius: 1em;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 
 .homepage_membership_button {
