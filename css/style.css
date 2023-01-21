@@ -831,6 +831,7 @@ header .box_head {
 }
 .parents {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
 	margin: .8em auto auto auto;
@@ -880,7 +881,7 @@ header .box_head {
 /*.parents_gen_second .parents_content::before,
 .parents_gen_third .parents_content::before,
 .parents_gen_fourth .parents_content::before*/
-.parents_p1 .parents_content::before {
+.parents_p1 .branch_up::before {
 	content: '';
 	height: 1em;
 	width: 2px;
