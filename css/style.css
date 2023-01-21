@@ -676,7 +676,9 @@ header .box_head {
 	font-weight: 600;
 	font-size: var(--background-content-head-font-size);
 }
-
+.middle_side .homepage_image_slider_head:nth-child(1) {
+	border-radius: 1em 1em 0 0;
+}
 .image_slider {
 	height: 22em;
 	width: auto;
@@ -745,13 +747,17 @@ header .box_head {
 .chobegu_bansawali_btn {
 	width: max-content;
 	border: none;
-	background: #075f4cca;
+	background: #075f4cb2;
 	font-size: var(--background-button-font-size);
 	color: #f2f2f2;
 	font-family: var(--background-text-general);
 	padding: .5em .8em;
 	border-radius: 2em;
 	justify-content: center;
+	border-bottom: 3px solid #075f4cd8;
+	border-top: 3px solid transparent;
+	transition: 200ms;
+	
 }
 
 .middle_side_box {
@@ -849,17 +855,19 @@ header .box_head {
 .parents_content,.parents_content_head {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid #075f4c;
+	border: 1.7px solid #075f4c;
 	padding: .5em;
 	border-radius: .8em;
 	gap: .3em;
 	position: relative;
 	background: #075f4c30;
+	justify-content: center;
+	box-shadow: inset 3px 4px 6px -1px #69827c8c, inset -2px -2px 2px 1px #4e5f5b18;
 }
 .branch::after {
 	content: '';
 	height: 1em;
-	width: 2px;
+	width: 1.5px;
 	background: #047821;
 	position: absolute;
 	bottom: -1em;
@@ -884,7 +892,7 @@ header .box_head {
 .parents_p1 .branch_up::before {
 	content: '';
 	height: 1em;
-	width: 2px;
+	width: 1.5px;
 	background: #047821;
 	position: absolute;
 	top: -1em;
@@ -893,14 +901,14 @@ header .box_head {
 .parents_p1 .parents_content_head:first-child:before {
     content: '';
     height: 4.3em;
-    width: 2px;
+    width: 1px;
     background: #047821;
     position: absolute;
     top: 50%;
     left: 110%;
 }
 .bansa_icons .half_hr {
-	border: 1.4px solid #047821;
+	border: 1px solid #047821;
 	width: 50%;
 	margin-left: auto;
   margin-right: auto;
@@ -934,6 +942,8 @@ header .box_head {
 	display: flex;
 	justify-content: space-evenly;
 	margin: .8em 1.5em;
+	gap: .8em;
+	flex-direction: column;
 }
 
 .homepage_scholarship_1 {
@@ -944,7 +954,8 @@ header .box_head {
 	height: max-content;
 	width: 100%;
 	border-radius: 1em;
-
+	background: #54af9b42;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 .homepage_scholarship_button {
 	color: #e9f1f1e8;
@@ -953,44 +964,53 @@ header .box_head {
 .scholarship_box .homepage_scholarship_head {
 	text-align: center;
 	width: 100%;
+	font-weight: 600;
 	display: inline-block;
 	padding: .5em;
 	color: #e9f1f1e8;
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
-	box-shadow: inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 
 .homepage_scholarship_info {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column;
 }
 
 .homepage_scholarship_info img {
-	height: 8.5em;
-	width: 100%;
+	height: 7.5em;
+	width: 8em;
+	border-radius: 0 1.5em 1.5em 0;
+	margin-top: .5em;
 }
 
-.homepage_scholarship_1 .homepage_scholarship_head {
-	background: #0c5c05ea;
-}
-
+.homepage_scholarship_1 .homepage_scholarship_head,
 .homepage_scholarship_2 .homepage_scholarship_head {
-	background: #5e0b87;
+	background: #98b2b485;
+	color: #214e44;
 }
 
 .homepage_scholarship_text {
 	display: flex;
 	flex-direction: column;
-	margin: .5em 0;
+	background: #9da7bb73;
+	margin: .5em;
+	border-radius: 1em;
 	font-size: var(--background-content-body-font-size-s);
 	color: var(--background-text-color-general);
+	box-shadow: inset 3px 4px 6px -1px #69827cba, inset -2px -2px 2px 1px #4e5f5b59;
+
 }
 
 .homepage_scholarship_text span {
 	font-size: var(--background-content-body-font-size-s);
 	font-weight: var(--background-text-font-weight-primary);
+	padding: .5em .5em 0 .5em;
+}
+
+.homepage_scholarship_text span .name{
+	padding: 0;
 }
 
 .homepage_scholarship_button {
@@ -1000,21 +1020,12 @@ header .box_head {
 	justify-content: center;
 	width: 100%;
 	cursor: pointer;
-	margin-top: .2em;
 	font-weight: var(--background-button-font-weight);
 	font-size: var(--background-button-font-size);
 }
 
-.scholarship_btn1 {
-	background: #0c5c05ea;
-}
-
-.homepage_scholarship_2 {
-	margin-left: .5em;
-}
-
-.scholarship_btn2 {
-	background: #5e0b87;
+.scholarship_btn1,.scholarship_btn2 {
+	background: #075f4cb2;
 }
 
 .homepage_membership_1st_text {
