@@ -1031,23 +1031,41 @@ header .box_head {
 }
 .membership_homepage {
 	display: flex;
-	padding: 1.3em;
+	padding: 1em;
 	gap: .8em;
 	align-items: center;
 	background: #075f4c30;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 .membership_homepage:first-child {
 	border-radius: 1em 1em 0 0;
 }
-.membership_homepage:last-child {
+.membership_homepage:nth-child(5) {
 	border-radius: 0 0 1em 1em;
+}
+.membership_footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.membership_footer .membership_count {
+	width: max-content;
+}
+.membership_total_count_number {
+	font-weight: 600;
 }
 .membership_img {
 	height: 6em;
 	width: 6em;
 }
-.membership_total {
+.membership_total,.branch_total {
 	margin-bottom: .8em;
+}
+.branch_total {
+	margin-top: .8em;
+	text-align: center;
+	width: 100%;
 }
 .homepage_membership_1st_text {
 	display: inline-block;
@@ -1066,7 +1084,6 @@ header .box_head {
 	margin: .2em 1.4em .8em 1.4em;
 	border-radius: 1em;
 	gap: .7em;
-	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 .membership_body {
 	background: #9da7bb73;
@@ -1085,30 +1102,49 @@ header .box_head {
 	border: none;
 }
 .membership_count {
-	font-size: 25pt;
-	background: #9da7bb73;
+	font-size: 18pt;
+	background: #075f4c30;
 	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 	border-radius: .5em;
 	padding: .4em;
 	display: flex;
-	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	gap: .3em;
 }
 .membership_count span:nth-child(2) {
 	font-size: 10pt;
 }
 
-
 .homepage_build_branch {
-	padding: .8em 1.2em;
+	margin: .8em 1.3em;
+	
+}
+.homepage_build_branch_body {
 	text-align: justify;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: #075f4c30;
+	padding: .8em;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
+	border-radius: 1em;
 }
-
+.homepage_build_branch_frst,
+.homepage_build_branch_btn_container
+{
+	background: #9da7bb73;
+	padding: .8em;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
+	border-radius: 1em;
+}
+.homepage_branch_icon {
+	height: auto;
+	width: 20em;
+}
 .homepage_build_branch_button {
 	display: flex;
-	background: #780455;
+	background: #075f4cb2;
 	color: #e9e6e6;
 	padding: .5em 1em;
 	width: max-content;
@@ -1117,8 +1153,10 @@ header .box_head {
 	font-weight: 600;
 	margin-top: .7em;
 	cursor: pointer;
+	border: none;
 	font-weight: var(--background-button-font-weight);
-	font-size: var(--background-button-font-size);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
