@@ -1029,7 +1029,14 @@ header .box_head {
 .scholarship_btn1,.scholarship_btn2 {
 	background: #075f4cb2;
 }
-
+.membership_homepage {
+	display: flex;
+	padding: 1.3em;
+}
+.membership_img {
+	height: 6em;
+	width: 6em;
+}
 .homepage_membership_1st_text {
 	display: inline-block;
 	margin: .5em 1.2em;
@@ -1044,6 +1051,10 @@ header .box_head {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	background: #54af9b42;
+	margin: .2em 1.4em .8em 1.4em;
+	border-radius: 1em;
+	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
 }
 
 .homepage_membership_button a {
