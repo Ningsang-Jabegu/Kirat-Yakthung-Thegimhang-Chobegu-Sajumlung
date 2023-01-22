@@ -1159,7 +1159,9 @@ header .box_head {
 	margin-right: auto;
 }
 
-
+.nepali_numbers {
+	list-style-type: nepali;
+}
 .homepage_cencus_box {
 	margin: .5em 1.2em;
 	display: flex;
