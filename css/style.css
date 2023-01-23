@@ -1297,8 +1297,12 @@ header .box_head {
 	border: none;
 	cursor: pointer;
 	margin: .3em auto;
-	
-
+}
+.census_icon {
+	height: auto;
+	width: 15em;
+	margin: 0 auto;
+	display: flex;
 }
 
 
