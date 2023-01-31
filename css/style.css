@@ -1437,7 +1437,6 @@ header .box_head {
 	position: relative !important;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
 	/* margin: .3em .8em; */
 	margin-left: 0;
 	/* padding: .3em; */

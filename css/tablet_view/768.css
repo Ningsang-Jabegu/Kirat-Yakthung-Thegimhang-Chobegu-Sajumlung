@@ -31,14 +31,6 @@
     }
 }
 @media (min-width: 1025px) {
-    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(2) {
-        top: 2.9em;
-        left: 5.1em;
-        right: .8em;
-    }
-    #notice_board .notice_board_content .right_side_box .notice_board_description span:first-child {
-        position: absolute;
-    }
     #notice_board .notice_board_content .right_side_box .right_side_person_info {
         flex-direction: column;
     }
@@ -47,7 +39,6 @@
         right: .8em;
     }
     #notice_board .notice_board_content .right_side_box .notice_board_image {
-        position: absolute;
         height: 2.5em;
         width: 2.5em;
     }
@@ -58,6 +49,10 @@
         width: 3.5em;
         height: 3.5em;
         border-radius: .5em;
+        margin: .3em 0 0 .3em;
+    }
+    #notice_board .right_side_box {
+        align-items: flex-start;
     }
 }
 @media (min-width:769px) and (max-width:1025px) {
@@ -92,6 +87,9 @@
         height: 28px;
         width: auto;
         border-radius: .5em;
+    }
+    #notice_board .notice_board_content .right_side_box {
+        justify-content: space-evenly;
     }
 }
 @media  (min-width:429px) and (max-width:768px) {
