@@ -30,6 +30,70 @@
         width: clamp(3.5em,13vw,4.8em);
     }
 }
+@media (min-width: 1025px) {
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(2) {
+        top: 2.9em;
+        left: 5.1em;
+        right: .8em;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:first-child {
+        position: absolute;
+    }
+    #notice_board .notice_board_content .right_side_box .right_side_person_info {
+        flex-direction: column;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(3) {
+        bottom: .3em;
+        right: .8em;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_image {
+        position: absolute;
+        height: 2.5em;
+        width: 2.5em;
+    }
+    .right_side_box {
+        align-items: center;
+    }
+    #notice_board .notice_board_image {
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: .5em;
+    }
+}
+@media (min-width:769px) and (max-width:1025px) {
+    #notice_board .notice_board_content .right_side_box {
+        height: max-content;
+    }
+    .notice_board_content .right_side_box .right_side_person_info span:first-child {
+        font-size: 9.8pt;
+        margin-top: .3em;
+        width: 100%;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(2) {
+        position: relative;
+        display: block;
+        margin-left: -3em;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(3) {
+        position: relative;
+        font-weight: 500;
+        font-size: 8pt;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description {
+        display: flex;
+        gap: .3em;
+        flex-wrap: wrap;
+    }
+    #notice_board .right_side_box {
+        align-items: flex-start;
+    }
+    .notice_board_image {
+        margin: .3em 0 0 .3em;
+        height: 28px;
+        width: auto;
+        border-radius: .5em;
+    }
+}
 @media  (min-width:429px) and (max-width:768px) {
     .org_register_num {
         top: -1em;

@@ -45,9 +45,10 @@
 /*Resizing the right side box by sifting the post of person to not overflow into personal info*/
 @media (min-width: 769px) and (max-width: 1219px) {
     .homepage_right_side_post {
-        bottom: .5em;
-        right: 0;
+        bottom: 0;
+        right: .5em;
         font-size: 11.1pt;
+
     }
 }
 
@@ -79,7 +80,6 @@
     }
 
     #notice_board .notice_board_content .right_side_box .notice_board_description span:first-child {
-        position: absolute;
         top: .4em;
         left: .8em;
         font-weight: 600;
@@ -87,25 +87,18 @@
     }
 
     #notice_board .notice_board_content .right_side_box .notice_board_image {
-        height: 2.5em;
-        width: 2.5em;
+        
         top: 2.5em;
         left: .8em;
-        position: absolute;
     }
 
     #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(2) {
-        top: 2.9em;
-        left: 5.1em;
-        right: .8em;
         position: absolute;
         text-align: justify;
         line-height: 1.3em;
     }
 
     #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(3) {
-        bottom: .3em;
-        right: .8em;
         position: absolute;
         text-align: right;
         line-height: 1.4em;
@@ -486,7 +479,7 @@
     /* Body content third box (right) adjustment */
     .right_side_box {
         padding: .2em .3em;
-        width: 100%;
+        width: auto;
     }
 
     .right_side_person {
