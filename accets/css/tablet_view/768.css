@@ -176,9 +176,6 @@ body {
     position: relative;
 }
     /* Heading organization name adjustment */
-#header {
-    width: 100vw;
-}
 #logo {
     margin-top: 1em;
 }
@@ -405,7 +402,7 @@ body {
     display: inline-flex;
     justify-content: space-between;
 	gap: .3em;
-    width: 100%;
+    width: 98%;
     position: absolute;
 }
 .nav_menu_close img {
