@@ -1,0 +1,589 @@
+/*tablet view right side border radius*/
+@media (max-width:768px) {
+    .right_side_head {
+        border-top-right-radius: 1em;
+    }
+}
+@media (min-width:245px) and (max-width:552px) {
+    .org_nep_slo {
+        font-size: clamp(5pt,2.5vw, 11pt);
+    }
+    
+    .org_nep {
+        font-size: clamp(8.9pt,3.8vw,15.7pt);
+    }
+    
+    .org_eng {
+        font-size: clamp(5pt,2.8vw, 10pt);/*clamp(5pt,3.1vw, 12pt)*/
+    }
+    
+    .org_yak {
+        font-size: clamp(8.5pt,4vw,15pt);
+        margin-top: .2em 0;
+    }
+    
+    .org_nep_add {
+        font-size: clamp(7pt,2.4vw,11pt);/*clamp(7pt,2.4vw,11pt)*/
+    }
+    .logo_n {
+        height: auto;
+        width: clamp(3.5em,13vw,4.8em);
+    }
+}
+@media (min-width: 1025px) {
+    #notice_board .notice_board_content .right_side_box .right_side_person_info {
+        flex-direction: column;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(3) {
+        bottom: .3em;
+        right: .8em;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_image {
+        height: 2.5em;
+        width: 2.5em;
+    }
+    .right_side_box {
+        align-items: center;
+    }
+    #notice_board .notice_board_image {
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: .5em;
+        margin: .3em 0 0 .3em;
+    }
+    #notice_board .right_side_box {
+        align-items: flex-start;
+    }
+}
+@media (min-width:769px) and (max-width:1025px) {
+    #notice_board .notice_board_content .right_side_box {
+        height: max-content;
+    }
+    .notice_board_content .right_side_box .right_side_person_info span:first-child {
+        font-size: 9.8pt;
+        margin-top: .3em;
+        width: 100%;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(2) {
+        position: relative;
+        display: block;
+        margin-left: -3em;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description span:nth-child(3) {
+        position: relative;
+        font-weight: 500;
+        font-size: 8pt;
+    }
+    #notice_board .notice_board_content .right_side_box .notice_board_description {
+        display: flex;
+        gap: .3em;
+        flex-wrap: wrap;
+    }
+    #notice_board .right_side_box {
+        align-items: flex-start;
+    }
+    .notice_board_image {
+        margin: .3em 0 0 .3em;
+        height: 28px;
+        width: auto;
+        border-radius: .5em;
+    }
+    #notice_board .notice_board_content .right_side_box {
+        justify-content: space-evenly;
+    }
+}
+@media  (min-width:429px) and (max-width:768px) {
+    .org_register_num {
+        top: -1em;
+        
+    }
+    .right_side_box {
+        flex-wrap: wrap;
+    }
+    .right_side_box .notice_board_image{
+        order: 1;
+        margin-top: .5em;
+    }
+    .right_side_box .notice_board_description{
+        order: 2;
+        margin: .5em;
+    }
+    .notice_board_description span:nth-child(1) {
+        margin-top: .2em!important;
+    }
+    .notice_board_description span:nth-child(2) {
+        text-align: justify;
+    }
+    .right_tab_view {
+        text-align: center;
+        order: 3;
+    }
+    .body_content {
+        /*margin-bottom: 17em;*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .left_side_foot {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-top: 2px solid grey;
+        padding: .4em 0;
+    }
+    .left_side {
+        order: 3;
+        position: relative;
+        /*bottom: -16em;*/
+        width: 100%;
+        border-radius: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: .8em 0;
+    }
+    .left_side_box {
+        border-bottom: none;
+        flex-direction: column;
+        justify-content: center;
+        margin: .2em;
+        display: flex;
+        background: #99bfb56b;
+        border-radius: .5em;
+        width: 20%;
+        border: 2px solid var(--background-content-head-background-color);
+    }
+    .see_more_box,.see_less_box {
+        display: none;
+    }
+    .left_side_more_icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .middle_side {
+        order: 1;
+        width: 66%;
+    }
+    .right_side {
+        order: 2;
+        width: 30%;
+    }
+}
+@media only screen and (max-width:768px) {
+    /*------------------------------ HEADER ------------------------------*/
+body {
+    position: relative;
+}
+    /* Heading organization name adjustment */
+#header {
+    width: 100vw;
+}
+#logo {
+    margin-top: 1em;
+}
+.org_register_num {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    /*font-size: 10pt;*/
+    text-align: center;
+}
+.org_reg_dot {
+    display: none;
+}
+.org_register_hide {
+    display: inline-block
+}
+.logo_discription {
+	height: 100%;
+	width: 100vw;
+}
+.logo_images {
+    flex-wrap: wrap;
+}
+.logo_discription_A {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100vw;
+    height: 85vh;
+    overflow: scroll;
+}
+.div_down {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav_hide {
+    margin: 0;
+}
+.nav_link img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+/*Navigation Bar*/
+#navigation {
+    height: 2.5em;
+    border-radius: 0;
+    box-shadow: none;
+    background: #3a7975de!important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#nav_bar_layer {
+    order: 2;
+}
+.nav_menu {
+    border-radius: 2em 0 0 2em;
+    order: 1;
+    border-radius: 1.3em 0 0 1.3em;
+    z-index: 8;
+    padding:  1.25em .2em;
+}
+.navigation_items {
+    display: none;
+    position: absolute;
+    right: .5em;
+    z-index: 8;
+    width: 11.8em;
+    height: max-content;
+    border-radius: .8em;
+    background: #a11255e1;
+    box-shadow: 10px 5px 55px 5px rgba(4, 1, 23, 0.667),
+		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
+    padding: .5em;
+}
+
+.navigation_items .selected {
+    background: #d1d4d4;
+    border-radius: .6em;
+}
+.nav_item {
+    display: flex;
+    justify-content: space-between;
+} 
+.selected .nav_hide {
+    color: #640e30!important;
+}
+.nav_item .nav_hide {
+    opacity: 1;
+    color: #d1d4d4;
+    background: none;
+    position: relative;
+    align-items: center;
+    font-family: poppins-regular;
+    font-weight: 600;
+    font-size: 10pt;
+}
+#navigation .nav_item.selected .nav_link {
+    background: none;
+}
+.navigation_items .nav_item {
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+.navigation_items .nav_item:last-child {
+    border-bottom: none;
+}
+#navigation .navigation_items .nav_item {
+    width: 100%;
+    align-items: center;
+}
+#navigation .navigation_items .nav_item .nav_hide{
+    display: block;
+    position: relative;
+}
+
+.navigation_items {
+    position: absolute;
+    right: .3em;
+}
+#nav_bar_layer {
+    position: relative;
+    z-index: 5;
+}
+.show_hide_nav_bar {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: sticky;
+}
+#navigation_backdrop {
+    background: rgba(11, 11, 11, 0.546);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    position: fixed;
+    display: none;
+
+}
+.show_hide_nav_bar[open] {
+    transform-origin: top center;
+    animation: nav_open 400ms ease-in forwards;
+}
+.show_hide_nav_bar[closing] {
+    transform-origin: top center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    animation: nav_close 400ms ease-out forwards;
+}
+@keyframes open_nav_icon {
+    100% {
+        opacity: 0;
+      }
+      
+      50% {
+        opacity: 0.5;
+      }
+    
+      0% {
+        opacity: 1;
+      }
+}
+@keyframes close_nav_icon {
+    0% {
+        opacity: 0;
+      }
+      
+      50% {
+        opacity: 0.5;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+}
+@keyframes nav_open {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+      
+      50% {
+        transform: translateX(-5px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+}
+@keyframes nav_close {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      
+      50% {
+        transform: translateX(5px);
+      }
+    
+      100% {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+}
+.nav_hide_menu {
+    display: inline-flex;
+    font-size: inherit;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    font-family: var(--background-text-general);
+}
+.nav_menu {
+    display: inline;
+    position: relative;
+}
+.nav_link_menu {
+	top: .2em;
+    display: inline-flex;
+    justify-content: space-between;
+	gap: .3em;
+    width: 100%;
+    position: absolute;
+}
+.nav_menu_close img {
+    margin-left: .3em!important;
+}
+.nav_link_menu img {
+    margin-left: .4em;
+}
+.body_content {
+    position: relative;
+}
+/* Body content first box (left) adjustment */
+
+.left_side_icon {
+    height: 1.7em;
+    width: 1.7em;
+}
+.left_side_opt_name {
+    font-size: 10pt;
+}
+
+/* Body content second box (middle) adjustment */
+.right_side {
+    min-width: 28%;
+    border-radius: 1em;
+}
+.homepage_news_head {
+    text-align: center;
+    width: 100%;
+    margin-bottom: .5em;
+}
+.homepage_news {
+	width: 100%;
+    margin: 0;
+}
+.middle_chobegu_20th_gen {
+	display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.middle_chobegu_20th_gen div {
+    padding: 0;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: .8em 0em;
+}
+.middle_side_box {
+    padding: .1em .5em;
+    background: #54af9b42;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: .7em;
+    box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
+}
+.middle_side_box img {
+    height: 3.3em;
+    width: 3.3em;
+}
+.middle_side_son_person_info {
+    margin-left: 0;
+}
+.homepage_scholarship_info {
+    display: inline-block;
+}
+.homepage_scholarship_info img {
+    height: 9em;
+    width: 100%;
+}
+.homepage_scholarship_head,
+.homepage_scholarship_button {
+    font-size: 12pt;
+}
+.homepage_membership_button {
+    font-size: 9pt;
+    padding: .1em .1em;
+    margin: .5em;
+}
+.homepage_build_branch_button {
+    text-align: center;
+}
+.homepage_cencus_box {
+    text-align: justify;
+}
+
+/* Body content third box (right) adjustment */
+.right_side_box {
+    padding: .2em .3em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right_side_person {
+    height: 3em;
+    width: 3em;
+    order: 1;
+}
+
+.more_member_box p:last-child {
+    right: 54%;
+    left: 46%;
+    top: 48%;
+}
+.homepage_right_side_post {
+    position: relative;
+    justify-self: center;
+    order: 2;
+    font-size: var(--background-content-body-font-size-s);
+    background: #8fc3b95c;
+    color: #1b5447;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    padding: .3em 0;
+    right: 0;
+    margin: 0;
+    border-radius: .7em;
+    border-bottom: 2px solid #69827c;
+    box-shadow: inset 3px 4px 6px -1px #546f69;
+}
+.middle_side_son_person_info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer content adjustment */
+/*#footer {
+    position: absolute;
+    bottom: -114em;
+}*/
+.notice_board_content {
+    display: none;
+}
+.hide_notice_desktop {
+	display: flex;
+    width: 100%;
+}
+.hide_notice_desktop .notice_board_description span:nth-child(1){
+    background-color: #640e30;
+    color: #fefefe;
+    text-align: center;
+    padding: .3em 1em;
+    border-radius: 2em;
+    font-size: 9pt;
+}
+.hide_notice_desktop .notice_board_description span:nth-child(1):hover {
+    background-color: #640e30cf;
+    color: #dadada;
+}
+.right_officials {
+    margin-top: .5em;
+    background: #5d7c7333;
+}
+}
+/*@media only screen and (max-width:600px) {
+.middle_side {
+width: 64%;
+}
+.right_side {
+    width: 32%;
+}
+.left_side {
+    display: block;
+    position: absolute;
+    background: #d6ddd8da;
+    left: .7em;
+    top: 162.5em;
+    width: 30%;
+    z-index: 3;
+}
+#notice_board {
+    position: absolute;
+    background: #d6ddd8da;
+    right: 0;
+    width: 205%;
+    top: 142.3em;
+    margin-top: 1em;
+    border-radius: 1em;
+    box-shadow: 5px 6px 5px -1px rgba(0, 0, 0, 0.292),
+		inset 3px 4px 6px -1px rgba(0, 0, 0, 0.578);
+}
+}*/

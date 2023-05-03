@@ -2,46 +2,46 @@
 
 @font-face {
     font-family: "preeti-regular";
-    src: url('/fonts/Preeti\ Normal.otf');
+    src: url('/accets/fonts/Preeti\ Normal.otf');
 }
 
 @font-face {
     font-family: "ananda-regular";
-    src: url('/fonts/Ananda\ Akchyar.ttf');
+    src: url('/accets/fonts/Ananda\ Akchyar.ttf');
 }
 
 @font-face {
     font-family: "ganess-regular";
-    src: url('/fonts/Ganess\ Regular.otf');
+    src: url('/accets/fonts/Ganess\ Regular.otf');
 }
 
 @font-face {
     font-family: "yakthung-regular";
-    src: url('/fonts/yakthung.ttf');
+    src: url('/accets/fonts/yakthung.ttf');
 }
 
 @font-face {
     font-family: "poppins-regular";
-    src: url('/fonts/Poppins-Regular.ttf');
+    src: url('/accets/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Capriola-Regular';
-	src: url('../fonts/Capriola-Regular.eot');
+	src: url('/accets/fonts/Capriola-Regular.eot');
 }
 @font-face {
     font-family: "germaniaOne";
-    src: url('/fonts/GermaniaOne-Regular.ttf');
+    src: url('./accets/fonts/GermaniaOne-Regular.ttf');
 }
 @font-face {
     font-family: "limbu";
-    src: url('/fonts/Sanchabir\ Kurle\ Style.ttf');
+    src: url('/accets/fonts/Sanchabir\ Kurle\ Style.ttf');
 }
 @font-face {
     font-family: "aakar";
-    src: url('/fonts/Aakar\ Regular.ttf');
+    src: url('/accets/fonts/Aakar\ Regular.ttf');
 }
 @font-face {
     font-family: "nato-devanagari";
-    src: url("/fonts/NotoSans_Devanagari.ttf");
+    src: url("/accets/fonts/NotoSans_Devanagari.ttf");
 }
