@@ -1710,3 +1710,82 @@ header .box_head {
 	background: #99bb91;
 	font-family: var(--background-text-general);
 }
+
+/*------------------------------ About Us Page  ------------------------------*/
+#aboutus .body_content {
+	margin: .9em;
+}
+#aboutus .book {
+	width: 230px;
+	height: 230px;
+	background: linear-gradient(#04766d62 , #02072dc8),url(/accets/images/logo/logo_1.PNG)  no-repeat;
+	background-size: contain;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.447);
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	text-align: center;
+	border-radius: 1em;
+	padding: .5em;
+	margin: 1em auto 1.5em auto;
+	color: #d0c6bf;
+	cursor: pointer;
+  }
+  #aboutus .book:hover {
+	box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
+		inset 3px 5px 9px -2px rgb(56, 56, 56);
+  }
+  #aboutus .book a {
+	width: 100%;
+  }
+  #aboutus .book a button {
+	padding: .5em .9em;
+	width: 100%;
+	border-radius: .6em;
+	background: #e0e0e0;
+	font-weight: bold;
+	cursor: pointer;
+	color: #056805;
+  }
+  #aboutus .book a button:hover {
+	background: #b1c2d7;
+	color: #000;
+  }
+  #aboutus .page {
+	font-size: 15pt;
+  }
+  .body_content .our_intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: .8em;
+	/* background: #d6ddd8da; */
+	padding: .8em;
+	/* box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
+		inset 3px 5px 9px -2px rgb(56, 56, 56); */
+  }
+  .our_intro  p {
+	text-align: justify;
+  }
+  .our_intro img {
+	height: auto;
+	margin: auto;
+	width: 16em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.447);
+	border-radius: 1em;
+  }
+  .middle_margin {
+	margin: .8em;
+  }
+  .our_intro .author {
+	text-align: right;
+	font-weight: bold;
+	color: var(--background-person-name-font-color);
+  }
+
+.the_end {
+	text-align: center;
+	margin-top: -2.3em;
+	padding: .6em;
+}
