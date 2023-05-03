@@ -1739,7 +1739,8 @@ header .box_head {
   #aboutus .book a {
 	width: 100%;
   }
-  #aboutus .book a button {
+  #aboutus .book a button,
+  #whatWeDo .our_intro a button {
 	padding: .5em .9em;
 	width: 100%;
 	border-radius: .6em;
@@ -1748,7 +1749,8 @@ header .box_head {
 	cursor: pointer;
 	color: #056805;
   }
-  #aboutus .book a button:hover {
+  #aboutus .book a button:hover,
+  #whatWeDo .our_intro a button:hover {
 	background: #b1c2d7;
 	color: #000;
   }
@@ -1788,4 +1790,19 @@ header .box_head {
 	text-align: center;
 	margin-top: -2.3em;
 	padding: .6em;
+}
+
+/*------------------------------ What We Do Page  ------------------------------*/
+#whatWeDo .our_intro {
+	background: #bac99652;
+	border: 1px solid grey;
+	border-radius: 1em;
+}
+#whatWeDo .our_intro a button {
+	width: max-content;
+	padding: .5em 4em;
+	background: #a5ddbe;
+}
+#whatWeDo .our_intro a button:hover {
+	background: ;
 }
