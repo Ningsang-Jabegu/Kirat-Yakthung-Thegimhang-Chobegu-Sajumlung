@@ -1332,7 +1332,6 @@ header .box_head {
 	display: flex;
 	position: relative;
 	gap: .5em;
-	margin: auto .3em;
 }
 .right_officials_box .right_side_box {
  align-items: center;
@@ -1470,7 +1469,39 @@ header .box_head {
 .hide_notice_desktop {
 	display: none;
 }
-
+.pagination-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  .previous_pg,
+  .next_pg {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+  }
+  
+  .page-number_pg {
+	padding: 10px;
+	margin: 10px;
+	font-size: 18px;
+  }
+  
+  .news_image {
+	width: auto;
+	height: 50px;
+  }
+  
+  .news_source,.news_body_short,.news_heading {
+	text-align: center;
+	margin-top: 20px;
+  }
+  
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
 	box-shadow: inset 0px -3px 19px -3px rgba(53, 50, 50, 0.72);
