@@ -358,7 +358,7 @@ body {
 	align-items: center;
 	list-style: none;
 	width: 100%;
-	border-radius: 1em;
+	/* border-radius: 1em;0 */
 	box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
 		inset 3px 5px 9px -2px rgb(56, 56, 56);
 }
@@ -387,7 +387,7 @@ body {
 
 
 #navigation .nav_item .nav_link img {
-	margin: .3em;
+	padding: .3em;
 }
 
 
@@ -472,6 +472,9 @@ body {
 }
 
 /*------------------------------ Home_Page_Body-content  ------------------------------*/
+.body_wrap {
+	position: relative;
+}
 .body_content {
 	display: flex;
 	justify-content: space-between;
@@ -516,6 +519,7 @@ header .box_head {
 	margin-left: .2em;
 	border-top-right-radius: 1em;
 	border-bottom-right-radius: 1em;
+	/* position: fixed; */
 }
 
 .left_side_box {
@@ -693,7 +697,7 @@ header .box_head {
 	margin: 1.3em;
 	background: rgba(24, 18, 146, 0.438);
 	border: 2px solid var(--background-person-post-font-color);
-	background-image: url(/images/banner/Krishna\ Janmasthami.JPG);
+	background-image: url(/accets/images/banner/Krishna\ Janmasthami.JPG);
 	background-size: 100% 100%;
 	position: relative;
 	animation: slide_image 25s infinite linear;
@@ -701,19 +705,19 @@ header .box_head {
 
 @keyframes slide_image {
 	0% {
-		background-image: url(/images/banner/Krishna\ Janmasthami.JPG);
+		background-image: url(/accets/images/banner/Krishna\ Janmasthami.JPG);
 	}
 
 	35% {
-		background-image: url(/images/banner/Teej\ .JPG);
+		background-image: url(/accets/images/banner/Teej\ .JPG);
 	}
 
 	70% {
-		background-image: url(/images/planting.jpg);
+		background-image: url(/accets/images/planting.jpg);
 	}
 
 	100% {
-		background-image: url(/images/lions.jpg);
+		background-image: url(/accets/images/lions.jpg);
 	}
 }
 
@@ -1062,6 +1066,7 @@ header .box_head {
 	display: flex;
 	padding: 1em;
 	gap: .8em;
+	margin: 0.5em 1.2em;
 	align-items: center;
 	background: #075f4c30;
 	box-shadow: inset 3px 4px 6px -1px #69827c, inset -2px -2px 2px 1px #4e5f5b2b;
@@ -1123,7 +1128,7 @@ header .box_head {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin: .2em 1.4em .8em 1.4em;
+	/* margin: .2em 1.4em .8em 1.4em; */
 	border-radius: 1em;
 	gap: .7em;
 }
@@ -1180,8 +1185,8 @@ header .box_head {
 
 
 .homepage_branch_icon {
-	height: auto;
-	width: 20em;
+	height: 5em;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 }

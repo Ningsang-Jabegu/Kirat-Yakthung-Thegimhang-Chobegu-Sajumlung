@@ -18,10 +18,10 @@ function open_logo_1_download_box() {
   var img = document.createElement('img');
   var logo_download = document.querySelector("#logo_download");
   var model_head_info = document.querySelector(".logo_download_box_head_info");
-  logo_download.setAttribute('href', '/images/logo/logo_5.PNG');
+  logo_download.setAttribute('href', './accets/images/logo/logo_5.PNG');
   model_head_info.innerHTML = "पुरानाे लाेगाे डाउन्लाेड बक्स";
   model_box_all.style.display = "block";
-  img.src = '/images/logo/logo_5.PNG';
+  img.src = './accets/images/logo/logo_5.PNG';
   logo_display.appendChild(img);
 }
 function close_logo_box_sub1() {
@@ -38,10 +38,10 @@ function open_logo_2_download_box() {
   var img = document.createElement('img');
   var logo_download = document.querySelector("#logo_download");
   var model_head_info = document.querySelector(".logo_download_box_head_info");
-  logo_download.setAttribute('href', '/images/logo/logo_2.PNG');
+  logo_download.setAttribute('href', './accets/images/logo/logo_2.PNG');
   model_head_info.innerHTML = "स्ट्याम्प लाेगाे डाउन्लाेड बक्स";
   model_box_all.style.display = "block";
-  img.src = '/images/logo/logo_2.PNG';
+  img.src = './accets/images/logo/logo_2.PNG';
   logo_display.appendChild(img);
 }
 function close_logo_box_sub2() {
@@ -56,10 +56,10 @@ function open_logo_3_download_box() {
   var img = document.createElement('img');
   var logo_download = document.querySelector("#logo_download");
   var model_head_info = document.querySelector(".logo_download_box_head_info");
-  logo_download.setAttribute('href', '/images/logo/logo_1.PNG');
+  logo_download.setAttribute('href', './accets/images/logo/logo_1.PNG');
   model_head_info.innerHTML = "डिजिटल लाेगाे डाउन्लाेड बक्स";
   model_box_all.style.display = "block";
-  img.src = '/images/logo/logo_1.PNG';
+  img.src = './accets/images/logo/logo_1.PNG';
   logo_display.appendChild(img);
 }
 function close_logo_box_sub3() {
@@ -74,10 +74,10 @@ function open_logo_fav_download_box() {
   var img = document.createElement('img');
   var logo_download = document.querySelector("#logo_download");
   var model_head_info = document.querySelector(".logo_download_box_head_info");
-  logo_download.setAttribute('href', '/images/fav-icon/fav-icon.PNG');
+  logo_download.setAttribute('href', './accets/images/fav-icon/fav-icon.PNG');
   model_head_info.innerHTML = "त्याब बार आइकन डाउन्लाेड बक्स";
   model_box_all.style.display = "block";
-  img.src = '/images/fav-icon/fav-icon.PNG';
+  img.src = './accets/images/fav-icon/fav-icon.PNG';
   logo_display.appendChild(img);
 }
 function close_logo_box_subfav() {

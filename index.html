@@ -43,7 +43,7 @@
 				नं<span class="org_register_hide">म्बर</span><span class="org_reg_dot">.</span> : २७७/०६६/६७
 			</span>
 			<div id="logo">
-				<img class="logo_n logo_n0" alt="original_logo" onclick="open_logo_box()"
+				<img class="logo_n logo_n0" alt="original logo" onclick="open_logo_box()"
 					src="./accets/images/logo/logo_2.PNG">
 				<div id="org_name">
 					<a href="#" class="org_nep_slo">Oltxf;, ;+:s[lt / klxrfg, ;Eo / ;d[4 ;dfh, xfd|f] cleofg</a>
@@ -56,7 +56,7 @@
 						<!--sf7df8f}F-->
 					</a>
 				</div>
-				<img class="logo_n logo_n1" alt="newly_made_logo" onclick="open_logo_box()"
+				<img class="logo_n logo_n1" alt="newly made logo" onclick="open_logo_box()"
 					src="./accets/images/logo/logo_1.PNG">
 			</div>
 			<div class="logo_discription">
@@ -226,7 +226,7 @@
 				if (window.pageYOffset >= sticky) {
 					navbar.classList.add("sticky");
 					navbar.style.background = "rgb(48 104 99 / 81%)";
-					show_hide_nav.style.position = "sticky";
+					navbar.classList.add("sticky");
 				} else if (window.pageYOffset < sticky && window.innerWidth < 768) {
 					navbar.classList.add("sticky");
 					navbar.style.background = "#3a7975de";
@@ -315,7 +315,7 @@
 			</div>
 		</header>
 		<section class="body_content">
-			<aside class="left_side box">
+			<aside class="left_side box ">
 				<div class="calender_box left_side_box">
 					<img class="left_side_icon" src="./accets/images/Icons/PNG/Asset L1.PNG">
 					<p class="left_side_opt_name">बार्षिक भित्तेपात्रो</p>
@@ -1090,7 +1090,7 @@
 
 						</p>
 					</div>
-					<div class="pagination-container">
+					<!-- <div class="pagination-container">
 						<button class="previous_pg">अघिल्लो</button>
 						<span class="page-number_pg">१</span>
 						<button class="next_pg">अर्को</button>
@@ -1100,7 +1100,7 @@
 						<p class="news_heading">समाचार पृष्ठ १ को शीर्षक</p>
 						<p class="news_body_short">छोटो समाचार विवरण १</p>
 						<p class="news_source">समाचार स्रोत १</p>
-					</div>
+					</div> -->
 					<script>
 						const previousButton = document.querySelector(".previous_pg");
 						const nextButton = document.querySelector(".next_pg");
@@ -1142,29 +1142,6 @@
 							}
 						];
 
-						let currentPage = 1;
-
-						previousButton.addEventListener("click", () => {
-							if (currentPage > 1) {
-								currentPage--;
-								pageNumber.textContent = convertToNepaliNumber(currentPage);
-								news_image.src = content[currentPage - 1].news_image;
-								news_heading.textContent = content[currentPage - 1].news_heading;
-								news_body_short.textContent = content[currentPage - 1].news_body_short;
-								news_source.textContent = content[currentPage - 1].news_source;
-							}
-						});
-
-						nextButton.addEventListener("click", () => {
-							if (currentPage < content.length) {
-								currentPage++;
-								pageNumber.textContent = convertToNepaliNumber(currentPage);
-								news_image.src = content[currentPage - 1].news_image;
-								news_heading.textContent = content[currentPage - 1].news_heading;
-								news_body_short.textContent = content[currentPage - 1].news_body_short;
-								news_source.textContent = content[currentPage - 1].news_source;
-							}
-						});
 
 						function convertToNepaliNumber(number) {
 							let nepaliNumber = "";
@@ -1217,7 +1194,7 @@
 				<div class="footer_org_info footer_content_body">
 					<span class="footer_content_head">बोदार्थ</span>
 					<div class="footer_org_name">
-						<img class="footer_logo" src="/images/logo/logo_1.PNG">
+						<img class="footer_logo" src="./accets/images/logo/logo_1.PNG">
 						<p class="footer_org">
 							<span class="footer_org_name_nep">किरात याक्थुङ थेगिमहाङ</span>
 							<span class="footer_org_nick_name">चोबेगु सजुम्लुङ</span>

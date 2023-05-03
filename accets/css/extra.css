@@ -31,7 +31,7 @@
 }
 @font-face {
     font-family: "germaniaOne";
-    src: url('./accets/fonts/GermaniaOne-Regular.ttf');
+    src: url('/accets/fonts/GermaniaOne-Regular.ttf');
 }
 @font-face {
     font-family: "limbu";
