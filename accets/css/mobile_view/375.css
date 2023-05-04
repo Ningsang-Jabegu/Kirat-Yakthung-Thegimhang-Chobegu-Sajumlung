@@ -484,4 +484,9 @@
     .image_slider {
         height: 20em;
     }
+
+    /*-----------Gallary--------------*/
+    div.gallery figure{
+        width: 100%;
+    }
 }

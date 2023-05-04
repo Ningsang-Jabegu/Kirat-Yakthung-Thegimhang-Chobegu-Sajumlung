@@ -1820,3 +1820,50 @@ header .box_head {
 	color: #4e0d67;
 	background: #ca2f7236;
 }
+
+/*------------------------------ What We Do Page  ------------------------------*/
+ div.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: .3em;
+	justify-content: space-evenly;
+}
+div.gallery figure{
+	background: #84c9997b;
+	padding: .8em;
+	border-radius: 1em;
+	display: flex;
+	gap: .5em;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 46%;
+	margin: .8em auto;
+	box-shadow: 2px 5px 9px -4px rgba(58, 57, 57, 0.658),
+		inset 3px 5px 9px -2px rgb(56, 56, 56);
+}
+div.gallery figure figcaption {
+	text-align: center;
+	background: #d7bd3e80;
+	padding: .3em;
+	border-radius: 0 0 1em 1em;
+	font-size: 11pt;
+}
+div.gallery figure:hover {
+	transition: 300ms;
+	scale: 1.05;
+	cursor: pointer;
+}
+div.gallery img,
+div.gallery figure figcaption {
+	border: 1.5px solid rgb(135, 105, 16)
+}
+div.gallery img {
+	height: 8em ;
+	width: auto;
+	border-radius: 1em 1em 0 0;
+}
+.gallery .author {
+	text-align: center;
+	width: 100%;
+}
