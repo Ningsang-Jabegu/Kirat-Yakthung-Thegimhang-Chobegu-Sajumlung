@@ -1867,3 +1867,35 @@ div.gallery img {
 	text-align: center;
 	width: 100%;
 }
+
+/*------------------------------ Members Page  ------------------------------*/
+.members figure {
+	width: 5.5em;
+	height: max-content;
+}
+.members figure img {
+	height: 6em;
+	width: auto;
+	border-radius: .5em;
+	border: 2px solid rgb(7, 68, 93);
+}
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.5em;
+}
+.members figcaption {
+	text-align: center;
+}
+.members figcaption span{
+	display: block;
+}
+.members figcaption span.name {
+	font-size: 1.09em;
+	font-weight: 700;
+}
+.members figcaption span.post {
+	color: #0b510b;
+	font-weight: 500;
+}
