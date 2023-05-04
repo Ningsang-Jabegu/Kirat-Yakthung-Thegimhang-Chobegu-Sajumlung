@@ -1802,7 +1802,21 @@ header .box_head {
 	width: max-content;
 	padding: .5em 4em;
 	background: #a5ddbe;
+	border: 2px solid green;
 }
 #whatWeDo .our_intro a button:hover {
-	background: ;
+	border: 2px solid #0d3667;
+	transition: 300ms;
+}
+#whatWeDo .our_intro_sec {
+	background: #96acc952;
+}
+#whatWeDo .our_intro_sec a button {
+	background: #c7dda5;
+	border: 2px solid #807300;
+}
+#whatWeDo .our_intro_sec a button:hover {
+	border: 2px solid #4e0d67;
+	color: #4e0d67;
+	background: #ca2f7236;
 }
