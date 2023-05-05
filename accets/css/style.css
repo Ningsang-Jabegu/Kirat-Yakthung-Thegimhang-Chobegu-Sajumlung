@@ -2030,6 +2030,11 @@ div.gallery img {
 	margin: 0;
 	font-size: 12pt;
 	font-weight: 500;
+	line-height: .7;
+}
+.contactus_org_info,
+.contactus_form {
+	max-width: 23em;
 }
 .contactus_form {
 	background: #36b5df64 no-repeat;
@@ -2047,6 +2052,7 @@ div.gallery img {
 	padding: .2em;
 	border: 2px solid #064256c7;
 	border-radius: .4em;
+	background: #f0efeaae;
 }
 .contactus_form form textarea {
 	height: initial;
@@ -2055,17 +2061,19 @@ div.gallery img {
 	text-align: center;
 	color: #0b3248;
 	font-weight: 500;
-	font-size: 11pt;
+	font-size: 9pt;
 }
 .contact_main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: .5em;
+	margin: .5em auto 1.4em auto;
 }
 input[type="submit"] {
 	background: #a5e28ad9;
 	cursor: pointer;
+	font-weight: 600;
 }
 input[type="submit"]:hover {
 	background: #bc99bf68;
