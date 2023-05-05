@@ -1740,7 +1740,8 @@ header .box_head {
 	width: 100%;
   }
   #aboutus .book a button,
-  #whatWeDo .our_intro a button {
+  #whatWeDo .our_intro a button,
+  .contribution_points p span button {
 	padding: .5em .9em;
 	width: 100%;
 	border-radius: .6em;
@@ -1750,9 +1751,11 @@ header .box_head {
 	color: #056805;
   }
   #aboutus .book a button:hover,
-  #whatWeDo .our_intro a button:hover {
+  #whatWeDo .our_intro a button:hover,
+  .contribution_points p span button:hover {
 	background: #b1c2d7;
 	color: #000;
+	transition: 300ms;
   }
   #aboutus .page {
 	font-size: 15pt;
@@ -1959,6 +1962,50 @@ div.gallery img {
 	border-radius: 0 0 1em 1em;
 	padding: .4em .2em;
 }
+.cencus_results {
+	display: flex;
+	justify-content: space-between;
+}
+.cencus_results > span:nth-child(2) {
+	font-weight: 600;
+}
 /*------------------------------ MyRights Page  ------------------------------*/
+.contribution_points p {
+	display: flex;
+	gap: .5em;
+}
+.contribution_points p span:nth-child(1){
+	font-weight: bold;
+}
+.contribution_points p span:nth-child(2){
+	flex-direction: column;
+}
+.contribution_points p {
+	line-height: 1.4;
+	padding: .4em;
+	border-radius: .5em;
+	border: 2px solid #3b044b53;
+	margin-bottom: .4em;
+}
+.contribution_points p a:hover {
+	font-weight: 500;
+	text-decoration: underline;
+}
+.contribution_points p:nth-child(odd) {
+	background: #94dbeb6f;
+}
+.contribution_points p:nth-child(even) {
+	background: #9e94eb6f;
+}
+.contribution_points p span button {
+	background: rgba(255, 255, 0, 0.17);
+}
+
+.contirbution_img_icon {
+	height: 1em;
+	width: auto;
+	border-radius: .2em;
+	border: 1px solid rgb(6, 11, 66);
+}
 
 /*------------------------------ Contact Us Page  ------------------------------*/
