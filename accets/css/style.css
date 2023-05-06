@@ -2260,7 +2260,7 @@ input[type=file]::file-selector-button:hover {
 .photo_form #form_conditions .checkbox_prompt {
   margin: 0;
 }
-.photo_form button {
+.photo_form button,.link_to_request {
   background: #b9e10851;
   padding: .4em;
   width: 100%;
@@ -2269,7 +2269,13 @@ input[type=file]::file-selector-button:hover {
   color: rgb(78, 2, 2);
   font-weight: 600;
 }
-.photo_form button:hover {
+.photo_form button:hover,.link_to_request:hover {
   background: #0849e151;
   cursor: pointer;
+}
+
+/**/
+.author_homepage {
+  text-align: right;
+  margin:.5em;
 }
