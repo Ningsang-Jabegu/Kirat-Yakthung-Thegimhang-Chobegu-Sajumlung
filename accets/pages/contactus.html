@@ -448,13 +448,14 @@
                     <div class="middle_margin contactus_box contactus_form">
                         <h4>हामीलाई आफ्नो बारेमा बताउनुहोस्</h4>
                         <h1>हामी तपाईलाई कसरी सहयोग गर्न सक्छौ ?</h1>
-                        <form>
-                            <input type="text" placeholder="पहिलो नाम">
-                            <input type="text" placeholder="थर">
-                            <input type="email" placeholder="इमेल">
-                            <input type="number" max="10" placeholder="मोबाइल नम्बर" maxlength="10" pattern="\d{10}"
-                                title="Please enter exactly 10 digits">
-                            <select name="" id="">
+                        <form method="POST"
+                            action="https://script.google.com/macros/s/AKfycbxl_Z-pNgCBn3aP6LRhWhDOQ_9188raMHjiIkZXe_-8BE68EBuBBa3Ww89aWmm7HMbv/exec">
+                            <input name="firstName" type="text" placeholder="पहिलो नाम" required aria-required="true">
+                            <input name="lastName" type="text" placeholder="थर" required aria-required="true">
+                            <input name="email" type="email" placeholder="इमेल" required aria-required="true">
+                            <input name="mobileNumber" type="number" placeholder="मोबाइल नम्बर" maxlength="10"
+                                pattern="\d{10}" title="Please enter exactly 10 digits" required aria-required="true">
+                            <select name="reason" name="" id="" required aria-required="true">
                                 <option value="X">कारण</option>
                                 <option value="Volunteer">स्वयंसेवा</option>
                                 <option value="Donation">दान</option>
@@ -462,12 +463,48 @@
                                 <option value="Media">मिडिया सोधपुछ</option>
                                 <option value="Other">अन्य</option>
                             </select>
-                            <textarea name="" id="" cols="30" rows="5"></textarea>
-                            <input type="submit" value="पेश गर्नुहोस् &#xf0f6; ">
+                            <textarea name="message" id="" cols="30" rows="5" required aria-required=""></textarea>
+                            <button type="submit">पेश गर्नुहोस् &nbsp; <i
+                                    class=" fa-solid fa-paper-plane-top"></i></button>
                         </form>
+
+                        <div id="message"></div>
                     </div>
                 </div>
+                <script>
+                    $(document).ready(function () {
+                        $('form').submit(function (event) {
+                            event.preventDefault();
+                            var $form = $(this);
+                            var url = $form.attr('action');
+                            var data = $form.serialize();
 
+                            $.ajax({
+                                url: url,
+                                type: 'POST',
+                                data: data,
+                                success: function () {
+                                    $('#message').text('We have submitted your request');
+                                    $('form * ').fadeOut('fast');
+                                    $('form').addClass('submitted');
+                                    setTimeout(function () {
+                                        $('form * ').css("opacity", '0');
+                                        $('form').removeClass('submitted');
+                                        $('form').addClass('bounce');
+                                    }, 1000);
+                                    setTimeout(function () {
+                                        $('form').removeClass('bounce');
+                                        $('form').css("opacity", '1');
+                                        $('form').addClass('grow');
+                                    }, 3500);
+                                },
+                                error: function () {
+                                    $('#message').text('There was an error submitting your request');
+                                }
+                            });
+                        });
+                    });
+                </script>
             </aside>
             <aside class="right_side box">
                 <div class="right_side_head">
