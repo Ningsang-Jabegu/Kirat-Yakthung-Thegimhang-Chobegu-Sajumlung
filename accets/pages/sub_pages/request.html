@@ -504,7 +504,7 @@
                                         <label for="check_permanent" class="checkbox_prompt">स्थायी ठेगानानै भए</label>
                                         <input id="check_permanent" type="checkbox">
                                     </div>
-                                    <div class="form_address_current">
+                                    <div class="form_address_current form_address">
                                         <label for="country">देश</label>
                                         <input type="text" id="country" name="country_c" value="नेपाल"
                                             placeholder="छान्नुहोस">
@@ -545,10 +545,100 @@
                         </fieldset>
                         <fieldset>
                             <legend>संस्थागत विवरण</legend>
-                            <label for="wardNo">वडा नं</label>
-                            <input id="wardNo" type="text" name="wardNumber_c" placeholder="पालिका">
-
+                            <label for="org_member_type">चोबेगु सजुम्लुङ सदस्य प्रकार</label>
+                            <select name="org_member_type">
+                                <option value="X">सदस्यको प्रकार छान्नुहोस</option>
+                                <option value="साधारणा सदस्य">साधारणा सदस्य</option>
+                                <option value="आजीवन सदस्य">आजीवन सदस्य
+                                </option>
+                                <option value="संरक्षक सदस्य"> संरक्षक सदस्य</option>
+                                <option value="बिशिष्ट संरक्षक सदस्य"> बिशिष्ट संरक्षक सदस्य</option>
+                                <option value="मानार्थ सदस्य"> मानार्थ सदस्य</option>
+                                <option value="मानार्थ सदस्य"> लिएको छैन</option>
+                            </select>
+                            <div class="form_address_previous">
+                                <label for="open_cs_post" class="checkbox_prompt">चोबेगु सजुम्लुङको पदाधिकारी भए</label>
+                                <input id="open_cs_post" type="checkbox">
+                            </div>
+                            <script>
+                                // Hide Unhide post personall
+                                $(document).ready(function () {
+                                    $('.form_org_post').hide();
+                                    $('#open_cs_post').change(function () {
+                                        if ($(this).is(':checked')) {
+                                            $('.form_org_post').show();
+                                        } else {
+                                            $('.form_org_post').hide();
+                                        }
+                                    });
+                                });
+                            </script>
+                            <div class="form_org_post">
+                                <label for="org_group_type">कार्यसमितिको किसिम</label>
+                                <select name="org_group_type" required>
+                                    <option value="X">आफ्नो समिति छान्नुहोस</option>
+                                    <option value="केन्द्रिय">केन्द्रिय कार्य समिति</option>
+                                    <option value="केन्द्रिय">शाखा कार्य समिति</option>
+                                </select>
+                                <label for="org_member_type">कार्यक्षेत्र</label>
+                                <select name="org_member_type" required>
+                                    <option value="X">आफ्नो समिति छान्नुहोस</option>
+                                    <option value="केन्द्रिय">केन्द्रिय कार्य समिति</option>
+                                    <option value="केन्द्रिय">शाखा कार्य समिति</option>
+                                </select>
+                                <label for="org_member_type">कियाथेचोस मा आफ्नो पद</label>
+                                <select name="org_member_type" required>
+                                    <option value="X">आफ्नो पद छान्नुहोस</option>
+                                    <option value="साधारणा सदस्य">अध्यक्ष</option>
+                                    <option value="आजीवन सदस्य">उपाध्यक्ष
+                                    </option>
+                                    <option value="संरक्षक सदस्य"> सचिव</option>
+                                    <option value="बिशिष्ट संरक्षक सदस्य"> सह-सचिव</option>
+                                    <option value="मानार्थ सदस्य"> काेषाध्यक्ष</option>
+                                    <option value="मानार्थ सदस्य"> सदस्य</option>
+                                </select>
+                            </div>
+                            <label for="org_member_type">पुस्ता नं</label>
+                            <p class="form_notice"> आफ्नो पुस्ता नं थाहा नभए यस संस्थामा आबद्ध सम्बन्धित
+                                <strong>पदाधिकारी</strong> लाई सोध्नसक्नुहुनेछ ।
+                            </p>
+                            <select name="org_member_type" required>
+                                <option value="X">आफ्नो पुस्ता नं छान्नुहोस</option>
+                                <option value="साधारणा सदस्य">२५</option>
+                                <option value="आजीवन सदस्य">२६
+                                </option>
+                                <option value="संरक्षक सदस्य"> २७</option>
+                                <option value="बिशिष्ट संरक्षक सदस्य"> २८</option>
+                                <option value="मानार्थ सदस्य"> २९</option>
+                                <option value="मानार्थ सदस्य"> ३०</option>
+                                <option value="संरक्षक सदस्य"> ३१</option>
+                                <option value="बिशिष्ट संरक्षक सदस्य"> ३२</option>
+                                <option value="मानार्थ सदस्य"> ३३</option>
+                                <option value="मानार्थ सदस्य"> ३४</option>
+                            </select>
                         </fieldset>
+                        <fieldset>
+                            <legend>फोटो विवरण</legend>
+                            <label for="user_photo">हालसालै खिचिएको फोटो</label>
+                            <p class="form_notice"> हालसालै खिचिएको <strong>पासफोटो</strong> वा आफ्नो फोटो आफै खिचेको
+                                खण्डमा <strong>उज्यलो प्रकासमा दुइवटा कान आएको </strong> प्रष्ट फोटो अपलोड गर्नुहोला ।
+                            </p>
+                            <input type="file" name="photo" id="user_photo" accept="image/*">
+                            <div id="form_show_photo"></div>
+                        </fieldset>
+                        <fieldset id="form_conditions">
+                            <legend>स्वीकार खण्ड</legend>
+                            <div class="check_condition">
+                                <input id="form_condition" type="checkbox" required>
+                            <label for="form_condition" class="checkbox_prompt">मैले दिएको विवरणहरू सबै ठिक छ । मेरो
+                                विवरण झुटो साबित भए नियम बमोजिम सजाय सहुँला । </label>
+                            </div>
+                            <div class="check_condition">
+                                <input id="form_condition" type="checkbox" required>
+                            <label for="form_condition" class="checkbox_prompt">यो फारम बुझाएपछि, म चोबेगु साजुम्लुङका सबै नियम र सर्तहरू स्वीकार गर्नेछु । </label>
+                            </div>
+                        </fieldset>
+                        <button type="submit">फारम बुझाउनुहोस् &nbsp; <i class="fa-solid fa-file-signature fa-beat-fade"></i></button>
                     </form>
                 </div>
                 <script>
@@ -586,6 +676,18 @@
                         });
                     });
 
+                    /*Photo show when upload*/
+                    $(document).ready(function () {
+                        // add event listener to file input element
+                        $('#user_photo').change(function () {
+                            // get selected file and create a URL for it
+                            var file = this.files[0];
+                            var url = URL.createObjectURL(file);
+
+                            // update the HTML of the div with the selected image
+                            $('#form_show_photo').html('<img src="' + url + '">');
+                        });
+                    });
                 </script>
             </aside>
             <aside class="right_side box">
