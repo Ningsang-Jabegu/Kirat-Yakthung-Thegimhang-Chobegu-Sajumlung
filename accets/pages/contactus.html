@@ -464,7 +464,7 @@
                                 <option value="Other">अन्य</option>
                             </select>
                             <textarea name="message" id="" cols="30" rows="5" required aria-required=""></textarea>
-                            <button type="submit">पेश गर्नुहोस् &nbsp; <i
+                            <button id="myButton" type="submit">पेश गर्नुहोस् &nbsp; <i
                                     class=" fa-solid fa-paper-plane-top"></i></button>
                         </form>
 
@@ -479,31 +479,28 @@
                             var url = $form.attr('action');
                             var data = $form.serialize();
 
+                            $('#myButton').prop('disabled', true); // Disable the button
+
                             $.ajax({
                                 url: url,
                                 type: 'POST',
                                 data: data,
                                 success: function () {
-                                    $('#message').text('We have submitted your request');
-                                    $('form * ').fadeOut('fast');
+                                    $('#message').show();
+                                    $('#message').text('हामीले तपाईंको अनुरोध पेस गरेका छौं। तपाईंलाई जवाफ फर्काउन २४ देखि ३६ घण्टा लाग्न सक्छ। हामिलाइ सम्झनु भएकोमा नोगेन (सेवारो) ।');
+                                    $('form * ').fadeOut('slow');
                                     $('form').addClass('submitted');
-                                    setTimeout(function () {
-                                        $('form * ').css("opacity", '0');
-                                        $('form').removeClass('submitted');
-                                        $('form').addClass('bounce');
-                                    }, 1000);
-                                    setTimeout(function () {
-                                        $('form').removeClass('bounce');
-                                        $('form').css("opacity", '1');
-                                        $('form').addClass('grow');
-                                    }, 3500);
                                 },
                                 error: function () {
                                     $('#message').text('There was an error submitting your request');
                                 }
+                                // complete: function () {
+                                //     $('#myButton').prop('disabled', false); // Enable the button
+                                // }
                             });
                         });
                     });
+
                 </script>
             </aside>
             <aside class="right_side box">
