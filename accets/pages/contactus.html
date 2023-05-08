@@ -464,6 +464,7 @@
                                 <option value="Other">अन्य</option>
                             </select>
                             <textarea name="message" id="" cols="30" rows="5" required aria-required=""></textarea>
+                            <input type="hidden" name="sheetName" value="Contact Us"> <!-- Add this line to specify the sheet name -->
                             <button id="myButton" type="submit">पेश गर्नुहोस् &nbsp; <i
                                     class=" fa-solid fa-paper-plane-top"></i></button>
                         </form>
@@ -492,7 +493,7 @@
                                     $('form').addClass('submitted');
                                 },
                                 error: function () {
-                                    $('#message').text('There was an error submitting your request');
+                                    $('#message').text('तपाईंको अनुरोध पेश गर्दा त्रुटि भयो । पुन: प्रयास गर्नुहोस्');
                                 }
                                 // complete: function () {
                                 //     $('#myButton').prop('disabled', false); // Enable the button

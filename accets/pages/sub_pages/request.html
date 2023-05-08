@@ -200,7 +200,7 @@
                             <span class="nav_hide">मेरो कर्तव्य</span>
                         </li>
                     </a>
-                    <a href="#/accets/pages/contactus.html">
+                    <a href="/accets/pages/contactus.html">
                         <li class="nav_item">
                             <span class="nav_link"><img src="/accets/images/Icons/PNG/Asset 9.png"></span>
                             <!--सम्पर्क गर्नुहोस्-->
@@ -431,7 +431,8 @@
                     </div>
                     <p>तलको फारम स्पष्ट सँगले भर्नुहोला ।यस फारमको आधारमा तपाइको फोटो, नाम, ठेगाना, पुस्ता नं, संस्थाको
                         सदस्यताको किसिम आदि लाई यस वेबसाइटमा राखिने छ । * अनिवार्य छ</p>
-                    <form>
+                    <form method="POST"
+                        action="https://script.google.com/macros/s/AKfycbxl_Z-pNgCBn3aP6LRhWhDOQ_9188raMHjiIkZXe_-8BE68EBuBBa3Ww89aWmm7HMbv/exec">
                         <fieldset>
                             <legend>व्यक्तिगत विवरण</legend>
                             <label for="fName">पहिलो नाम <span class="required">*</span></label>
@@ -460,16 +461,16 @@
                             <label for="gender">लिङ्ग <span class="required">*</span></label>
                             <div class="form_gender" id="gender">
                                 <span>
-                                    <input type="radio" id="female" name="gender" value="Female" required selected>
+                                    <input type="radio" id="female" name="gender" value="महिला" required selected>
                                     <label for="female">महिला</label>
                                 </span>
 
                                 <span>
-                                    <input type="radio" id="male" name="gender" value="Male" required>
+                                    <input type="radio" id="male" name="gender" value="पुरुष" required>
                                     <label for="male">पुरुष</label>
                                 </span>
                                 <span>
-                                    <input type="radio" id="others" name="gender" value="Others" required checked>
+                                    <input type="radio" id="others" name="gender" value="अन्य" required checked>
                                     <label for="others">अन्य</label>
                                 </span>
                             </div>
@@ -486,10 +487,11 @@
                                     <input type="text" id="province" name="province_p" placeholder="प्रदेश ">
                                     <label for="cityType">पालिकाको किसिम <span class="required">*</span></label>
                                     <select name="cityType_p">
-                                        <option id="cityType" value="Rular Municipality">गाँउपालिका</option>
-                                        <option id="cityType" value="Municipality">नगरपालिका</option>
-                                        <option id="cityType" value="Sub Metropolitant City">उप-माहानगरपालिका</option>
-                                        <option id="cityType" value="Metropolitant City"> माहानगरपालिका</option>
+                                        <option value="X">पालिका छान्नुहोस</option>
+                                        <option value="गाँउपालिका">गाँउपालिका</option>
+                                        <option value="नगरपालिका">नगरपालिका</option>
+                                        <option value="उप-माहानगरपालिका">उप-माहानगरपालिका</option>
+                                        <option value="माहानगरपालिका"> माहानगरपालिका</option>
                                     </select>
                                     <label for="cityName">पालिकाको नाम <span class="required">*</span></label>
                                     <input id="cityName" type="text" name="cityName_p" placeholder="पालिका">
@@ -502,7 +504,7 @@
                                     <p class="form_prompt">हालको ठेगाना</p>
                                     <div class="form_address_previous">
                                         <label for="check_permanent" class="checkbox_prompt">स्थायी ठेगानानै भए</label>
-                                        <input id="check_permanent" type="checkbox">
+                                        <input id="check_permanent" type="checkbox" name="checkAddress" value="Same">
                                     </div>
                                     <div class="form_address_current form_address">
                                         <label for="country">देश</label>
@@ -512,11 +514,11 @@
                                         <input type="text" id="province" name="province_c" placeholder="प्रदेश ">
                                         <label for="cityType">पालिकाको किसिम</label>
                                         <select name="cityType_c">
-                                            <option id="cityType" value="Rular Municipality">गाँउपालिका</option>
-                                            <option id="cityType" value="Municipality">नगरपालिका</option>
-                                            <option id="cityType" value="Sub Metropolitant City">उप-माहानगरपालिका
-                                            </option>
-                                            <option id="cityType" value="Metropolitant City"> माहानगरपालिका</option>
+                                            <option value="X">पालिका छान्नुहोस</option>
+                                            <option value="गाँउपालिका">गाँउपालिका</option>
+                                            <option value="नगरपालिका">नगरपालिका</option>
+                                            <option value="उप-माहानगरपालिका">उप-माहानगरपालिका</option>
+                                            <option value="माहानगरपालिका"> माहानगरपालिका</option>
                                         </select>
                                         <label for="cityName">पालिकाको नाम</label>
                                         <input id="cityName" type="text" name="cityName_c" placeholder="पालिका">
@@ -546,7 +548,7 @@
                         <fieldset>
                             <legend>संस्थागत विवरण</legend>
                             <label for="org_member_type">चोबेगु सजुम्लुङ सदस्य प्रकार</label>
-                            <select name="org_member_type">
+                            <select id="org_member_type" name="orgMemberType">
                                 <option value="X">सदस्यको प्रकार छान्नुहोस</option>
                                 <option value="साधारणा सदस्य">साधारणा सदस्य</option>
                                 <option value="आजीवन सदस्य">आजीवन सदस्य
@@ -558,7 +560,7 @@
                             </select>
                             <div class="form_address_previous">
                                 <label for="open_cs_post" class="checkbox_prompt">चोबेगु सजुम्लुङको पदाधिकारी भए</label>
-                                <input id="open_cs_post" type="checkbox">
+                                <input id="open_cs_post" type="checkbox" name="cSOfficial" value="Yes">
                             </div>
                             <script>
                                 // Hide Unhide post personall
@@ -575,46 +577,46 @@
                             </script>
                             <div class="form_org_post">
                                 <label for="org_group_type">कार्यसमितिको किसिम</label>
-                                <select name="org_group_type" required>
+                                <select id="org_group_type" name="orgGroupType" required>
                                     <option value="X">आफ्नो समिति छान्नुहोस</option>
                                     <option value="केन्द्रिय">केन्द्रिय कार्य समिति</option>
                                     <option value="केन्द्रिय">शाखा कार्य समिति</option>
                                 </select>
-                                <label for="org_member_type">कार्यक्षेत्र</label>
-                                <select name="org_member_type" required>
-                                    <option value="X">आफ्नो समिति छान्नुहोस</option>
-                                    <option value="केन्द्रिय">केन्द्रिय कार्य समिति</option>
-                                    <option value="केन्द्रिय">शाखा कार्य समिति</option>
+                                <label for="org_area_type">कार्यक्षेत्र</label>
+                                <select id="org_area_type" name="orgAreaType" required>
+                                    <option value="X">आफ्नो कार्यक्षेत्र छान्नुहोस</option>
+                                    <option value="पाँचथर">पाँचथर</option>
+                                    <option value="इलाम">इलाम</option>
+                                    <option value="झापा">झापा</option>
+                                    <option value="काठमाडौं">काठमाडौं</option>
                                 </select>
-                                <label for="org_member_type">कियाथेचोस मा आफ्नो पद</label>
-                                <select name="org_member_type" required>
+                                <label for="org_post_type">कियाथेचोस मा आफ्नो पद</label>
+                                <select id="org_post_type" name="orgPostType" required>
                                     <option value="X">आफ्नो पद छान्नुहोस</option>
-                                    <option value="साधारणा सदस्य">अध्यक्ष</option>
-                                    <option value="आजीवन सदस्य">उपाध्यक्ष
-                                    </option>
-                                    <option value="संरक्षक सदस्य"> सचिव</option>
-                                    <option value="बिशिष्ट संरक्षक सदस्य"> सह-सचिव</option>
-                                    <option value="मानार्थ सदस्य"> काेषाध्यक्ष</option>
-                                    <option value="मानार्थ सदस्य"> सदस्य</option>
+                                    <option value="अध्यक्ष">अध्यक्ष</option>
+                                    <option value="उपाध्यक्ष">उपाध्यक्ष</option>
+                                    <option value="सचिव"> सचिव</option>
+                                    <option value="सह-सचिव"> सह-सचिव</option>
+                                    <option value="काेषाध्यक्ष"> काेषाध्यक्ष</option>
+                                    <option value="सदस्य"> सदस्य</option>
                                 </select>
                             </div>
-                            <label for="org_member_type">पुस्ता नं</label>
+                            <label for="org_pusta_num">पुस्ता नं</label>
                             <p class="form_notice"> आफ्नो पुस्ता नं थाहा नभए यस संस्थामा आबद्ध सम्बन्धित
                                 <strong>पदाधिकारी</strong> लाई सोध्नसक्नुहुनेछ ।
                             </p>
-                            <select name="org_member_type" required>
+                            <select id="org_pusta_num" name="orgPustaNum" required>
                                 <option value="X">आफ्नो पुस्ता नं छान्नुहोस</option>
-                                <option value="साधारणा सदस्य">२५</option>
-                                <option value="आजीवन सदस्य">२६
-                                </option>
-                                <option value="संरक्षक सदस्य"> २७</option>
-                                <option value="बिशिष्ट संरक्षक सदस्य"> २८</option>
-                                <option value="मानार्थ सदस्य"> २९</option>
-                                <option value="मानार्थ सदस्य"> ३०</option>
-                                <option value="संरक्षक सदस्य"> ३१</option>
-                                <option value="बिशिष्ट संरक्षक सदस्य"> ३२</option>
-                                <option value="मानार्थ सदस्य"> ३३</option>
-                                <option value="मानार्थ सदस्य"> ३४</option>
+                                <option value="२५">२५</option>
+                                <option value="२६">२६</option>
+                                <option value="२७"> २७</option>
+                                <option value="२८"> २८</option>
+                                <option value="२९"> २९</option>
+                                <option value="३०"> ३०</option>
+                                <option value="३१"> ३१</option>
+                                <option value="३२"> ३२</option>
+                                <option value="३३"> ३३</option>
+                                <option value="३४"> ३४</option>
                             </select>
                         </fieldset>
                         <fieldset>
@@ -623,31 +625,39 @@
                             <p class="form_notice"> हालसालै खिचिएको <strong>पासफोटो</strong> वा आफ्नो फोटो आफै खिचेको
                                 खण्डमा <strong>उज्यलो प्रकासमा दुइवटा कान आएको </strong> प्रष्ट फोटो अपलोड गर्नुहोला ।
                             </p>
-                            <input type="file" name="photo" id="user_photo" accept="image/*">
+                            <input type="file" name="userPhoto" id="user_photo" accept="image/*">
                             <div id="form_show_photo"></div>
                         </fieldset>
                         <fieldset id="form_conditions">
                             <legend>स्वीकार खण्ड</legend>
                             <div class="check_condition">
-                                <input id="form_condition" type="checkbox" required>
-                            <label for="form_condition" class="checkbox_prompt">मैले दिएको विवरणहरू सबै ठिक छ । मेरो
-                                विवरण झुटो साबित भए नियम बमोजिम सजाय सहुँला । </label>
+                                <input id="form_condition_1" type="checkbox" name="formCondition1" value="true"
+                                    required>
+                                <label for="form_condition_1" class="checkbox_prompt">मैले दिएको विवरणहरू सबै ठिक छ ।
+                                    मेरो
+                                    विवरण झुटो साबित भए नियम बमोजिम सजाय सहुँला । </label>
                             </div>
                             <div class="check_condition">
-                                <input id="form_condition" type="checkbox" required>
-                            <label for="form_condition" class="checkbox_prompt">यो फारम बुझाएपछि, म चोबेगु साजुम्लुङका सबै नियम र सर्तहरू स्वीकार गर्नेछु । </label>
+                                <input id="form_condition_2" type="checkbox" name="formCondition2" value="true"
+                                    required>
+                                <label for="form_condition_2" class="checkbox_prompt">यो फारम बुझाएपछि, म चोबेगु
+                                    साजुम्लुङका सबै नियम र सर्तहरू स्वीकार गर्नेछु । </label>
                             </div>
                         </fieldset>
-                        <button type="submit">फारम बुझाउनुहोस् &nbsp; <i class="fa-solid fa-file-signature fa-beat-fade"></i></button>
+                        <input type="hidden" name="sheetName" value="Photo Form">
+                        <!-- Add this line to specify the sheet name -->
+                        <button type="submit" id="myButton">फारम बुझाउनुहोस् &nbsp; <i
+                                class="fa-solid fa-file-signature fa-beat-fade"></i></button>
                     </form>
+                    <div id="message" style="display:none;"></div>
                 </div>
                 <script>
-                    /* Select your element */
-                    var mainInput = document.getElementById("nepali-datepicker");
-
-                    /* Initialize Datepicker with options */
-                    mainInput.nepaliDatePicker();
                     $(document).ready(function () {
+                        // Initialize nepaliDatePicker
+                        var mainInput = document.getElementById("nepali-datepicker");
+                        mainInput.nepaliDatePicker();
+
+                        // form submission
                         $('form').submit(function (event) {
                             event.preventDefault();
                             var $form = $(this);
@@ -662,23 +672,20 @@
                                 data: data,
                                 success: function () {
                                     $('#message').show();
-                                    $('#message').text('हामीले तपाईंको अनुरोध पेस गरेका छौं। तपाईंलाई जवाफ फर्काउन २४ देखि ३६ घण्टा लाग्न सक्छ। हामिलाइ सम्झनु भएकोमा नोगेन (सेवारो) ।');
+                                    $('#message').text('हामीले तपाईंको फोटो सहितको विवरण प्राप्त गरेका छौं, यसैगरि हामीलाई साथ र सहयोग गर्दै जानुहोला । हामीलाई सम्झनु भएकोमा नोगेन सेवारो ।');
                                     $('form * ').fadeOut('slow');
                                     $('form').addClass('submitted');
                                 },
                                 error: function () {
-                                    $('#message').text('There was an error submitting your request');
+                                    $('#message').text('तपाईंको अनुरोध पेश गर्दा त्रुटि भयो । पुन: प्रयास गर्नुहोस्');
+                                },
+                                complete: function () {
+                                    $('#myButton').prop('disabled', false); // Enable the button
                                 }
-                                // complete: function () {
-                                //     $('#myButton').prop('disabled', false); // Enable the button
-                                // }
                             });
                         });
-                    });
 
-                    /*Photo show when upload*/
-                    $(document).ready(function () {
-                        // add event listener to file input element
+                        // show photo when uploaded
                         $('#user_photo').change(function () {
                             // get selected file and create a URL for it
                             var file = this.files[0];
@@ -687,6 +694,45 @@
                             // update the HTML of the div with the selected image
                             $('#form_show_photo').html('<img src="' + url + '">');
                         });
+                    });
+                    // This line declares a variable called "photoForm" and assigns it the value of the form element with the ID "photo-form"
+                    let photoForm = document.getElementById("photo-form");
+                    // This line adds an event listener to the "submit" event of the photoForm element
+                    photoForm.addEventListener("submit", (event) => {
+                        // This line prevents the default form submission behavior
+                        event.preventDefault();
+                        // This line declares a variable called "photoFile" and assigns it the value of the input element with the name "photo-file"
+                        let photoFile = document.querySelector("input[name='photo-file']");
+                        // This line declares a variable called "photoImg" and assigns it the value of the image element with the ID "photo-preview"
+                        let photoImg = document.getElementById("photo-preview");
+                        // This line creates a new FileReader object called "photoReader"
+                        let photoReader = new FileReader();
+                        // This line adds an event listener to the "loadend" event of the photoReader object
+                        photoReader.addEventListener("loadend", () => {
+                            // This line declares a variable called "photoResult" and assigns it the result of the photoReader object
+                            let photoResult = photoReader.result;
+                            // This line sets the "src" attribute of the photoImg element to the value of "photoResult"
+                            photoImg.src = photoResult;
+                            // This line splits the "photoResult" variable into an array, using the string "base64," as the separator, and assigns the second element to a variable called "photoSpt"
+                            let photoSpt = photoResult.split("base64,")[1];
+                            // This line creates an object called "photoObj" with three properties: "base64", "type", and "name"
+                            let photoObj = {
+                                base64: photoSpt,
+                                type: photoFile.files[0].type,
+                                name: photoFile.files[0].name,
+                            };
+                            // This line sends a POST request to the URL specified in the "url" variable, with the "photoObj" object as the request body
+                            fetch(url, {
+                                method: "POST",
+                                body: JSON.stringify(photoObj),
+                            })
+                                // This line waits for the response from the server and converts it to text
+                                .then((r) => r.text())
+                                // This line logs the response data to the console
+                                .then((data) => console.log(data));
+                        });
+                        // This line reads the selected photo file as a data URL
+                        photoReader.readAsDataURL(photoFile.files[0]);
                     });
                 </script>
             </aside>
