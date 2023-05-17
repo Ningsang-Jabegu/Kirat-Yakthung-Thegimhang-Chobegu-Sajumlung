@@ -626,7 +626,7 @@
                                 खण्डमा <strong>उज्यलो प्रकासमा दुइवटा कान आएको </strong> प्रष्ट फोटो अपलोड गर्नुहोला ।
                             </p>
                             <input type="file" name="userPhoto" id="user_photo" accept="image/*">
-                            <div id="form_show_photo"></div>
+                            <div id="form_show_photo"><img src="" alt=""> </div>
                         </fieldset>
                         <fieldset id="form_conditions">
                             <legend>स्वीकार खण्ड</legend>
@@ -683,6 +683,8 @@
                                     $('#myButton').prop('disabled', false); // Enable the button
                                 }
                             });
+
+
                         });
 
                         // show photo when uploaded

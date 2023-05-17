@@ -2190,9 +2190,14 @@ div.gallery img {
 .photo_form .form_gender span {
   display: flex;
   gap: 2em;
+  justify-content: flex-start;
+  align-items: center;
 }
 .photo_form .form_gender span {
   gap: .4em;
+}
+.photo_form .form_gender span label{
+  margin-top: 0;
 }
 .photo_form .form_prompt {
   font-weight: 600;
@@ -2237,8 +2242,8 @@ div.gallery img {
   width: 100%;
 }
 #form_show_photo img {
-  height: 20em;
-  width: auto;
+  height: auto;
+  width: 10em;
   border-radius: .4em;
   border: 2px solid rgba(224, 35, 224, 0.523);
 }
@@ -2278,4 +2283,8 @@ input[type=file]::file-selector-button:hover {
 .author_homepage {
   text-align: right;
   margin:.5em;
+}
+.submitted {
+  box-shadow: none;
+  display: none;
 }

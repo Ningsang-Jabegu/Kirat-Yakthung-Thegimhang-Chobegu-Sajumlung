@@ -448,12 +448,11 @@
                     <div class="middle_margin contactus_box contactus_form">
                         <h4>हामीलाई आफ्नो बारेमा बताउनुहोस्</h4>
                         <h1>हामी तपाईलाई कसरी सहयोग गर्न सक्छौ ?</h1>
-                        <form method="POST"
-                            action="https://script.google.com/macros/s/AKfycbxl_Z-pNgCBn3aP6LRhWhDOQ_9188raMHjiIkZXe_-8BE68EBuBBa3Ww89aWmm7HMbv/exec">
+                        <form method="POST" action="https://script.google.com/macros/s/AKfycbxl_Z-pNgCBn3aP6LRhWhDOQ_9188raMHjiIkZXe_-8BE68EBuBBa3Ww89aWmm7HMbv/exec">
                             <input name="firstName" type="text" placeholder="पहिलो नाम" required aria-required="true">
                             <input name="lastName" type="text" placeholder="थर" required aria-required="true">
                             <input name="email" type="email" placeholder="इमेल" required aria-required="true">
-                            <input name="mobileNumber" type="number" placeholder="मोबाइल नम्बर" maxlength="10"
+                            <input name="mobileNumber" type="tel" placeholder="मोबाइल नम्बर" maxlength="10"
                                 pattern="\d{10}" title="Please enter exactly 10 digits" required aria-required="true">
                             <select name="reason" name="" id="" required aria-required="true">
                                 <option value="X">कारण</option>
@@ -479,7 +478,6 @@
                             var $form = $(this);
                             var url = $form.attr('action');
                             var data = $form.serialize();
-
                             $('#myButton').prop('disabled', true); // Disable the button
 
                             $.ajax({
