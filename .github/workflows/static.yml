@@ -33,16 +33,16 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: Check if .well-known directory exists
+        run: |
+          if [ ! -d ".well-known" ]; then
+            mkdir .well-known
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Set Permissions for Hidden Folders
-        run: |
-          mkdir .well-known
-          chmod 755 .well-known
-        # This creates the .well-known directory and sets the appropriate permissions.
+          with:
+            # Upload entire repository
+            path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
