@@ -485,8 +485,6 @@
                                         placeholder="छान्नुहोस">
                                     <label for="province">प्रदेश <span class="required">*</span></label>
                                     <input type="text" id="province" name="province_p" placeholder="प्रदेश ">
-                                    <label for="district">जिल्ला <span class="required">*</span></label>
-                                    <input type="text" id="district" name="district_p" placeholder="जिल्ला ">
                                     <label for="cityType">पालिकाको किसिम <span class="required">*</span></label>
                                     <select name="cityType_p">
                                         <option value="X">पालिका छान्नुहोस</option>
@@ -514,8 +512,6 @@
                                             placeholder="छान्नुहोस">
                                         <label for="province">प्रदेश</label>
                                         <input type="text" id="province" name="province_c" placeholder="प्रदेश ">
-                                        <label for="district">जिल्ला </label>
-                                    <input type="text" id="district" name="district_c" placeholder="जिल्ला ">
                                         <label for="cityType">पालिकाको किसिम</label>
                                         <select name="cityType_c">
                                             <option value="X">पालिका छान्नुहोस</option>
@@ -644,7 +640,8 @@
                             <div class="check_condition">
                                 <input id="form_condition_2" type="checkbox" name="formCondition2" value="true"
                                     required>
-                                <label for="form_condition_2" class="checkbox_prompt">यो फारम बुझाएपछि, म चोबेगु साजुम्लुङका सबै नियम र सर्तहरू स्वीकार गर्नेछु । </label>
+                                <label for="form_condition_2" class="checkbox_prompt">यो फारम बुझाएपछि, म चोबेगु
+                                    साजुम्लुङका सबै नियम र सर्तहरू स्वीकार गर्नेछु । </label>
                             </div>
                         </fieldset>
                         <input type="hidden" name="sheetName" value="Photo Form">
@@ -702,7 +699,6 @@
                     });
                     // This line declares a variable called "photoForm" and assigns it the value of the form element with the ID "photo-form"
                     let photoForm = document.getElementById("photo-form");
-
                     // This line adds an event listener to the "submit" event of the photoForm element
                     photoForm.addEventListener("submit", (event) => {
                         // This line prevents the default form submission behavior
